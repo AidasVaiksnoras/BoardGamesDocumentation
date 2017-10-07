@@ -42,6 +42,51 @@
 Board games - tai aplikacija sujungianti norinčius žaisti stalo žaidimus žmones
 su tais kuriems trūksta žaidėjų.
 
+\section{Užduotys}
+Pagrindinės sistemos užduotys ir su jomis susiję agentai
+
+	\renewcommand{\labelitemi}{$\bullet$}
+	\renewcommand{\labelitemii}{$\circ$}
+	\begin{itemize}
+		\item Agentai:
+			\begin{description}
+				\item [$\circ$ Svečias] Neprisijungęs programėlės naudotojas.
+				\item [$\circ$ Registruotas vartotojas] Žmogus, sėkmingai atlikęs registraciją ir prisijungęs prie programėlės, galintis dalyvauti jos veikloje.
+				\item [$\circ$ Žaidimo dalyvis] Registruotas vartotojas, nusprendęs prisijungti prie vieno iš sistemos siūlomų žaidimų.
+				\item [$\circ$ Žaidimo šeimininkas] Registruotas vartotojas, pridėjęs žaidimą sistemoje.
+				\item [$\circ$ Administratorius] Žmogus, atsakingas už tinkamą sistemos darbo palaikymą.
+			\end{description}
+	\end{itemize}
+		
+	\subsubsection*{Pagrindinės užduotys}
+	
+	\subsection{Svečio ir registruoto vartotojo užduotys}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.5]{img/UzduociuDiagrama1}
+			\caption{Svečio ir registruoto vartotojo užduotys}
+			\label{img:UzduociuDiagrama1}
+		\end{figure}
+		Kol vartotojas nėra užsiregistravęs sistemoje, jam suteikiamos tik svečio teisės, kurios leidžia tik peržiūrėti sukurtus žaidimus. Norėdamas įgyti daugiau privilegijų, vartotojas privalo užsiregistruoti. Registruotas vartotojas jau gali dalyvauti programėlės veikloje: sukurti naują žaidimą ir apie jį paskelbti, arba prisijungti prie jau esamo.
+
+	\subsection{Žaidimo dalyvio ir šeimininko užduotys}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.5]{img/UzduociuDiagrama2}
+			\caption{Žaidimo dalyvio ir šeimininko užduotys}
+			\label{img:UzduociuDiagrama2}
+		\end{figure}
+		Registruotas vartotojas gali atlikti du vaidmenis: arba būti sukurto žaidimo šeimininku, arba paprasčiausiu dalyviu. Žaidimo dalyviui leidžiama pranešti sistemos administratoriui apie nevykstantį žaidimą, tuo atveju, jeigu žaidėjas nuvyko į sutartą žaidimo vietą reikiamu laiku ir jam nepavyko surasti kitų užsiregistravusių dalyvių. Jeigu bent vienas žaidėjas (išskyrus šeimininką) nesutinka su tokia informacija, pranešimas laikomas melagingu. Priešingu atveju, sulaukus administratoriaus pritarimo, žaidimas išimamas iš aktyvių žaidimų sąrašo norint užkirsti tolimesnį galimą dalyvių pritraukimą. Tai pat, šeimininkui patvirtinus žaidėją, jis įgauna teisę peržiūrėti kitų, jau pareiškusių norą dalyvauti žaidėjų profilius ir su jais susipažinti naudojantis programėlės asmeninių žinučių sistema. Norėdamas pasiteirauti dėl žaidimo detalių arba visais kitais iškilusiais klausimais, jis taip pat gali tiesiogiai kreiptis į žaidimo šeimininką. Na o šeimininkas gali informuoti žaidėjus apie nenumatytai pasikeitusią žaidimo vietą ar laiką, susisiekti su jais ir iš anksto trumpai supažindinti su žaidimo taisyklėmis ir pnš. Jeigu žaidimo dalyviui nepatinka kitų dalyvių kompanija ar bet kokios kitos žaidimo detalės, jis gali bet kada palikti žaidimą, o žaidimo šeimininkas apie tai yra informuojamas.
+
+	\subsection{Sistemos administravimas}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.5]{img/UzduociuDiagrama3}
+			\caption{Sistemos administravimas}
+			\label{img:UzduociuDiagrama3}
+		\end{figure}
+		Administratorius prižiūri programėlės pateikiamos informacijos patikimumą. Jis turi teisę ištrinti registruoto vartotojo sukurtą žaidimą siekdamas apsaugoti dar vėliau prie žaidimo galimai prisijungsiančius dalyvius tuo atveju, jei vartotojo pateikti duomenys nėra tikslūs ar apie žaidimą jau buvo gautas įspėjamas pranešimas iš kitų sąžiningų vartotojų. Jeigu vartotojas nesiliauja kurti fiktyvių žaidimų, jam gali būti taikomos nuobaudos: laikinai (pvz. parai) apribojimas organizuoti bet kokius žaidimus. Jei tai kartojasi, administratorius gali apsvarstyti pasiūlymą užblokuoti vartotojo paskyrą arba įtraukti jo IP adresą į nepageidaujamų sąrašą. Kaip pagalbinę priemonę vartotojų veiksmams sekti administratorius gali naudoti vartotojų veiklos žurnalą, kuriame būtų pateikiami chronologiškai surikiuoti vartotojų veiksmai, gauti nurodžius dominantį periodą. Veiklos žurnalą būtų galima filtruoti pagal konkretų vartotoją, taip susiaurinant paiešką.		
+
 \section{Procesų pjūvis}
 Aplikacijoje yra vartotojo sąsajos, duomenų apdorojimo ir duomenu bazės procesai. 
 Vartotojas tiesiogiai bendraudamas su vartotojo sąsaja, siunčia asinchronines 
