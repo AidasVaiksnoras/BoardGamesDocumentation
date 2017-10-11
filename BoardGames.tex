@@ -273,7 +273,41 @@ Vartotojas tiesiogiai bendraudamas su vartotojo sąsaja, siunčia asinchronines
 				\label{img:TopologyExample}
 			\end{figure}
 		Diagramoje pavaizduotas galimas realaus sistemos vaizdo atvejis, kuris atitinka 		anksčiau aprašytą mazgų komunikacijos ir artifaktų diegimo logiką. Pavyzdyje 			pateikti trys klientiniai įrenginiai (2 Android, 1 iOS), kurie TCP/IP protokolo 		pagalba komunikuoja su konkrečiu Linux Debian 9.0 distribucijos serveriu, kuriame 			įdiegtas MySQL 5.7 versijos serveris, apdorojantis programėlės SQL užklausas ir 		Common Language Runtime vykdomoji aplinka, apdorojanti loginį programinį kodą, jį 			paverčianti mašininiu, kurį vėliau įvykdo fizinis mazgas.
+		
+\section{Kūrimo pjūvis}
+Komponentų dekompozicija įgyvendinta taip: nuo bendresnių komponentų pereinanama iki detalesnių.
 
+	\subsection{Bendroji UML diagrama}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.6]{img/UMLComponent1}
+			\caption{Bendroji UML diagrama}
+			\label{img:UMLComponent1}
+		\end{figure}
+		Vartotojui įsijungus stalo žaidimų aplikaciją, jis prie jos turi prisijungti, kad būtų patvirtinta jo tapatybė. Tai atliekama prisijungimo sąsajoj, kurią suteikia autentifikacijos komponentas. Patikrinus duomenis duomenų sistemoje, kurioje saugoma informacija apie vartotoją bei jo įvertinimą, gautą iš kitų žaidėjų, ir sėkmingai autentifikavus vartotoją, jam leidžiama naudotis stalo žaidimų aplikacijos ir naudotojo komponentų teikiamomis funkcijomis. Naudotojo komponento teikiama sąsaja leidžia pateikti informaciją apie save kitiems, o aplikacijos komponento sąsaja suteikia galimybę kurti žaidimus, prisijungti prie jų, vertinti vartotojus, pateikti informaciją apie esančius žaidimus pačiam vartotojui ar pačio kuriamus kitiems vartotojams.
+		
+		\subsection{Vartotojo komponentų diagrama}
+		Aukščiau pateikta UML diagrama, kurioje vaizduojami bendri komponentai. Atskirus sistemos komponentus patogiau vaizduoti atskirai, todėl tam sukurtos papildomos diagramos.
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.6]{img/UMLComponent2}
+			\caption{Vartotojo komponentų diagrama}
+			\label{img:UMLComponent2}
+		\end{figure}
+		Vartotojui pateikiama atitinkama sąsaja priklausomai nuo to, ar vartotojas pasirinko būti žaidimo kūrėju, ar prisijungti prie žaidimo. Jei vartotojas pasirinko prisijungti prie esamo žaidimo, tai jam yra pateikiama žaidimų sąrašo sąsaja, pateikianti sąrašą žaidimų, kuriuose trūksta narių. Jei vartotojas nusprendė pats kurti žaidimą, tada jis nukeliamas į žaidimo kūrimo langą ir įgauna papildomų funkcijų. Tai suteikia žaidimo kūrimo komponentas ir jo suteikiama žaidimo organizavimo sąsaja. Pasirinkimą būti žaidimo kurėju ar paprastu nariu bet kada galima pakeisti. 
+		
+		\subsection{Detalesnė vartotojo komponentų diagrama}
+		Kadangi vartotojai gali arba prisijungti prie žaidimų, arba būti jų kūrėjais, jiems reikalingi atitinkami komponentai. Kad geriau matytųsi, kokie iš jų priklauso kiekvienam tipui, sukurta atskira UML diagrama.
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.6]{img/UMLComponent3}
+			\caption{Detalesnė vartotojo komponentų diagrama}
+			\label{img:UMLComponent3}
+		\end{figure}
+		Tiek paprasti nariai, tiek kūrėjai gali naudotis vartotojo profilio, žaidimo informacijos ir žinučių komponentais, kurie suteikia atitinkamas sąsajas. Vartotojo profilio komponentas leidžia parodyti informaciją apie žaidimuose esančius narius bei jų įvertinimą ir patikimumą. Žaidimo informacijos komponente trumpai nupasakojama apie žaidimą bei pateikiamas jo pavadinimas. Žinučių komponentas suteikia galimybę susisiekti su kiekvienu žaidimo nariu atskirai ir bendrauti bendrame grupės pokalbyje. Kūrėjas taip pat gali naudotis žaidimo kūrimo įrankių komponentu. Jam suteikiamos galimybės pateikti ir keisti žaidimo informaciją, priimti, pakviesti bei išmesti žaidimo narius.
+		
 	\sectionnonum{Literatūros sąrašas}
 	\begin{itemize}
 		\item Doc. dr. K. Petrausko Programų Sistemų Inžinerijos kurso konspektai

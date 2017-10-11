@@ -33,3 +33,13 @@
 \contentsline {subsection}{\numberline {3.2.}Artifaktų diegimas į mazgus}{14}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.3.}Topologinio išdėstymo tinkle pavyzdys}{15}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.}Kūrimo pjūvis}{16}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.}Bendroji UML diagrama}{16}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.}Vartotojo komponentų diagrama}{16}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3.}Detalesnė vartotojo komponentų diagrama}{17}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Literatūros sąrašas}{19}
