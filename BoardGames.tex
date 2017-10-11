@@ -217,5 +217,46 @@ Vartotojas tiesiogiai bendraudamas su vartotojo sąsaja, siunčia asinchronines
 			atidaromas pokalbių langas, kur vartotojas gali išsiųsti žinutę visiems 
 			prie žaidimo prisijungusiems žaidėjams. Paspaudus siųsti žinutę logikos 
 			procesas išsaugo žinutę duomenų bazėje ir praneša žaidėjams apie gautą žinutę.
-
+\section{Loginis pjūvis}
+	\subsection{Klasių Diagramos}
+			Tam, kad būtų patogiau suprasti, klasių diagrama yra padalinta į kelias dalis:
+		\subsubsection*{Pirmoji klasių diagramos dalis :}
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.5]{img/BoardGamesClassDiagram}
+				\caption{Klasių diagrama: registracija ir pgr funkcijos}
+				\label{img:BoardGamesClassDiagram}
+			\end{figure}
+			Klasė Login, atsakinga už vartotojo autentifikaciją, turi  registracjos langą (klasę Register). Viena Login klasė gali turėti vieną   registracijos klasę. Užsiregistravus, Login klasė gali atidaryti pagrindinį vartotojo puslapį (MainForm klasę), kuris gali parodyti MyGames klasę, t.y. vartotojo žaidimus , siūlo sukurti žaidimą (HostGame) arba jungtis prie jau egzistuojančio (JoinGame) žaidimo. Kiekviena MainForm klasė gali parodyti, sukurti ir prisijungti prie kiek norimai daug žaidimų. Kiekvieną kartą sukūrus ar prisijungus prie žaidimo, jis yra pridedamas prie MyGames. 
+		\subsubsection*{Antroji klasių diagramos dalis :}
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.5]{img/BoardGamesClassDiagrampt1}
+				\caption{Klasių diagrama: žaidimų kūrimas ir prisijungimas}
+				\label{img:BoardGamesClassDiagrampt1}
+			\end{figure}
+			Klasė MyGames atveria vartotojo sukurtus žaidimus (klasė MyHostedGame) bei žaidimus, prie kurių jis prisijungė (MyJoinedGame). Abiejų variantų vartotojas gali turėti kiek norimai daug. Kiekvienas sukurtas žaidimas gali atverti prisijungusių kitų žaidėjų sąrašą ir iš jo yra pasiekiamas kiekvieno žaidėjo profilis (klasė Profile). Jei vartotojas pasirinko prisijungti prie žaidimo, už tai yra atsakinga JoinGame klasė, kurios vieną ar daugiau elementų (žaidimų) sukūrė konkretus kūrėjas (klasė Host). Host turi klasę Reviews, nes kiekvienas kūrėjas gali turėti atsiliepimų. Prisijungus prie žaidimo, klasė ViewOthers užtikrina galimybę peržvelgti kitų prisijungusių žaidėjų sąrašą ir jų profilius (Profile).
+		\subsubsection*{Trečioji klasių diagramos dalis :}
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.5]{img/BoardGamesClassDiagrampt2}
+				\caption{Klasių diagrama: Svečias}
+				\label{img:BoardGamesClassDiagrampt2}
+			\end{figure}
+			Jei vartotojas nėra prisiregistravęs (Guest), Login forma gali nuvesti jį prie sukurtų žaidimų sąrašo.
+		\subsubsection*{Pilna klasių diagrama :}
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.3]{img/BoardGamesClassDiagramFull}
+				\caption{Visa klasių diagrama}
+				\label{img:BoardGamesClassDiagramFull}
+			\end{figure}
+	\subsection*{Objektų diagrama}
+		\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.5]{img/Object}
+				\caption{Objektų diagrama}
+				\label{img:Object}
+			\end{figure}
+		Užsiregistravęs vartotojas yra autentifikuojamas ir nusiunčiamas į savo pagrindinį puslapį mainForm. Jis buvo sukūręs žaidimą game ir prisijungęs prie žaidimo game1, kurie abu buvo pridėti prie jo asmeninių žaidimų sarašo myGames. Jame jau yra žaidimai game2 ir game3 (kuriuos jis sukūrė pats) bei game4, prie kurio buvo prisijungęs. Kitas vartotojas player1 buvo prisijungęs prie žaidimo game2, playerč2 - prie game2 ir game3, o player3 - prie game3.
 \end{document}
