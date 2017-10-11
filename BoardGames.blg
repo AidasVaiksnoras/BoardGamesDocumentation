@@ -1,9 +1,9 @@
 [1] Config.pm:354> INFO - This is Biber 2.7 (beta)
 [1] Config.pm:357> INFO - Logfile is 'BoardGames.blg'
-[57] biber:303> INFO - === Thu Oct 12, 2017, 00:57:16
-[75] Biber.pm:360> INFO - Reading 'BoardGames.bcf'
-[169] Biber.pm:836> INFO - Found 0 citekeys in bib section 0
-[179] Utils.pm:164> WARN - The file 'BoardGames.bcf' does not contain any citations!
-[186] bbl.pm:608> INFO - Writing 'BoardGames.bbl' with encoding 'UTF-8'
-[186] bbl.pm:712> INFO - Output to BoardGames.bbl
-[187] Biber.pm:110> INFO - WARNINGS: 1
+[60] biber:303> INFO - === Thu Oct 12, 2017, 01:10:24
+[80] Biber.pm:360> INFO - Reading 'BoardGames.bcf'
+[182] Biber.pm:836> INFO - Found 0 citekeys in bib section 0
+[195] Utils.pm:164> WARN - The file 'BoardGames.bcf' does not contain any citations!
+[204] bbl.pm:608> INFO - Writing 'BoardGames.bbl' with encoding 'UTF-8'
+[205] bbl.pm:712> INFO - Output to BoardGames.bbl
+[205] Biber.pm:110> INFO - WARNINGS: 1

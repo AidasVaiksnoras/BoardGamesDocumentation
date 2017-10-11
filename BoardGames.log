@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/Debian) (preloaded format=xelatex 2017.10.10)  12 OCT 2017 00:57
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/Debian) (preloaded format=xelatex 2017.10.10)  12 OCT 2017 01:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1182,21 +1182,23 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 37.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
+] [1
+
 ]
 (./BoardGames.toc)
 \tf@toc=\write5
 \openout5 = `BoardGames.toc'.
 
- [1
+ [2
 
-] [2
+] [3
 
 ]
 File: img/BoardGamesClassDiagram.jpg Graphic file (type QTm)
  <use  "img/BoardGamesClassDiagram.jpg" >
 File: img/BoardGamesClassDiagrampt1.jpg Graphic file (type QTm)
 
-<use  "img/BoardGamesClassDiagrampt1.jpg" > [3
+<use  "img/BoardGamesClassDiagrampt1.jpg" > [4
 
 ]
 File: img/BoardGamesClassDiagrampt2.jpg Graphic file (type QTm)
@@ -1205,77 +1207,77 @@ File: img/BoardGamesClassDiagrampt2.jpg Graphic file (type QTm)
 File: img/BoardGamesClassDiagramFull.jpg Graphic file (type QTm)
 
 <use  "img/BoardGamesClassDiagramFull.jpg" >
-Overfull \hbox (60.90161pt too wide) in paragraph at lines 75--76
+Overfull \hbox (60.90161pt too wide) in paragraph at lines 80--81
  [][] 
  []
 
-[4]
+[5]
 File: img/Object.jpg Graphic file (type QTm)
- <use  "img/Object.jpg" > [5] [6]
+ <use  "img/Object.jpg" > [6] [7]
 File: img/UzduociuDiagrama1.jpg Graphic file (type QTm)
  <use  "img/UzduociuDiagrama1.jpg" >
 File: img/UzduociuDiagrama2.jpg Graphic file (type QTm)
 
-<use  "img/UzduociuDiagrama2.jpg" > [7
+<use  "img/UzduociuDiagrama2.jpg" > [8
 
 ]
 File: img/UzduociuDiagrama3.jpg Graphic file (type QTm)
  <use  "img/UzduociuDiagrama3.jpg" >
-[8] [9]
+[9] [10]
 File: img/UMLComponent1.jpg Graphic file (type QTm)
  <use  "img/UMLComponent1.jpg" >
 File: img/UMLComponent2.jpg Graphic file (type QTm)
  <use  "img/UMLComponent2.jpg" >
-[10
+[11
 
 ]
 File: img/UMLComponent3.jpg Graphic file (type QTm)
- <use  "img/UMLComponent3.jpg" > [11] [12]
+ <use  "img/UMLComponent3.jpg" > [12] [13]
 File: img/NodesCommunication.jpg Graphic file (type QTm)
 
 <use  "img/NodesCommunication.jpg" >
-Overfull \hbox (10.82271pt too wide) in paragraph at lines 172--173
+Overfull \hbox (10.82271pt too wide) in paragraph at lines 177--178
  [][] 
  []
 
 File: img/Artifacts.jpg Graphic file (type QTm)
-<use  "img/Artifacts.jpg" > [13
+<use  "img/Artifacts.jpg" > [14
 
-] [14]
+] [15]
 File: img/TopologyExample.jpg Graphic file (type QTm)
  <use  "img/TopologyExample.jpg" >
-[15]
+[16]
 File: img/Login_sequence.png Graphic file (type QTm)
  <use  "img/Login_sequence.png" >
 File: img/Authentication.jpg Graphic file (type QTm)
- <use  "img/Authentication.jpg" > [16
+ <use  "img/Authentication.jpg" > [17
 
 ]
 File: img/MainWindow_activity.png Graphic file (type QTm)
 
-<use  "img/MainWindow_activity.png" > [17]
+<use  "img/MainWindow_activity.png" > [18]
 File: img/HostGame_activity.png Graphic file (type QTm)
  <use  "img/HostGame_activity.png" >
-[18]
+[19]
 File: img/HostGame_sequence.png Graphic file (type QTm)
- <use  "img/HostGame_sequence.png" > [19]
+ <use  "img/HostGame_sequence.png" > [20]
 File: img/JoinGame_activity.png Graphic file (type QTm)
 
-<use  "img/JoinGame_activity.png" > [20]
+<use  "img/JoinGame_activity.png" > [21]
 File: img/JoinGame_sequence.png Graphic file (type QTm)
  <use  "img/JoinGame_sequence.png" >
 File: img/FriendList_sequence.png Graphic file (type QTm)
 
-<use  "img/FriendList_sequence.png" > [21]
+<use  "img/FriendList_sequence.png" > [22]
 File: img/GameWindow_sequence.png Graphic file (type QTm)
 
-<use  "img/GameWindow_sequence.png" > [22]
-Underfull \hbox (badness 1783) in paragraph at lines 359--360
+<use  "img/GameWindow_sequence.png" > [23]
+Underfull \hbox (badness 1783) in paragraph at lines 364--365
 []\TU/texgyretermes(0)/m/n/12 Informacija apie išdėstymo tinkle (Deployment) di
 agramas, pavyzdžiai $[][][][] [] [] [] [][][] []
  []
 
-[23
+[24
 
 ] (./BoardGames.aux)
 
@@ -1288,10 +1290,10 @@ Package logreq Info: Writing requests to 'BoardGames.run.xml'.
 Here is how much of TeX's memory you used:
  22869 strings out of 493068
  464932 string characters out of 6137719
- 903555 words of memory out of 5000000
+ 903556 words of memory out of 5000000
  26482 multiletter control sequences out of 15000+600000
  16574 words of font info for 81 fonts, out of 8000000 for 9000
  1347 hyphenation exceptions out of 8191
  67i,12n,96p,10499b,3426s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on BoardGames.pdf (24 pages).
+Output written on BoardGames.pdf (25 pages).
