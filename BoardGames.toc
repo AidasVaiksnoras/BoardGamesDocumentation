@@ -4,42 +4,48 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{Įvadas}{2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.}Užduotys}{3}
+\contentsline {section}{\numberline {1.}Loginis pjūvis}{3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1.}Svečio ir registruoto vartotojo užduotys}{3}
+\contentsline {subsection}{\numberline {1.1.}Klasių Diagramos}{3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2.}Žaidimo dalyvio ir šeimininko užduotys}{4}
+\contentsline {subsection}{\numberline {1.2.}Objektų diagrama}{6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3.}Sistemos administravimas}{5}
+\contentsline {section}{\numberline {2.}Užduotys}{7}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.}Procesų pjūvis}{6}
+\contentsline {subsection}{\numberline {2.1.}Svečio ir registruoto vartotojo užduotys}{7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.}Prisijungimas}{6}
+\contentsline {subsection}{\numberline {2.2.}Žaidimo dalyvio ir šeimininko užduotys}{8}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.}Pagrindinis navigacijos langas}{8}
+\contentsline {subsection}{\numberline {2.3.}Sistemos administravimas}{9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.}Žaidimo sukūrimo langas}{9}
+\contentsline {section}{\numberline {3.}Kūrimo pjūvis}{10}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.}Prisijungimo prie egzistuojančio žaidimo langas}{10}
+\contentsline {subsection}{\numberline {3.1.}Bendroji UML diagrama}{10}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5.}Draugų sąrašo langas}{11}
+\contentsline {subsection}{\numberline {3.2.}Vartotojo komponentų diagrama}{10}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.6.}Žaidimo langas}{12}
+\contentsline {subsection}{\numberline {3.3.}Detalesnė vartotojo komponentų diagrama}{11}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.}Fizinis pjūvis}{13}
+\contentsline {section}{\numberline {4.}Fizinis pjūvis}{13}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.}Fiziniai mazgai tinkle, jų komunikacija}{13}
+\contentsline {subsection}{\numberline {4.1.}Fiziniai mazgai tinkle, jų komunikacija}{13}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.}Artifaktų diegimas į mazgus}{14}
+\contentsline {subsection}{\numberline {4.2.}Artifaktų diegimas į mazgus}{14}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.}Topologinio išdėstymo tinkle pavyzdys}{15}
+\contentsline {subsection}{\numberline {4.3.}Topologinio išdėstymo tinkle pavyzdys}{15}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.}Kūrimo pjūvis}{16}
+\contentsline {section}{\numberline {5.}Procesų pjūvis}{16}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.}Bendroji UML diagrama}{16}
+\contentsline {subsection}{\numberline {5.1.}Prisijungimas}{16}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.}Vartotojo komponentų diagrama}{16}
+\contentsline {subsection}{\numberline {5.2.}Pagrindinis navigacijos langas}{18}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.}Detalesnė vartotojo komponentų diagrama}{17}
+\contentsline {subsection}{\numberline {5.3.}Žaidimo sukūrimo langas}{19}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Literatūros sąrašas}{19}
+\contentsline {subsection}{\numberline {5.4.}Prisijungimo prie egzistuojančio žaidimo langas}{20}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.5.}Draugų sąrašo langas}{21}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.6.}Žaidimo langas}{22}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Literatūros sąrašas}{23}
