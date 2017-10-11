@@ -17,9 +17,9 @@
 \university{Vilniaus universitetas}
 \faculty{Matematikos ir informatikos fakultetas}
 \department{Programų sistemų katedra}
-\papertype{Programų sistemų labaratorinis darbas}
+\papertype{Programų sistemų inžinerija: 1 laboratorinis darbas}
 \title{Stalo žaidimų programėlė}
-\titleineng{Board games application}
+\titleineng{Board Games Application}
 \status{2 kurso 5 grupės studentai}
 \author{Elena Reivitytė}
 \secondauthor{Matas Šilinskas}
@@ -108,7 +108,14 @@ Vartotojas tiesiogiai bendraudamas su vartotojo sąsaja, siunčia asinchronines
 		bazėje. Autentifikuotas vartotojas yra prijungiamas prie programėlės. 
 		Jei slaptažodis netinka arba vartotojas nerastas duomenų bazėje, leidžiama
 		patikslinti prisijungimo laukus ir prisijungimo procesas kartojamas dar kartą.
-
+		\subsubsection*{Prisijungimo/Registracijos procesų veiklos diagrama :}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.5]{img/Authentication}
+			\caption{Autentifikacijos veiklos diagrama}
+			\label{img:Authentication}
+		\end{figure}
+		Kiekvienas programėlės naudotojas patenka į prisijungimo langą, kuriame gali 			pasirinkti vieną iš galimų prisijungimo būdų - naudojantis Facebook API arba 			paprasta vartotojo paskyra. Pasirinkus Facebook autentifikacija, programėlė 			nuskaito vartotojo identifikacinius duomenis ir ši veikla pabaigiama. Pasirinkus 			prisijungimą naudojantis paprasta paskyra atsiranda dvi galimybės - prisijungti 		arba užsiregistruoti. Pasirinkus registraciją vartotojas suveda savo duomenis, 			jeigu pastarieji teisingi - jis užregistruojamas ir gali prisijungti. Jei duomenys 			klaidingi - vartotojas vėl patenka į tą patį registracijos langą. Norėdamas 			prisijungti vartotojas turi įvesti savo teisingus prisijungimo duomenis, tuomet 		iššoka CAPTCHA patvirtinimo paveikslėlis, skirtas prevencijai nuo kenkėjiško tipo 			skriptų ir programų, imituojančių žmogų. Jeigu CAPTCHA klaidingas - vartotojas 			blokuojamas 5 minutėms (tiek laiko negali prisijungti siekiant taupyti sistemos 		resursus, išvengti DOS/DDOS atakų). Suvedus teisingą CAPTCHA kodą patenkama į 			sistemą ir ši veikla užbaigiama.
 	\subsection{Pagrindinis navigacijos langas}
 		\begin{figure}[H]
 			\centering
@@ -218,4 +225,52 @@ Vartotojas tiesiogiai bendraudamas su vartotojo sąsaja, siunčia asinchronines
 			prie žaidimo prisijungusiems žaidėjams. Paspaudus siųsti žinutę logikos 
 			procesas išsaugo žinutę duomenų bazėje ir praneša žaidėjams apie gautą žinutę.
 
+\section{Fizinis pjūvis}
+Šioje dalyje pateikta informacija apie sistemos fizinius mazgus, juose įdiegtas vykdomasias aplinkas, reikalingas vykdyti programos komponentų darbą, taip pat apie komunikaciją tarp mazgų ir juose įdiegtus artifaktus, kurie saugo programinį kodą.
+	\subsection{Fiziniai mazgai tinkle, jų komunikacija}
+				\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.5]{img/NodesCommunication}
+				\caption{Fizinių sistemos mazgų išdėstymo tinkle diagrama}
+				\label{img:NodesCommunication}
+			\end{figure}
+			Mobilioji aplikacija dėl savo paprasto loginio pobūdžio nereikalauja 				kompleksiškos tinklo architektūros su daugybe fizinių komponentų. 				Išdėstymo diagramoje pateiktas kliento mazgas – mobilusis įrenginys – 				kuriame veikia Android OS arba iOS. Šiose operacinių sistemų aplinkose 				diegiamas mobiliosios aplikacijos artifaktas (.apk – Android atveju, .ipa 				– iOS atveju), kurį sudaro visos sukompiliuotos projekto vartotojo sąsajos 				klasės, resursai, taip pat ir nesukompiliuoti resursai. Kitas mazgas – 				nutolęs aplikacijos serveris, su kuriuo TCP/IP protokolu komunikuoja kliento mobilusis įrenginys. Šiame nutolusiame fiziniame serveryje veikia stabili Linux OS 				aplinkos distribucija, užtikrinanti duombazės pasiekiamumą ir darbo 				nepertraukiamumą. Šioje OS instaliuota MySQL duomenų bazių valdymo 				sistema, kurioje sukurtos trys lentelių schemos: Users (informacija, 				susijusi su aplikacijos naudotojais), Games (informacija, susijusi su 				žaidimais, jų sesijomis), Management (aplikacijos valdymo, statistinių 				duomenų schema). Taip pat šioje Linux aplinkoje veikia programėlės loginio 				kodo vykdomoji aplinka, kurioje įdiegtas loginis artifaktas, atsakingas už 				visą programėlės logiką.
+	\subsection{Artifaktų diegimas į mazgus}
+				\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.4]{img/Artifacts}
+				\caption{Artifaktų sandara ir diegimas į mazgus}
+				\label{img:Artifacts}
+			\end{figure}
+			Sistemą sudaro du pagrindiniai artifaktai - įdiegtas vartotojo sąsajos 				paketas, išdėstomas kliento mobiliajame įrenginyje, ir logikos paketas, 			įdiegtas nutolusio aplikacijos serverio kodo vykdomojoje aplinkoje. 
+		\subsubsubsection*{Mobiliajame įrenginyje įdiegto artifakto turinys:}
+  				\begin{itemize}
+					\item Žaidimo šeimininko vartotojo sąsajos komponentas
+					\item Paprasto programėlės naudotojo vartotojo sąsajos komponentas.
+					\item Administratoriaus vartotojo sąsajos komponentas
+					\item Esamų žaidimų sąrašas ir informacija apie juos
+				\end{itemize}
+		\subsubsubsection*{Nutolusiame serveryje įdiegto artifakto turinys:}
+  				\begin{itemize}
+					\item Autentifikacijos komponentas - visa logika, susijusi 						su prisijungimu, registracija 
+					\item Duombazės komponentas - logika, kurioje apibrėžta 					komunikacija su DBVS
+					\item Žaidimo sukūrimo logika - validacija, patvirtinimas, 
+					sistemos informavimas
+					\item Prisijungimo prie žaidimo logika - validacija, 						žaidimo šeimininko, kitų žaidėjų informavimas 
+					\item Draugų modulio komponentas - visa logika, 					apibrėžianti galimą tarpusavio komunikaciją tarp 						programėlės naudotojų
+				\end{itemize}
+			Taip pat nutolusiame serveryje veikiančios Duomenų bazės valdymo 				sistemos aplinkoje įdiegti šie artifaktai, apibrėžiantys loginį 			duomenų bazės lentelių išskaidymą:
+  				\begin{itemize}
+					\item Naudotojų lentelių schema
+					\item Žaidimų lentelių schema
+					\item Valdymo, priežiūros lentelių schema
+				\end{itemize}
+	\subsection{Topologinio išdėstymo tinkle pavyzdys}
+				\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.4]{img/TopologyExample}
+				\caption{Fizinio išdėstymo tinkle pavyzdys, komunikacija}
+				\label{img:TopologyExample}
+			\end{figure}
+		Diagramoje pavaizduotas galimas realaus sistemos vaizdo atvejis, kuris atitinka 		anksčiau aprašytą mazgų komunikacijos ir artifaktų diegimo logiką. Pavyzdyje 			pateikti trys klientiniai įrenginiai (2 Android, 1 iOS), kurie TCP/IP protokolo 		pagalba komunikuoja su konkrečiu Linux Debian 9.0 distribucijos serveriu, kuriame 			įdiegtas MySQL 5.7 versijos serveris, apdorojantis programėlės SQL užklausas ir 		Common Language Runtime vykdomoji aplinka, apdorojanti loginį programinį kodą, jį 			paverčianti mašininiu, kurį vėliau įvykdo fizinis mazgas.
 \end{document}
