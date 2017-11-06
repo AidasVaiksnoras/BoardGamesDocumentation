@@ -12,6 +12,8 @@
 \usepackage{listings}
 \usepackage{subfig}
 \usepackage{wrapfig}
+\usepackage{multirow}
+\usepackage{array,makecell}
 
 % Titulinio aprašas
 \university{Vilniaus universitetas}
@@ -47,127 +49,39 @@ sistemą iš skirtingų pusių, papildantys vieni kitus. Modelio pagrindas - sta
 Board Games - tai aplikacija, sujungianti norinčius žaisti stalo žaidimus žmones
 su tais, kuriems trūksta žaidėjų. 
 
-\section{Loginis pjūvis}
-	\subsection{Klasių Diagramos}
-			Tam, kad būtų patogiau suprasti, klasių diagrama yra padalinta į kelias dalis:
-		\subsubsection*{Pirmoji klasių diagramos dalis :}
-			\begin{figure}[H]
-				\centering
-				\includegraphics[scale=0.5]{img/BoardGamesClassDiagram}
-				\caption{Klasių diagrama: registracija ir pgr funkcijos}
-				\label{img:BoardGamesClassDiagram}
-			\end{figure}
-			Klasė Login, atsakinga už vartotojo autentifikaciją, turi  registracjos langą (klasę Register). Viena Login klasė gali turėti vieną   registracijos klasę. Užsiregistravus, Login klasė gali atidaryti pagrindinį vartotojo puslapį (MainForm klasę), kuris gali parodyti MyGames klasę, t.y. vartotojo žaidimus , siūlo sukurti žaidimą (HostGame) arba jungtis prie jau egzistuojančio (JoinGame) žaidimo. Kiekviena MainForm klasė gali parodyti, sukurti ir prisijungti prie kiek norimai daug žaidimų. Kiekvieną kartą sukūrus ar prisijungus prie žaidimo, jis yra pridedamas prie MyGames. 
-		\subsubsection*{Antroji klasių diagramos dalis :}
-			\begin{figure}[H]
-				\centering
-				\includegraphics[scale=0.5]{img/BoardGamesClassDiagrampt1}
-				\caption{Klasių diagrama: žaidimų kūrimas ir prisijungimas}
-				\label{img:BoardGamesClassDiagrampt1}
-			\end{figure}
-			Klasė MyGames atveria vartotojo sukurtus žaidimus (klasė MyHostedGame) bei žaidimus, prie kurių jis prisijungė (MyJoinedGame). Abiejų variantų vartotojas gali turėti kiek norimai daug. Kiekvienas sukurtas žaidimas gali atverti prisijungusių kitų žaidėjų sąrašą ir iš jo yra pasiekiamas kiekvieno žaidėjo profilis (klasė Profile). Jei vartotojas pasirinko prisijungti prie žaidimo, už tai yra atsakinga JoinGame klasė, kurios vieną ar daugiau elementų (žaidimų) sukūrė konkretus kūrėjas (klasė Host). Host turi klasę Reviews, nes kiekvienas kūrėjas gali turėti atsiliepimų. Prisijungus prie žaidimo, klasė ViewOthers užtikrina galimybę peržvelgti kitų prisijungusių žaidėjų sąrašą ir jų profilius (Profile).
-		\subsubsection*{Trečioji klasių diagramos dalis :}
-			\begin{figure}[H]
-				\centering
-				\includegraphics[scale=0.5]{img/BoardGamesClassDiagrampt2}
-				\caption{Klasių diagrama: Svečias}
-				\label{img:BoardGamesClassDiagrampt2}
-			\end{figure}
-			Jei vartotojas nėra prisiregistravęs (Guest), Login forma gali nuvesti jį prie sukurtų žaidimų sąrašo.
-		\subsubsection*{Pilna klasių diagrama :}
-			\begin{figure}[H]
-				\centering
-				\includegraphics[scale=0.4]{img/BoardGamesClassDiagramFull}
-				\caption{Visa klasių diagrama}
-				\label{img:BoardGamesClassDiagramFull}
-			\end{figure}
-	\subsection{Objektų diagrama}
-		\begin{figure}[H]
-				\centering
-				\includegraphics[scale=0.5]{img/Object}
-				\caption{Objektų diagrama}
-				\label{img:Object}
-			\end{figure}
-		Užsiregistravęs vartotojas yra autentifikuojamas ir nusiunčiamas į savo pagrindinį puslapį mainForm. Jis buvo sukūręs žaidimą game ir prisijungęs prie žaidimo game1, kurie abu buvo pridėti prie jo asmeninių žaidimų sarašo myGames. Jame jau yra žaidimai game2 ir game3 (kuriuos jis sukūrė pats) bei game4, prie kurio buvo prisijungęs. Kitas vartotojas player1 buvo prisijungęs prie žaidimo game2, player2 - prie game2 ir game3, o player3 - prie game3.
 
-\section{Užduotys}
-Pagrindinės sistemos užduotys ir su jomis susiję agentai
+\sectionnonum{Reikalavimai}
+\section{Nefunkciniai reikalavimai}
 
-	\renewcommand{\labelitemi}{$\bullet$}
-	\renewcommand{\labelitemii}{$\circ$}
-	\begin{itemize}
-		\item Agentai:
-			\begin{description}
-				\item [$\circ$ Svečias] Neprisijungęs programėlės naudotojas.
-				\item [$\circ$ Registruotas vartotojas] Žmogus, sėkmingai atlikęs registraciją ir prisijungęs prie programėlės, galintis dalyvauti jos veikloje.
-				\item [$\circ$ Žaidimo dalyvis] Registruotas vartotojas, nusprendęs prisijungti prie vieno iš sistemos siūlomų žaidimų.
-				\item [$\circ$ Žaidimo šeimininkas] Registruotas vartotojas, pridėjęs žaidimą sistemoje.
-				\item [$\circ$ Administratorius] Žmogus, atsakingas už tinkamą sistemos darbo palaikymą.
-			\end{description}
-	\end{itemize}
-		
-	\subsubsection*{Pagrindinės užduotys}
-	
-	\subsection{Svečio ir registruoto vartotojo užduotys}
-		\begin{figure}[H]
-			\centering
-			\includegraphics[scale=0.6]{img/UzduociuDiagrama1}
-			\caption{Svečio ir registruoto vartotojo užduotys}
-			\label{img:UzduociuDiagrama1}
-		\end{figure}
-		Kol vartotojas nėra užsiregistravęs sistemoje, jam suteikiamos svečio teisės, kurios leidžia tik peržiūrėti sukurtus žaidimus. Norėdamas įgyti daugiau privilegijų, vartotojas privalo užsiregistruoti. Registruotas vartotojas jau gali dalyvauti programėlės veikloje: sukurti naują žaidimą ir apie jį paskelbti, arba prisijungti prie jau esamo.
+\newcounter{nfrcount}
+\newcommand\rownumber{\stepcounter{nfrcount}\arabic{nfrcount}}
 
-	\subsection{Žaidimo dalyvio ir šeimininko užduotys}
-		\begin{figure}[H]
-			\centering
-			\includegraphics[scale=0.5]{img/UzduociuDiagrama2}
-			\caption{Žaidimo dalyvio ir šeimininko užduotys}
-			\label{img:UzduociuDiagrama2}
-		\end{figure}
-		Registruotas vartotojas gali atlikti du vaidmenis: arba būti sukurto žaidimo šeimininku, arba paprasčiausiu dalyviu. Žaidimo dalyviui leidžiama pranešti sistemos administratoriui apie nevykstantį žaidimą, tuo atveju, jeigu žaidėjas nuvyko į sutartą žaidimo vietą reikiamu laiku ir jam nepavyko surasti kitų užsiregistravusių dalyvių. Jeigu bent vienas žaidėjas (išskyrus šeimininką) nesutinka su tokia informacija, pranešimas laikomas melagingu. Priešingu atveju, sulaukus administratoriaus pritarimo, žaidimas išimamas iš aktyvių žaidimų sąrašo norint užkirsti tolimesnį galimą dalyvių pritraukimą. Tai pat, šeimininkui patvirtinus žaidėją, jis įgauna teisę peržiūrėti kitų, jau pareiškusių norą dalyvauti žaidėjų profilius ir su jais susipažinti naudojantis programėlės asmeninių žinučių sistema. Norėdamas pasiteirauti dėl žaidimo detalių arba visais kitais iškilusiais klausimais, jis taip pat gali tiesiogiai kreiptis į žaidimo šeimininką. Šeimininkas gali informuoti žaidėjus apie nenumatytai pasikeitusią žaidimo vietą ar laiką, susisiekti su jais ir iš anksto trumpai supažindinti su žaidimo taisyklėmis. Jeigu žaidimo dalyviui nepatinka kitų dalyvių kompanija ar bet kokios kitos žaidimo detalės, jis gali bet kada palikti žaidimą, o žaidimo šeimininkas apie tai yra informuojamas.
+\begin{tabular}{ | >{\centering}m{2cm} | m{10cm} | >{\centering}m{2.5cm} | } \hline
+\multicolumn{3}{ |l| }{\textbf{\textit{Vidinių interfeisų reikalavimai}}} \tabularnewline \hline
+\multicolumn{3}{ |l| }{\textbf{OS reikalavimai}} \tabularnewline \hline
+NFR\rownumber & Aplikacija turi būti palaikoma IOS (nuo 8.0 versijos) ir Android (nuo 4.0 versijos) įrenginiuose & Būtina\tabularnewline \hline
+NFR\rownumber & Aplikacija pageidautina, kad būtu palaikoma Windows Phone opracinėje sistemoje. & Pageidautinas\tabularnewline \hline
+NFR\rownumber & Aplikacija turi būti pasiekiama ir be išmanaus telefono - per naršyklę & Būtina\tabularnewline \hline
+NFR\rownumber & Išmanusis renginys turi turėti GPS modulį. & Būtina\tabularnewline \hline
+NFR\rownumber & Išmanusis įrenginys turi turėti prieigą prie interneto & Būtina\tabularnewline \hline
+\multicolumn{3}{ |l| }{\textbf{Saveikos su DB reikalavimai}} \tabularnewline \hline
+NFR\rownumber & Duomenys saugomi naudojant MySQL (ne senesnė nei 5.0 versija) duomenų bazių valdymo sistemą & Būtina\tabularnewline \hline
+NFR\rownumber & Turi egzistuoti lentelės: “Vartotojai”, “Žaidimai”, “Vartotojų sukurti žaidimai”, “Vartotojų žaidžiami žaidimai”. & Būtinas\tabularnewline \hline
+NFR\rownumber & Turi būti neribojamas duomenų bazės duomenų pralaidumas. & Būtina\tabularnewline \hline
+\multicolumn{3}{ |l| }{\textbf{Saveikos su DB reikalavimai}} \tabularnewline \hline
+NFR\rownumber & Aplikacija su serveriu keičiasi duomenimis JSON formatu. & Būtina\tabularnewline \hline
+\multicolumn{3}{ |l| }{\textbf{Darbo kompiuterių tinkluose reikalavima}} \tabularnewline \hline
+NFR\rownumber & Duomenys siunčiami HTTP protokolu. & Būtina\tabularnewline \hline
+\multicolumn{3}{ |l| }{\textbf{Saveikos su  kitomis programomis reikalavimai:}} \tabularnewline \hline
+NFR\rownumber & Facebook ir Google api vartotojo autorizacijai & Būtina\tabularnewline \hline
+NFR\rownumber & Aplikacija reikalauja GPS prieigos teisių. & Būtina\tabularnewline \hline
+NFR\rownumber & Aplikacija reikalauja fotoaparato prieigos teisių. & Būtina\tabularnewline \hline
+NFR\rownumber & Aplikacija reikalauja prieigos prei vartotojo įrenginyje turimų failų. & Būtina\tabularnewline \hline
+NFR\rownumber & Aplikacija reikalauja priegos prie mobiliojo interneto, jei neprisijungta prie Wi-Fi. & Būtina\tabularnewline \hline
+NFR\rownumber & Google Api žaidimo vietos nustatymui. & Būtina\tabularnewline \hline
+\multicolumn{3}{ |l| }{\textbf{Programavimo aplinkos reikalavimai:}} \tabularnewline \hline
+\end{tabular}
 
-	\subsection{Sistemos administravimas}
-		\begin{figure}[H]
-			\centering
-			\includegraphics[scale=0.6]{img/UzduociuDiagrama3}
-			\caption{Sistemos administravimas}
-			\label{img:UzduociuDiagrama3}
-		\end{figure}
-		Administratorius prižiūri programėlės pateikiamos informacijos patikimumą. Jis turi teisę ištrinti registruoto vartotojo sukurtą žaidimą siekdamas apsaugoti dar vėliau prie žaidimo galimai prisijungsiančius dalyvius tuo atveju, jei vartotojo pateikti duomenys nėra tikslūs ar apie žaidimą jau buvo gautas įspėjamas pranešimas iš kitų sąžiningų vartotojų. Jeigu vartotojas nesiliauja kurti fiktyvių žaidimų, jam gali būti taikomos nuobaudos: laikinai (pvz. parai) apribojimas organizuoti bet kokius žaidimus. Jei tai kartojasi, administratorius gali apsvarstyti pasiūlymą užblokuoti vartotojo paskyrą ir įtraukti jį į nepageidaujamų sąrašą. Kaip pagalbinę priemonę vartotojų veiksmams sekti administratorius gali naudoti vartotojų veiklos žurnalą, kuriame būtų pateikiami chronologiškai surikiuoti vartotojų veiksmai, gauti nurodžius dominantį periodą. Veiklos žurnalą būtų galima filtruoti pagal konkretų vartotoją, taip susiaurinant paiešką.		
-
-\section{Kūrimo pjūvis}
-Komponentų dekompozicija įgyvendinta taip: nuo bendresnių komponentų pereinanama iki detalesnių.
-
-	\subsection{Bendroji UML diagrama}
-		\begin{figure}[H]
-			\centering
-			\includegraphics[scale=0.6]{img/UMLComponent1}
-			\caption{Bendroji UML diagrama}
-			\label{img:UMLComponent1}
-		\end{figure}
-		Vartotojui įsijungus stalo žaidimų aplikaciją, jis prie jos turi prisijungti, kad būtų patvirtinta jo tapatybė. Tai atliekama prisijungimo sąsajoj, kurią suteikia autentifikacijos komponentas. Patikrinus duomenis duomenų sistemoje, kurioje saugoma informacija apie vartotoją bei jo įvertinimą, gautą iš kitų žaidėjų, ir sėkmingai autentifikavus vartotoją, jam leidžiama naudotis stalo žaidimų aplikacijos ir naudotojo komponentų teikiamomis funkcijomis. Naudotojo komponento teikiama sąsaja leidžia pateikti informaciją apie save kitiems, o aplikacijos komponento sąsaja suteikia galimybę kurti žaidimus, prisijungti prie jų, vertinti vartotojus, pateikti informaciją apie esančius žaidimus pačiam vartotojui ar pačio kuriamus kitiems vartotojams.
-		
-		\subsection{Vartotojo komponentų diagrama}
-		Aukščiau pateikta UML diagrama, kurioje vaizduojami bendri komponentai. Atskirus sistemos komponentus patogiau vaizduoti atskirai, todėl tam sukurtos papildomos diagramos.
-		
-		\begin{figure}[H]
-			\centering
-			\includegraphics[scale=0.6]{img/UMLComponent2}
-			\caption{Vartotojo komponentų diagrama}
-			\label{img:UMLComponent2}
-		\end{figure}
-		Vartotojui pateikiama atitinkama sąsaja priklausomai nuo to, ar vartotojas pasirinko būti žaidimo kūrėju, ar prisijungti prie žaidimo. Jei vartotojas pasirinko prisijungti prie esamo žaidimo, tai jam yra pateikiama žaidimų sąrašo sąsaja, pateikianti sąrašą žaidimų, kuriuose trūksta narių. Jei vartotojas nusprendė pats kurti žaidimą, tada jis nukeliamas į žaidimo kūrimo langą ir įgauna papildomų funkcijų. Tai suteikia žaidimo kūrimo komponentas ir jo suteikiama žaidimo organizavimo sąsaja. Pasirinkimą būti žaidimo kurėju ar paprastu nariu bet kada galima pakeisti. 
-		
-		\subsection{Detalesnė vartotojo komponentų diagrama}
-		Kadangi vartotojai gali arba prisijungti prie žaidimų, arba būti jų kūrėjais, jiems reikalingi atitinkami komponentai. Kad geriau matytųsi, kokie iš jų priklauso kiekvienam tipui, sukurta atskira UML diagrama.
-		
-		\begin{figure}[H]
-			\centering
-			\includegraphics[scale=0.6]{img/UMLComponent3}
-			\caption{Detalesnė vartotojo komponentų diagrama}
-			\label{img:UMLComponent3}
-		\end{figure}
-		Tiek paprasti nariai, tiek kūrėjai gali naudotis vartotojo profilio, žaidimo informacijos ir žinučių komponentais, kurie suteikia atitinkamas sąsajas. Vartotojo profilio komponentas leidžia parodyti informaciją apie žaidimuose esančius narius bei jų įvertinimą ir patikimumą. Žaidimo informacijos komponente trumpai nupasakojama apie žaidimą bei pateikiamas jo pavadinimas. Žinučių komponentas suteikia galimybę susisiekti su kiekvienu žaidimo nariu atskirai ir bendrauti bendrame grupės pokalbyje. Kūrėjas taip pat gali naudotis žaidimo kūrimo įrankių komponentu. Jam suteikiamos galimybės pateikti ir keisti žaidimo informaciją, priimti, pakviesti bei išmesti žaidimo narius.
 
 \section{Fizinis pjūvis}
 Šioje dalyje pateikta informacija apie sistemos fizinius mazgus, juose įdiegtas vykdomasias aplinkas, reikalingas vykdyti programos komponentų darbą, taip pat apie komunikaciją tarp mazgų ir juose įdiegtus artifaktus, kurie saugo programinį kodą.
@@ -178,7 +92,7 @@ Komponentų dekompozicija įgyvendinta taip: nuo bendresnių komponentų pereina
 				\caption{Fizinių sistemos mazgų išdėstymo tinkle diagrama}
 				\label{img:NodesCommunication}
 			\end{figure}
-			Mobilioji aplikacija dėl savo paprasto loginio pobūdžio nereikalauja 				kompleksiškos tinklo architektūros su daugybe fizinių komponentų. 				Išdėstymo diagramoje pateiktas kliento mazgas – mobilusis įrenginys – 				kuriame veikia Android OS arba iOS. Šiose operacinių sistemų aplinkose 				diegiamas mobiliosios aplikacijos artifaktas (.apk – Android atveju, .ipa 				– iOS atveju), kurį sudaro visos sukompiliuotos projekto vartotojo sąsajos 				klasės, resursai, taip pat ir nesukompiliuoti resursai. Kitas mazgas – 				nutolęs aplikacijos serveris, su kuriuo TCP/IP protokolu komunikuoja kliento mobilusis įrenginys. Šiame nutolusiame fiziniame serveryje veikia stabili Linux OS 				aplinkos distribucija, užtikrinanti duombazės pasiekiamumą ir darbo 				nepertraukiamumą. Šioje OS instaliuota MySQL duomenų bazių valdymo 				sistema, kurioje sukurtos trys lentelių schemos: Users (informacija, 				susijusi su aplikacijos naudotojais), Games (informacija, susijusi su 				žaidimais, jų sesijomis), Management (aplikacijos valdymo, statistinių 				duomenų schema). Taip pat šioje Linux aplinkoje veikia programėlės loginio 				kodo vykdomoji aplinka, kurioje įdiegtas loginis artifaktas, atsakingas už 				visą programėlės logiką.
+			Mobilioji aplikacija dėl savo paprasto loginio pobūdžio nereikalauja 				kompleksiškos tinklo architektūros su daugybe fizinių komponentų. 				Išdėstymo diagramoje (žr. \ref{img:NodesCommunication} pav.)  pateiktas kliento mazgas – mobilusis įrenginys – 				kuriame veikia Android OS arba iOS. Šiose operacinių sistemų aplinkose 				diegiamas mobiliosios aplikacijos artifaktas (.apk – Android atveju, .ipa 				– iOS atveju), kurį sudaro visos sukompiliuotos projekto vartotojo sąsajos 				klasės, resursai, taip pat ir nesukompiliuoti resursai. Kitas mazgas – 				nutolęs aplikacijos serveris, su kuriuo TCP/IP protokolu komunikuoja kliento mobilusis įrenginys. Šiame nutolusiame fiziniame serveryje veikia stabili Linux OS 				aplinkos distribucija, užtikrinanti duombazės pasiekiamumą ir darbo 				nepertraukiamumą. Šioje OS instaliuota MySQL duomenų bazių valdymo 				sistema, kurioje sukurtos trys lentelių schemos: Users (informacija, 				susijusi su aplikacijos naudotojais), Games (informacija, susijusi su 				žaidimais, jų sesijomis), Management (aplikacijos valdymo, statistinių 				duomenų schema). Taip pat šioje Linux aplinkoje veikia programėlės loginio 				kodo vykdomoji aplinka, kurioje įdiegtas loginis artifaktas, atsakingas už 				visą programėlės logiką.
 	\subsection{Artifaktų diegimas į mazgus}
 				\begin{figure}[H]
 				\centering
@@ -186,7 +100,7 @@ Komponentų dekompozicija įgyvendinta taip: nuo bendresnių komponentų pereina
 				\caption{Artifaktų sandara ir diegimas į mazgus}
 				\label{img:Artifacts}
 			\end{figure}
-			Sistemą sudaro du pagrindiniai artifaktai - įdiegtas vartotojo sąsajos 				paketas, išdėstomas kliento mobiliajame įrenginyje, ir logikos paketas, 			įdiegtas nutolusio aplikacijos serverio kodo vykdomojoje aplinkoje. 
+			Sistemą sudaro du pagrindiniai artifaktai - įdiegtas vartotojo sąsajos 				paketas, išdėstomas kliento mobiliajame įrenginyje, ir logikos paketas, 			įdiegtas nutolusio aplikacijos serverio kodo vykdomojoje aplinkoje (žr. \ref{img:Artifacts} pav.) . 
 		\subsubsubsection*{Mobiliajame įrenginyje įdiegto artifakto turinys:}
   				\begin{itemize}
 					\item Žaidimo šeimininko vartotojo sąsajos komponentas
@@ -216,8 +130,132 @@ Komponentų dekompozicija įgyvendinta taip: nuo bendresnių komponentų pereina
 				\caption{Fizinio išdėstymo tinkle pavyzdys, komunikacija}
 				\label{img:TopologyExample}
 			\end{figure}
-		Diagramoje pavaizduotas galimas realaus sistemos vaizdo atvejis, kuris atitinka 		anksčiau aprašytą mazgų komunikacijos ir artifaktų diegimo logiką. Pavyzdyje 			pateikti trys klientiniai įrenginiai (2 Android, 1 iOS), kurie TCP/IP protokolo 		pagalba komunikuoja su konkrečiu Linux Debian 9.0 distribucijos serveriu, kuriame 			įdiegtas MySQL 5.7 versijos serveris, apdorojantis programėlės SQL užklausas ir 		Common Language Runtime vykdomoji aplinka, apdorojanti loginį programinį kodą, jį 			paverčianti mašininiu, kurį vėliau įvykdo fizinis mazgas.
+		Diagramoje (žr. \ref{img:TopologyExample} pav.) pavaizduotas galimas realaus sistemos vaizdo atvejis, kuris atitinka 		anksčiau aprašytą mazgų komunikacijos ir artifaktų diegimo logiką. Pavyzdyje 			pateikti trys klientiniai įrenginiai (2 Android, 1 iOS), kurie TCP/IP protokolo 		pagalba komunikuoja su konkrečiu Linux Debian 9.0 distribucijos serveriu, kuriame 			įdiegtas MySQL 5.7 versijos serveris, apdorojantis programėlės SQL užklausas ir 		Common Language Runtime vykdomoji aplinka, apdorojanti loginį programinį kodą, jį 			paverčianti mašininiu, kurį vėliau įvykdo fizinis mazgas.
+
+\section{Kūrimo pjūvis}
+Komponentų dekompozicija įgyvendinta taip: nuo bendresnių komponentų pereinanama iki detalesnių.
+
+	\subsection{Bendroji UML diagrama}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.6]{img/UMLComponent1}
+			\caption{Bendroji UML diagrama}
+			\label{img:UMLComponent1}
+		\end{figure}
+		Vartotojui įsijungus stalo žaidimų aplikaciją, jis prie jos turi prisijungti, kad būtų patvirtinta jo tapatybė. Tai atliekama prisijungimo sąsajoj, kurią suteikia autentifikacijos komponentas. Patikrinus duomenis duomenų sistemoje, kurioje saugoma informacija apie vartotoją bei jo įvertinimą, gautą iš kitų žaidėjų, ir sėkmingai autentifikavus vartotoją, jam leidžiama naudotis stalo žaidimų aplikacijos ir naudotojo komponentų teikiamomis funkcijomis. Naudotojo komponento teikiama sąsaja leidžia pateikti informaciją apie save kitiems, o aplikacijos komponento sąsaja suteikia galimybę kurti žaidimus, prisijungti prie jų, vertinti vartotojus, pateikti informaciją apie esančius žaidimus pačiam vartotojui ar pačio kuriamus kitiems vartotojams (žr. \ref{img:UMLComponent1} pav.) .
+		
+		\subsection{Vartotojo komponentų diagrama}
+		Aukščiau pateikta UML diagrama, kurioje vaizduojami bendri komponentai. Atskirus sistemos komponentus patogiau vaizduoti atskirai, todėl tam sukurtos papildomos diagramos.
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.6]{img/UMLComponent2}
+			\caption{Vartotojo komponentų diagrama}
+			\label{img:UMLComponent2}
+		\end{figure}
+		Vartotojui pateikiama atitinkama sąsaja priklausomai nuo to, ar vartotojas pasirinko būti žaidimo kūrėju, ar prisijungti prie žaidimo. Jei vartotojas pasirinko prisijungti prie esamo žaidimo, tai jam yra pateikiama žaidimų sąrašo sąsaja, pateikianti sąrašą žaidimų, kuriuose trūksta narių. Jei vartotojas nusprendė pats kurti žaidimą, tada jis nukeliamas į žaidimo kūrimo langą ir įgauna papildomų funkcijų. Tai suteikia žaidimo kūrimo komponentas ir jo suteikiama žaidimo organizavimo sąsaja. Pasirinkimą būti žaidimo kurėju ar paprastu nariu bet kada galima pakeisti(žr. \ref{img:UMLComponent2} pav.) . 
+		
+		\subsection{Detalesnė vartotojo komponentų diagrama}
+		Kadangi vartotojai gali arba prisijungti prie žaidimų, arba būti jų kūrėjais, jiems reikalingi atitinkami komponentai. Kad geriau matytųsi, kokie iš jų priklauso kiekvienam tipui, sukurta atskira UML diagrama.
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.6]{img/UMLComponent3}
+			\caption{Detalesnė vartotojo komponentų diagrama}
+			\label{img:UMLComponent3}
+		\end{figure}
+		Tiek paprasti nariai, tiek kūrėjai gali naudotis vartotojo profilio, žaidimo informacijos ir žinučių komponentais, kurie suteikia atitinkamas sąsajas. Vartotojo profilio komponentas leidžia parodyti informaciją apie žaidimuose esančius narius bei jų įvertinimą ir patikimumą. Žaidimo informacijos komponente trumpai nupasakojama apie žaidimą bei pateikiamas jo pavadinimas. Žinučių komponentas suteikia galimybę susisiekti su kiekvienu žaidimo nariu atskirai ir bendrauti bendrame grupės pokalbyje. Kūrėjas taip pat gali naudotis žaidimo kūrimo įrankių komponentu. Jam suteikiamos galimybės pateikti ir keisti žaidimo informaciją, priimti, pakviesti bei išmesti žaidimo narius (žr. \ref{img:UMLComponent3} pav.) .
+
 			
+\section{Loginis pjūvis}
+	\subsection{Klasių Diagramos}
+			Tam, kad būtų patogiau suprasti, klasių diagrama yra padalinta į kelias dalis:
+		\subsubsection*{Pirmoji klasių diagramos dalis :}
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.5]{img/BoardGamesClassDiagram}
+				\caption{Klasių diagrama: registracija ir pgr funkcijos}
+				\label{img:BoardGamesClassDiagram}
+			\end{figure}
+			Klasė Login, atsakinga už vartotojo autentifikaciją, turi  registracjos langą (klasę Register) (žr. \ref{img:BoardGamesClassDiagram} pav.) . Viena Login klasė gali turėti vieną   registracijos klasę. Užsiregistravus, Login klasė gali atidaryti pagrindinį vartotojo puslapį (MainForm klasę), kuris gali parodyti MyGames klasę, t.y. vartotojo žaidimus , siūlo sukurti žaidimą (HostGame) arba jungtis prie jau egzistuojančio (JoinGame) žaidimo. Kiekviena MainForm klasė gali parodyti, sukurti ir prisijungti prie kiek norimai daug žaidimų. Kiekvieną kartą sukūrus ar prisijungus prie žaidimo, jis yra pridedamas prie MyGames. 
+		\subsubsection*{Antroji klasių diagramos dalis :}
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.5]{img/BoardGamesClassDiagrampt1}
+				\caption{Klasių diagrama: žaidimų kūrimas ir prisijungimas}
+				\label{img:BoardGamesClassDiagrampt1}
+			\end{figure}
+			Klasė MyGames atveria vartotojo sukurtus žaidimus (klasė MyHostedGame) bei žaidimus, prie kurių jis prisijungė (MyJoinedGame) (žr. \ref{img:BoardGamesClassDiagrampt1} pav.) . Abiejų variantų vartotojas gali turėti kiek norimai daug. Kiekvienas sukurtas žaidimas gali atverti prisijungusių kitų žaidėjų sąrašą ir iš jo yra pasiekiamas kiekvieno žaidėjo profilis (klasė Profile). Jei vartotojas pasirinko prisijungti prie žaidimo, už tai yra atsakinga JoinGame klasė, kurios vieną ar daugiau elementų (žaidimų) sukūrė konkretus kūrėjas (klasė Host). Host turi klasę Reviews, nes kiekvienas kūrėjas gali turėti atsiliepimų. Prisijungus prie žaidimo, klasė ViewOthers užtikrina galimybę peržvelgti kitų prisijungusių žaidėjų sąrašą ir jų profilius (Profile).
+		\subsubsection*{Trečioji klasių diagramos dalis :}
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.5]{img/BoardGamesClassDiagrampt2}
+				\caption{Klasių diagrama: Svečias}
+				\label{img:BoardGamesClassDiagrampt2}
+			\end{figure}
+			Jei vartotojas nėra prisiregistravęs (Guest), Login forma gali nuvesti jį prie sukurtų žaidimų sąrašo (žr. \ref{img:BoardGamesClassDiagrampt2} pav.) .
+		\subsubsection*{Pilna klasių diagrama :}
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.4]{img/BoardGamesClassDiagramFull}
+				\caption{Visa klasių diagrama}
+				\label{img:BoardGamesClassDiagramFull}
+			\end{figure}
+	\subsection{Objektų diagrama}
+		\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.5]{img/Object}
+				\caption{Objektų diagrama}
+				\label{img:Object}
+			\end{figure}
+		Užsiregistravęs vartotojas yra autentifikuojamas ir nusiunčiamas į savo pagrindinį puslapį mainForm (žr. \ref{img:Object} pav.) . Jis buvo sukūręs žaidimą game ir prisijungęs prie žaidimo game1, kurie abu buvo pridėti prie jo asmeninių žaidimų sarašo myGames. Jame jau yra žaidimai game2 ir game3 (kuriuos jis sukūrė pats) bei game4, prie kurio buvo prisijungęs. Kitas vartotojas player1 buvo prisijungęs prie žaidimo game2, player2 - prie game2 ir game3, o player3 - prie game3.
+
+\section{Užduotys}
+Pagrindinės sistemos užduotys ir su jomis susiję agentai
+
+	\renewcommand{\labelitemi}{$\bullet$}
+	\renewcommand{\labelitemii}{$\circ$}
+	\begin{itemize}
+		\item Agentai:
+			\begin{description}
+				\item [$\circ$ Svečias] Neprisijungęs programėlės naudotojas.
+				\item [$\circ$ Registruotas vartotojas] Žmogus, sėkmingai atlikęs registraciją ir prisijungęs prie programėlės, galintis dalyvauti jos veikloje.
+				\item [$\circ$ Žaidimo dalyvis] Registruotas vartotojas, nusprendęs prisijungti prie vieno iš sistemos siūlomų žaidimų.
+				\item [$\circ$ Žaidimo šeimininkas] Registruotas vartotojas, pridėjęs žaidimą sistemoje.
+				\item [$\circ$ Administratorius] Žmogus, atsakingas už tinkamą sistemos darbo palaikymą.
+			\end{description}
+	\end{itemize}
+		
+	\subsubsection*{Pagrindinės užduotys}
+	
+	\subsection{Svečio ir registruoto vartotojo užduotys}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.6]{img/UzduociuDiagrama1}
+			\caption{Svečio ir registruoto vartotojo užduotys}
+			\label{img:UzduociuDiagrama1}
+		\end{figure}
+		Kol vartotojas nėra užsiregistravęs sistemoje, jam suteikiamos svečio teisės, kurios leidžia tik peržiūrėti sukurtus žaidimus. Norėdamas įgyti daugiau privilegijų, vartotojas privalo užsiregistruoti. Registruotas vartotojas jau gali dalyvauti programėlės veikloje: sukurti naują žaidimą ir apie jį paskelbti, arba prisijungti prie jau esamo (žr. \ref{img:UzduociuDiagrama1} pav.) .
+
+	\subsection{Žaidimo dalyvio ir šeimininko užduotys}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.5]{img/UzduociuDiagrama2}
+			\caption{Žaidimo dalyvio ir šeimininko užduotys}
+			\label{img:UzduociuDiagrama2}
+		\end{figure}
+		Registruotas vartotojas gali atlikti du vaidmenis: arba būti sukurto žaidimo šeimininku, arba paprasčiausiu dalyviu (žr. \ref{img:UzduociuDiagrama2} pav.) . Žaidimo dalyviui leidžiama pranešti sistemos administratoriui apie nevykstantį žaidimą, tuo atveju, jeigu žaidėjas nuvyko į sutartą žaidimo vietą reikiamu laiku ir jam nepavyko surasti kitų užsiregistravusių dalyvių. Jeigu bent vienas žaidėjas (išskyrus šeimininką) nesutinka su tokia informacija, pranešimas laikomas melagingu. Priešingu atveju, sulaukus administratoriaus pritarimo, žaidimas išimamas iš aktyvių žaidimų sąrašo norint užkirsti tolimesnį galimą dalyvių pritraukimą. Tai pat, šeimininkui patvirtinus žaidėją, jis įgauna teisę peržiūrėti kitų, jau pareiškusių norą dalyvauti žaidėjų profilius ir su jais susipažinti naudojantis programėlės asmeninių žinučių sistema. Norėdamas pasiteirauti dėl žaidimo detalių arba visais kitais iškilusiais klausimais, jis taip pat gali tiesiogiai kreiptis į žaidimo šeimininką. Šeimininkas gali informuoti žaidėjus apie nenumatytai pasikeitusią žaidimo vietą ar laiką, susisiekti su jais ir iš anksto trumpai supažindinti su žaidimo taisyklėmis. Jeigu žaidimo dalyviui nepatinka kitų dalyvių kompanija ar bet kokios kitos žaidimo detalės, jis gali bet kada palikti žaidimą, o žaidimo šeimininkas apie tai yra informuojamas.
+
+	\subsection{Sistemos administravimas}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.6]{img/UzduociuDiagrama3}
+			\caption{Sistemos administravimas}
+			\label{img:UzduociuDiagrama3}
+		\end{figure}
+		Administratorius prižiūri programėlės pateikiamos informacijos patikimumą (žr. \ref{img:UzduociuDiagrama3} pav.) . Jis turi teisę ištrinti registruoto vartotojo sukurtą žaidimą siekdamas apsaugoti dar vėliau prie žaidimo galimai prisijungsiančius dalyvius tuo atveju, jei vartotojo pateikti duomenys nėra tikslūs ar apie žaidimą jau buvo gautas įspėjamas pranešimas iš kitų sąžiningų vartotojų. Jeigu vartotojas nesiliauja kurti fiktyvių žaidimų, jam gali būti taikomos nuobaudos: laikinai (pvz. parai) apribojimas organizuoti bet kokius žaidimus. Jei tai kartojasi, administratorius gali apsvarstyti pasiūlymą užblokuoti vartotojo paskyrą ir įtraukti jį į nepageidaujamų sąrašą. Kaip pagalbinę priemonę vartotojų veiksmams sekti administratorius gali naudoti vartotojų veiklos žurnalą, kuriame būtų pateikiami chronologiškai surikiuoti vartotojų veiksmai, gauti nurodžius dominantį periodą. Veiklos žurnalą būtų galima filtruoti pagal konkretų vartotoją, taip susiaurinant paiešką.		
+
+
 \section{Procesų pjūvis}
 Aplikacijoje yra vartotojo sąsajos, duomenų apdorojimo ir duomenu bazės procesai. 
 Vartotojas tiesiogiai bendraudamas su vartotojo sąsaja, siunčia asinchronines 
@@ -229,7 +267,7 @@ Vartotojas tiesiogiai bendraudamas su vartotojo sąsaja, siunčia asinchronines
 			\centering
 			\includegraphics[scale=0.5]{img/Login_sequence}
 			\caption{Prisijungimo procesų sekų diagrama}
-			\label{img:MainWindow_activity}
+			\label{img:Login_sequence}
 		\end{figure}
 		Visų pirma vartotojas privalo užsiregistruoti. Vartojo sąsaja nusiunčia JSON 
 		žinutę su gautais duomenimis loginiam procesui, kuris patikrina ar duomenys yra tinkami ir
@@ -238,7 +276,7 @@ Vartotojas tiesiogiai bendraudamas su vartotojo sąsaja, siunčia asinchronines
 		jei jie yra validūs, patikrinama ar slaptažodis sutampa su esančiu duomenų
 		bazėje. Autentifikuotas vartotojas yra prijungiamas prie programėlės. 
 		Jei slaptažodis netinka arba vartotojas nerastas duomenų bazėje, leidžiama
-		patikslinti prisijungimo laukus ir prisijungimo procesas kartojamas dar kartą.
+		patikslinti prisijungimo laukus ir prisijungimo procesas kartojamas dar kartą (žr. \ref{img:Login_sequence} pav.).
 		\subsubsection*{Prisijungimo/Registracijos procesų veiklos diagrama :}
 		\begin{figure}[H]
 			\centering
@@ -246,7 +284,7 @@ Vartotojas tiesiogiai bendraudamas su vartotojo sąsaja, siunčia asinchronines
 			\caption{Autentifikacijos veiklos diagrama}
 			\label{img:Authentication}
 		\end{figure}
-		Kiekvienas programėlės naudotojas patenka į prisijungimo langą, kuriame gali 			pasirinkti vieną iš galimų prisijungimo būdų - naudojantis Facebook API arba 			paprasta vartotojo paskyra. Pasirinkus Facebook autentifikacija, programėlė 			nuskaito vartotojo identifikacinius duomenis ir ši veikla pabaigiama. Pasirinkus 			prisijungimą naudojantis paprasta paskyra atsiranda dvi galimybės - prisijungti 		arba užsiregistruoti. Pasirinkus registraciją vartotojas suveda savo duomenis, 			jeigu pastarieji teisingi - jis užregistruojamas ir gali prisijungti. Jei duomenys 			klaidingi - vartotojas vėl patenka į tą patį registracijos langą. Norėdamas 			prisijungti vartotojas turi įvesti savo teisingus prisijungimo duomenis, tuomet 		iššoka CAPTCHA patvirtinimo paveikslėlis, skirtas prevencijai nuo kenkėjiško tipo 			skriptų ir programų, imituojančių žmogų. Jeigu CAPTCHA klaidingas - vartotojas 			blokuojamas 5 minutėms (tiek laiko negali prisijungti siekiant taupyti sistemos 		resursus, išvengti DOS/DDOS atakų). Suvedus teisingą CAPTCHA kodą patenkama į 			sistemą ir ši veikla užbaigiama.
+		Kiekvienas programėlės naudotojas patenka į prisijungimo langą, kuriame gali 			pasirinkti vieną iš galimų prisijungimo būdų - naudojantis Facebook API arba 			paprasta vartotojo paskyra (žr. \ref{img:Authentication} pav.). Pasirinkus Facebook autentifikacija, programėlė 			nuskaito vartotojo identifikacinius duomenis ir ši veikla pabaigiama. Pasirinkus 			prisijungimą naudojantis paprasta paskyra atsiranda dvi galimybės - prisijungti 		arba užsiregistruoti. Pasirinkus registraciją vartotojas suveda savo duomenis, 			jeigu pastarieji teisingi - jis užregistruojamas ir gali prisijungti. Jei duomenys 			klaidingi - vartotojas vėl patenka į tą patį registracijos langą. Norėdamas 			prisijungti vartotojas turi įvesti savo teisingus prisijungimo duomenis, tuomet 		iššoka CAPTCHA patvirtinimo paveikslėlis, skirtas prevencijai nuo kenkėjiško tipo 			skriptų ir programų, imituojančių žmogų. Jeigu CAPTCHA klaidingas - vartotojas 			blokuojamas 5 minutėms (tiek laiko negali prisijungti siekiant taupyti sistemos 		resursus, išvengti DOS/DDOS atakų). Suvedus teisingą CAPTCHA kodą patenkama į 			sistemą ir ši veikla užbaigiama.
 	\subsection{Pagrindinis navigacijos langas}
 		\begin{figure}[H]
 			\centering
@@ -254,7 +292,7 @@ Vartotojas tiesiogiai bendraudamas su vartotojo sąsaja, siunčia asinchronines
 			\caption{Pagrindinio navigacijos lango veiklos diagrama}
 			\label{img:MainWindow_activity}
 		\end{figure}
-		\subsubsection*{Pagrindiniame navigacijos lange vartotojas paspaudęs atitinkamus mygtukus gali:}
+		\subsubsection*{Pagrindiniame navigacijos lange vartotojas paspaudęs atitinkamus mygtukus (žr. \ref{img:MainWindow_activity} pav.) gali:}
 			\renewcommand{\labelitemi}{$\bullet$}
 			\begin{itemize}
 				\item Atidaryti žaidimo sukūrimo langą.
@@ -272,7 +310,7 @@ Vartotojas tiesiogiai bendraudamas su vartotojo sąsaja, siunčia asinchronines
 				\caption{Žaidimo sukūrimo veiklos diagrama}
 				\label{img:Hostgame_activity}
 			\end{figure}
-			\subsubsubsection*{Žaidimo sukūrimo lange vartotojas turi įvesti :}
+			\subsubsubsection*{Žaidimo sukūrimo lange (žr. \ref{img:Hostgame_activity} pav.) vartotojas turi įvesti :}
 				\renewcommand{\labelitemi}{$\bullet$}
 				\begin{itemize}
 					\item Žaidimo pavadinimą.
@@ -290,7 +328,7 @@ Vartotojas tiesiogiai bendraudamas su vartotojo sąsaja, siunčia asinchronines
 				\caption{Žaidimo sukūrimo procesų sekų diagrama}
 				\label{img:Hostgame_sequence}
 			\end{figure}
-			Vartotojas norėdamas sukurti žaidimą įveda žaidimo duomenis. Įvedimo metu 
+			Vartotojas norėdamas sukurti žaidimą įveda žaidimo duomenis (žr. \ref{img:Hostgame_sequence} pav.). Įvedimo metu 
 			tikrinama ar duomenys įvesti leistinu formatu. Jei duomenys tinkami, tada 
 			jie JSON formatu išsiunčiami loginiam procesui, kuris sukuria žaidimą ir 
 			įrašo jį į duomenų bazę.	
@@ -303,7 +341,7 @@ Vartotojas tiesiogiai bendraudamas su vartotojo sąsaja, siunčia asinchronines
 				\caption{Prisijungimo prie egzistuojančio žaidimo veiklos diagrama}
 				\label{img:JoinGame_activity}
 			\end{figure}
-			Iš pradžių vartotojui atidaromas egzistuojančių žaidimų sąrašas. Čia 
+			Iš pradžių vartotojui atidaromas egzistuojančių žaidimų sąrašas (žr. \ref{img:JoinGame_activity} pav.). Čia 
 			vartotojas gali grįžti pagrindinį navigacijos langą arba tęsti žaidimo
 			pasirinkimą. Jei nėra žaidimų prie kurių būtų galima prisijungti, vartotojui
 			pasiūloma sukurti naują žaidimą. Vartotojui sutikus jis nukreipiamas į 
@@ -317,10 +355,10 @@ Vartotojas tiesiogiai bendraudamas su vartotojo sąsaja, siunčia asinchronines
 				\centering
 				\includegraphics[scale=0.5]{img/JoinGame_sequence}
 				\caption{Prisijungimo prie egzistuojančio žaidimo procesų sekų diagrama}
-				\label{img:Hostgame_sequence}
+				\label{img:JoinGame_sequence}
 			\end{figure}
 			Žaidėjui pasirinkus žaidimą iš sąrašo, atidaromas žaidimo informacijos 
-			langas. Informaciją apie žaidimą suteikia logikos procesas, kuris
+			langas (žr. \ref{img:JoinGame_sequence} pav.). Informaciją apie žaidimą suteikia logikos procesas, kuris
 			nusiuntęs užklausą į duomenų bazę, gauna papildomą informaciją apie 
 			pasirinktą žaidimą. Vartotojui nusprendus prisijungti prie žaidimo, 
 			nusiunčiama žinutė atnaujinti prisijungusių žaidėjų skaičių duomenų bazėje,
@@ -336,7 +374,7 @@ Vartotojas tiesiogiai bendraudamas su vartotojo sąsaja, siunčia asinchronines
 				\label{img:FriendList_sequence}
 			\end{figure}
 			Vartotojui pasirinkus draugą iš draugų sąrašo, paprašoma loginio proceso
-			gauti daugiau duomenų apie draugą iš duomenų bazės. Tuomet atidaromas 
+			gauti daugiau duomenų apie draugą iš duomenų bazės (žr. \ref{img:FriendList_sequence} pav.). Tuomet atidaromas 
 			langas su daugiau duomenų apie draugą. Paspaudus siųsti žinutę logikos 
 			procesas išsaugo žinutę duomenų bazėje ir praneša draugui apie gautą žinutę.
 			
@@ -349,7 +387,7 @@ Vartotojas tiesiogiai bendraudamas su vartotojo sąsaja, siunčia asinchronines
 				\label{img:GameWindow_sequence}
 			\end{figure}
 			Vartotojui pasirinkus žaidimą iš žaidimų sąrašo, paprašoma loginio proceso
-			gauti daugiau duomenų apie žaidimą iš duomenų bazės. Tuomet atidaromas 
+			gauti daugiau duomenų apie žaidimą iš duomenų bazės (žr. \ref{img:GameWindow_sequence} pav.). Tuomet atidaromas 
 			langas su daugiau duomenų apie žaidimą. Paspaudus siųsti žinutę logikos 
 			procesas paprašo žaidimo susirašinėjimo istorijos iš duomenų bazės. Tada
 			atidaromas pokalbių langas, kur vartotojas gali išsiųsti žinutę visiems 
@@ -360,11 +398,6 @@ Vartotojas tiesiogiai bendraudamas su vartotojo sąsaja, siunčia asinchronines
 Šiame dokumente pristatyta mobiliosios stalo žaidimų programėlės Board Games 4+1 architektūra ir
 modelis, kurį sudaro loginis, kūrimo, fizinis, procesų ir užduočių pjūviai, visi kartu parodantys
 sistemą iš skirtingų pusių, papildantys vieni kitus. Modelio pagrindas - standartinės UML diagramos.
-
-\sectionnonum{Išvados}
-Aplikacija projektuota atsižvelgiant į šiuolaikinius saugumo standartus - įvesta galimybė vertinti 
-žaidėjus ir žaidimų kūrėjus. Be to aplikacija yra orientuota į gera vartotojo patirtį(UX) naviguojant 
-aplikacijoje - vos keliais paspaudimais galima pasiekti norimą rezultatą.
 	
 \sectionnonum{Literatūros sąrašas}
 \begin{itemize}
