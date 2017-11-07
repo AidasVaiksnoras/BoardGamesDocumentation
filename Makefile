@@ -1,5 +1,6 @@
 generuoti:
 	xelatex BoardGames.tex
+	xelatex BoardGamesRequirements.tex
 	biber BoardGames
 
 ubuntu:

@@ -49,40 +49,6 @@ sistemą iš skirtingų pusių, papildantys vieni kitus. Modelio pagrindas - sta
 Board Games - tai aplikacija, sujungianti norinčius žaisti stalo žaidimus žmones
 su tais, kuriems trūksta žaidėjų. 
 
-
-\sectionnonum{Reikalavimai}
-\section{Nefunkciniai reikalavimai}
-
-\newcounter{nfrcount}
-\newcommand\rownumber{\stepcounter{nfrcount}\arabic{nfrcount}}
-
-\begin{tabular}{ | >{\centering}m{2cm} | m{10cm} | >{\centering}m{2.5cm} | } \hline
-\multicolumn{3}{ |l| }{\textbf{\textit{Vidinių interfeisų reikalavimai}}} \tabularnewline \hline
-\multicolumn{3}{ |l| }{\textbf{OS reikalavimai}} \tabularnewline \hline
-NFR\rownumber & Aplikacija turi būti palaikoma IOS (nuo 8.0 versijos) ir Android (nuo 4.0 versijos) įrenginiuose & Būtina\tabularnewline \hline
-NFR\rownumber & Aplikacija pageidautina, kad būtu palaikoma Windows Phone opracinėje sistemoje. & Pageidautinas\tabularnewline \hline
-NFR\rownumber & Aplikacija turi būti pasiekiama ir be išmanaus telefono - per naršyklę & Būtina\tabularnewline \hline
-NFR\rownumber & Išmanusis renginys turi turėti GPS modulį. & Būtina\tabularnewline \hline
-NFR\rownumber & Išmanusis įrenginys turi turėti prieigą prie interneto & Būtina\tabularnewline \hline
-\multicolumn{3}{ |l| }{\textbf{Saveikos su DB reikalavimai}} \tabularnewline \hline
-NFR\rownumber & Duomenys saugomi naudojant MySQL (ne senesnė nei 5.0 versija) duomenų bazių valdymo sistemą & Būtina\tabularnewline \hline
-NFR\rownumber & Turi egzistuoti lentelės: “Vartotojai”, “Žaidimai”, “Vartotojų sukurti žaidimai”, “Vartotojų žaidžiami žaidimai”. & Būtinas\tabularnewline \hline
-NFR\rownumber & Turi būti neribojamas duomenų bazės duomenų pralaidumas. & Būtina\tabularnewline \hline
-\multicolumn{3}{ |l| }{\textbf{Saveikos su DB reikalavimai}} \tabularnewline \hline
-NFR\rownumber & Aplikacija su serveriu keičiasi duomenimis JSON formatu. & Būtina\tabularnewline \hline
-\multicolumn{3}{ |l| }{\textbf{Darbo kompiuterių tinkluose reikalavima}} \tabularnewline \hline
-NFR\rownumber & Duomenys siunčiami HTTP protokolu. & Būtina\tabularnewline \hline
-\multicolumn{3}{ |l| }{\textbf{Saveikos su  kitomis programomis reikalavimai:}} \tabularnewline \hline
-NFR\rownumber & Facebook ir Google api vartotojo autorizacijai & Būtina\tabularnewline \hline
-NFR\rownumber & Aplikacija reikalauja GPS prieigos teisių. & Būtina\tabularnewline \hline
-NFR\rownumber & Aplikacija reikalauja fotoaparato prieigos teisių. & Būtina\tabularnewline \hline
-NFR\rownumber & Aplikacija reikalauja prieigos prei vartotojo įrenginyje turimų failų. & Būtina\tabularnewline \hline
-NFR\rownumber & Aplikacija reikalauja priegos prie mobiliojo interneto, jei neprisijungta prie Wi-Fi. & Būtina\tabularnewline \hline
-NFR\rownumber & Google Api žaidimo vietos nustatymui. & Būtina\tabularnewline \hline
-\multicolumn{3}{ |l| }{\textbf{Programavimo aplinkos reikalavimai:}} \tabularnewline \hline
-\end{tabular}
-
-
 \section{Fizinis pjūvis}
 Šioje dalyje pateikta informacija apie sistemos fizinius mazgus, juose įdiegtas vykdomasias aplinkas, reikalingas vykdyti programos komponentų darbą, taip pat apie komunikaciją tarp mazgų ir juose įdiegtus artifaktus, kurie saugo programinį kodą.
 	\subsection{Fiziniai mazgai tinkle, jų komunikacija}
