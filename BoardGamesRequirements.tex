@@ -13,6 +13,7 @@
 \usepackage{subfig}
 \usepackage{wrapfig}
 \usepackage{multirow}
+\usepackage{longtable}
 \usepackage{array,makecell}
 
 % Titulinio aprašas
@@ -55,11 +56,11 @@ su tais, kuriems trūksta žaidėjų.
 \newcounter{nfrcount}
 \newcommand\rownumber{\stepcounter{nfrcount}\arabic{nfrcount}}
 
-\begin{tabular}{ | >{\centering}m{2cm} | m{10cm} | >{\centering}m{2.5cm} | } \hline
+\begin{longtable}{ | >{\centering}m{2cm} | m{10cm} | >{\centering}m{2.5cm} | } \hline
 \multicolumn{3}{ |l| }{\textbf{\textit{Vidinių interfeisų reikalavimai}}} \tabularnewline \hline
 \multicolumn{3}{ |l| }{\textbf{OS reikalavimai}} \tabularnewline \hline
 NFR\rownumber & Aplikacija turi būti palaikoma IOS (nuo 8.0 versijos) ir Android (nuo 4.0 versijos) įrenginiuose & Būtina\tabularnewline \hline
-NFR\rownumber & Aplikacija pageidautina, kad būtu palaikoma Windows Phone opracinėje sistemoje. & Pageidautinas\tabularnewline \hline
+NFR\rownumber & Aplikacija palaikoma Windows Phone opracinėje sistemoje. & Pageidautinas\tabularnewline \hline
 NFR\rownumber & Aplikacija turi būti pasiekiama ir be išmanaus telefono - per naršyklę & Būtina\tabularnewline \hline
 NFR\rownumber & Išmanusis renginys turi turėti GPS modulį. & Būtina\tabularnewline \hline
 NFR\rownumber & Išmanusis įrenginys turi turėti prieigą prie interneto & Būtina\tabularnewline \hline
@@ -67,7 +68,7 @@ NFR\rownumber & Išmanusis įrenginys turi turėti prieigą prie interneto & Bū
 NFR\rownumber & Duomenys saugomi naudojant MySQL (ne senesnė nei 5.0 versija) duomenų bazių valdymo sistemą & Būtina\tabularnewline \hline
 NFR\rownumber & Turi egzistuoti lentelės: “Vartotojai”, “Žaidimai”, “Vartotojų sukurti žaidimai”, “Vartotojų žaidžiami žaidimai”. & Būtinas\tabularnewline \hline
 NFR\rownumber & Turi būti neribojamas duomenų bazės duomenų pralaidumas. & Būtina\tabularnewline \hline
-\multicolumn{3}{ |l| }{\textbf{Saveikos su DB reikalavimai}} \tabularnewline \hline
+\multicolumn{3}{ |l| }{\textbf{Dokumentų mainų reikalavimai}} \tabularnewline \hline
 NFR\rownumber & Aplikacija su serveriu keičiasi duomenimis JSON formatu. & Būtina\tabularnewline \hline
 \multicolumn{3}{ |l| }{\textbf{Darbo kompiuterių tinkluose reikalavima}} \tabularnewline \hline
 NFR\rownumber & Duomenys siunčiami HTTP protokolu. & Būtina\tabularnewline \hline
@@ -77,8 +78,68 @@ NFR\rownumber & Aplikacija reikalauja GPS prieigos teisių. & Būtina\tabularnew
 NFR\rownumber & Aplikacija reikalauja fotoaparato prieigos teisių. & Būtina\tabularnewline \hline
 NFR\rownumber & Aplikacija reikalauja prieigos prei vartotojo įrenginyje turimų failų. & Būtina\tabularnewline \hline
 NFR\rownumber & Aplikacija reikalauja priegos prie mobiliojo interneto, jei neprisijungta prie Wi-Fi. & Būtina\tabularnewline \hline
-NFR\rownumber & Google Api žaidimo vietos nustatymui. & Būtina\tabularnewline \hline
+NFR\rownumber & Google api žaidimo vietos nustatymui. & Būtina\tabularnewline \hline
 \multicolumn{3}{ |l| }{\textbf{Programavimo aplinkos reikalavimai:}} \tabularnewline \hline
-\end{tabular}
+NFR\rownumber & Programėlė kuriama C\# programavimo kalba. & Būtina\tabularnewline \hline
+NFR\rownumber & Internetinė svetainė kuriama Adobe Dreamweaver. & Pageidautina\tabularnewline \hline
+NFR\rownumber & Internetinei svetainei sukurti naudojamos naujausios web technologijos. & Būtina\tabularnewline \hline
+NFR\rownumber & Darbui su duomenų baze naudojama Microsoft SQL Server Management Studio. & Būtina\tabularnewline \hline
+NFR\rownumber & VisualStudio programavimo aplinką. & Pageidautina\tabularnewline \hline
+NFR\rownumber & Kodo versijavimui ir dalinimuisi naudojama Github repozitorija. & Būtina\tabularnewline \hline
+\multicolumn{3}{ |l| }{\textbf{Veikimo reikalavimai:}} \tabularnewline \hline
+\multicolumn{3}{ |l| }{Tikslumo reikalavimai duomenų saugojimui:} \tabularnewline \hline
+NFR\rownumber & Duomenų bazėje laikas saugomas sekundžių tikslumu. & Būtina\tabularnewline \hline
+NFR\rownumber & Žaidimimo pavadinimas ne ilgesnis nei 50 simbolių. & Būtina\tabularnewline \hline
+NFR\rownumber & Žaidimo aprašymas iki 2000 simbolių. & Būtina\tabularnewline \hline
+NFR\rownumber & Vartotojo vardas 15 simbolių. & Būtina\tabularnewline \hline
+NFR\rownumber & Slaptažodis bent 8 simboliai iš kurių bent vienas skaičius. & Būtina\tabularnewline \hline
+\multicolumn{3}{ |l| }{Tikslumo reikalavimai duomenų vaizdavimui:} \tabularnewline \hline
+NFR\rownumber & Žaidimo laikas vaizduojamas minučių tikslumu : YYYY-MM-DD hh:mm. & Būtina\tabularnewline \hline
+NFR\rownumber & Sutrumpintas žaidimo aprašymas yra pirmas pilno aprašymo sakinys. & Būtina\tabularnewline \hline
+NFR\rownumber & Žaidimas siūlomų žaidimų sąraše rodomas iki žaidimo pradžios laiko. & Būtina\tabularnewline \hline
+\multicolumn{3}{ |l| }{\textbf{Patikimumo reikalavimai:}} \tabularnewline \hline
+NFR\rownumber & Sutrikus interneto ryšiui aplikacijos būsena turi likti pasiekiama. & Būtina\tabularnewline \hline
+NFR\rownumber & Sistemos patikimumas yra nurodomas atsižvelgiant į sistemos veikimo be sutrikimų laiką. & Būtina\tabularnewline \hline
+NFR\rownumber & Aplikacija po interneto ryšio praradimo turi atsinaujinti. & Būtina\tabularnewline \hline
+NFR\rownumber & Dėl sutrikimų prarandamas laikas negali viršyti 1 dienos per 100 dienų. & Būtina\tabularnewline \hline
+NFR\rownumber & Sutrikimas turi būti pašalintas per vieną valandą nuo jo atsiradimo pradžios. & Pageidautinas\tabularnewline \hline
+\multicolumn{3}{ |l| }{\textbf{Našumo reikalavimai:}} \tabularnewline \hline
+NFR\rownumber & Didžiausia leistina programų sistemos apkrova yra 5000 vartotojų, prisijungusių vienu metu. & Būtina\tabularnewline \hline
+NFR\rownumber & Reakcijos laikas į sistemos vartotojo atliekamus veiksmus turi būti ne daugiau kaip 5 sekundės. & Būtina\tabularnewline \hline
+NFR\rownumber & Užklausos vykdymo laikas turi būti ne daugiau nei viena sekundė. & Būtina\tabularnewline \hline
+\multicolumn{3}{ |l| }{\textbf{Diegimo reikalavimai:}} \tabularnewline \hline
+NFR\rownumber & Programa turi būti instaliuojama automatiškai per įrenginį. & Būtina\tabularnewline \hline
+NFR\rownumber & Aplikacija turi būti lengvai parsisiunčiama ir instaliuojama per autorizuotas aplikacijų platformas (AppStore, GooglePlay). & Būtina\tabularnewline \hline
+NFR\rownumber & Įrenginys turi turėti pakankamai atminties programėlės įrašymui. & Būtina\tabularnewline \hline
+\multicolumn{3}{ |l| }{\textbf{Sistemos įsisavinamumo reikalavimai:}} \tabularnewline \hline
+NFR\rownumber & Sistema turi turėti bent tris kalbas: lietuvių, anglų ir rusų. & Būtina\tabularnewline \hline
+NFR\rownumber & Ikonos savo prasme tiesiogiai atspindi mygtuko esmę sistemoje. & Būtina\tabularnewline \hline
+NFR\rownumber & Jei vartotojui kyla neaiškumų, susijusių su programos veikimu, jis gali kreiptis į konsultantą nurodytu telefonu ar el. paštu. & Būtina\tabularnewline \hline
+\multicolumn{3}{ |l| }{\textbf{Saugumo reikalavimai:}} \tabularnewline \hline
+NFR\rownumber & Įvedus 3 kartus neteisingą slaptažodį, vartotojas yra paprašomas įvesti sugeneruotą CAPTCHA kodą. & Būtina\tabularnewline \hline
+NFR\rownumber & Negalima sukurti daugiau nei 10 žaidimų vienam vartotojui per dieną. & Būtina\tabularnewline \hline
+NFR\rownumber & Atsarginės duomenų kopijos daromos kasdien. & Būtina\tabularnewline \hline
+\multicolumn{3}{ |l| }{\textbf{Aptarnavimo ir priežiūros reikalavimai:}} \tabularnewline \hline
+NFR\rownumber & Į vartotojo užduodamus klausimus darbo metu turi būti atsakyta ne vėliau nei per valandą, o ne darbo metu ne vėliau nei per 12 valandų. & Pageidautina\tabularnewline \hline
+NFR\rownumber & Praplėtus sistemos funkcionalumą, būtina testuoti atnaujinimus, kad būtų užtikrinta programėlės sklandi veikla, prieš leidžiant jais naudotis registruotiems vartotojams, svečiams ir administratoriui. & Būtina\tabularnewline \hline
+NFR\rownumber & Testai turi padengti 80\% kodo. & Būtina\tabularnewline \hline
+NFR\rownumber & Programėlę galima atsinaujinti per Google Play, iTunes ir Microsoft Store aplikacijų parduotuves. & Būtina\tabularnewline \hline
+\multicolumn{3}{ |l| }{\textbf{Tiražuojamumo reikalavimai:}} \tabularnewline \hline
+NFR\rownumber & Programėlė turi sėkmingai veikti mobiliuosiuose įrenginiuose su Android OS, iOS ir Windows Phone OS. & Būtina\tabularnewline \hline
+NFR\rownumber & Programėlės internetinė svetainė privalo palaikyti funkcionalumą šiose naršyklėse: Google Chrome, Mozilla Firefox, Microsoft Edge, Safari, Opera, Microsoft Internet Explorer. & Būtina\tabularnewline \hline
+\multicolumn{3}{ |l| }{\textbf{Apsaugos reikalavimai:}} \tabularnewline \hline
+NFR\rownumber & Duomenų bazė periodiškai (ne rečiau nei kas 2 savaites) sukuria savo atsarginę kopiją. & Būtina\tabularnewline \hline
+NFR\rownumber & Įvedant slaptažodį, jo raidės atvaizduojamos juodais ‘*’ simboliais. & Būtina\tabularnewline \hline
+NFR\rownumber & Duomenų bazėje slaptažodžiai saugomi juos užkodavus. & Būtina\tabularnewline \hline
+\multicolumn{3}{ |l| }{\textbf{Juridiniai  reikalavimai:}} \tabularnewline \hline
+NFR\rownumber & Užsiregistruodamas vartotojas turi sutikti su visomis sistemos naudojamomis nuostatomis. & Būtina\tabularnewline \hline
+NFR\rownumber & Sistema turi nepažeisti Lietuvos Respublikoje galiojančių įstatymų. & Būtina\tabularnewline \hline
+NFR\rownumber & Sistemos duomenų bazėje esantys vartotojų registracijos ir kiti asmeniniai duomenys yra visapusiškai apsaugoti ir prieinami tik autorizuotiems asmenims. & Būtina\tabularnewline \hline
+\multicolumn{3}{ |l| }{\textbf{Dalykinės srities metaforų reikalavimai:}} \tabularnewline \hline
+NFR\rownumber & Pasirinkimas pateikti prašymą prisijungti prie žaidimo yra rodomas “+” pavidalu. & Būtina\tabularnewline \hline
+NFR\rownumber & Pasirinkimas pasiųsti pakvietimą rodomas žmogeliukio su “+” pavidalu. & Būtina\tabularnewline \hline
+NFR\rownumber & Jei draugas prisijungęs, prie jo vardo draugų sąraše rodomas žalias užpildytas apskritimas. & Būtina\tabularnewline \hline
+NFR\rownumber & Registracija per Facebook ar Google anketas rodoma jų atitinkamais simboliais. & Būtina\tabularnewline \hline
+\end{longtable}
 
 \end{document}

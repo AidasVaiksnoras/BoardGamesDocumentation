@@ -49,6 +49,19 @@ sistemą iš skirtingų pusių, papildantys vieni kitus. Modelio pagrindas - sta
 Board Games - tai aplikacija, sujungianti norinčius žaisti stalo žaidimus žmones
 su tais, kuriems trūksta žaidėjų. 
 
+\sectionnonum{Žodynas}
+\begin{enumerate}
+\item Aplikacija - tai programėlė leidžianti naudotis aprašytomis funkcijomis.
+\item Naudotojas - tai bendrinis aplikacijos profilis.
+\item Žaidimas - stalo žaidimo įvykis. (Game)
+\item Vartotojas - galutinis aplikacijos vartotojas, galintis sukurti ar prisijungti prie egzistuojančio žaidimo. (User)
+\item Administratorius - tai žmogus kuris prižiūri korektišką aplikacijos veikimą, turi priėjimą prie statistinės informacijos.
+\item Kompanija - verslo subjektas, galintis aplikacijoje sukurti specialus renginius savo atstovaujamiems žaidimams.
+\item Draugas - tai vartotojas esantis draugų saraše, kuriam galima parašyti žinutę arba pakviesti žaisti konkretų žaidimą. (Friend)
+\item Perspektyva - (Point of view) aplikacijos naudojimo kampas priklausantis nuo naudotojo tipo.
+
+\end{enumerate} 
+
 \section{Fizinis pjūvis}
 Šioje dalyje pateikta informacija apie sistemos fizinius mazgus, juose įdiegtas vykdomasias aplinkas, reikalingas vykdyti programos komponentų darbą, taip pat apie komunikaciją tarp mazgų ir juose įdiegtus artifaktus, kurie saugo programinį kodą.
 	\subsection{Fiziniai mazgai tinkle, jų komunikacija}
@@ -252,21 +265,56 @@ Vartotojas tiesiogiai bendraudamas su vartotojo sąsaja, siunčia asinchronines
 		\end{figure}
 		Kiekvienas programėlės naudotojas patenka į prisijungimo langą, kuriame gali 			pasirinkti vieną iš galimų prisijungimo būdų - naudojantis Facebook API arba 			paprasta vartotojo paskyra (žr. \ref{img:Authentication} pav.). Pasirinkus Facebook autentifikacija, programėlė 			nuskaito vartotojo identifikacinius duomenis ir ši veikla pabaigiama. Pasirinkus 			prisijungimą naudojantis paprasta paskyra atsiranda dvi galimybės - prisijungti 		arba užsiregistruoti. Pasirinkus registraciją vartotojas suveda savo duomenis, 			jeigu pastarieji teisingi - jis užregistruojamas ir gali prisijungti. Jei duomenys 			klaidingi - vartotojas vėl patenka į tą patį registracijos langą. Norėdamas 			prisijungti vartotojas turi įvesti savo teisingus prisijungimo duomenis, tuomet 		iššoka CAPTCHA patvirtinimo paveikslėlis, skirtas prevencijai nuo kenkėjiško tipo 			skriptų ir programų, imituojančių žmogų. Jeigu CAPTCHA klaidingas - vartotojas 			blokuojamas 5 minutėms (tiek laiko negali prisijungti siekiant taupyti sistemos 		resursus, išvengti DOS/DDOS atakų). Suvedus teisingą CAPTCHA kodą patenkama į 			sistemą ir ši veikla užbaigiama.
 	\subsection{Pagrindinis navigacijos langas}
-		\begin{figure}[H]
-			\centering
-			\includegraphics[scale=0.5]{img/MainWindow_activity}
-			\caption{Pagrindinio navigacijos lango veiklos diagrama}
-			\label{img:MainWindow_activity}
-		\end{figure}
-		\subsubsection*{Pagrindiniame navigacijos lange vartotojas paspaudęs atitinkamus mygtukus (žr. \ref{img:MainWindow_activity} pav.) gali:}
-			\renewcommand{\labelitemi}{$\bullet$}
-			\begin{itemize}
-				\item Atidaryti žaidimo sukūrimo langą.
-				\item Atidaryti prisijungimo prie žaidimo langą.
-				\item Atidaryti draugų sąrašo langą.
-				\item Atidaryti mano žaidimų langą
-				\item Atsijungti
-			\end{itemize}
+		\subsubsection*{Vartotojo perspektyva :}
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.5]{img/MainWindow_activity}
+				\caption{Pagrindinio navigacijos lango veiklos diagrama iš vartotojo perspektyvos}
+				\label{img:MainWindow_activity}
+			\end{figure}
+			\subsubsection*{Pagrindiniame navigacijos lange vartotojas paspaudęs atitinkamus mygtukus (žr. \ref{img:MainWindow_activity} pav.) gali:}
+				\renewcommand{\labelitemi}{$\bullet$}
+				\begin{itemize}
+					\item Atidaryti žaidimo sukūrimo langą.
+					\item Atidaryti prisijungimo prie žaidimo langą.
+					\item Atidaryti draugų sąrašo langą.
+					\item Atidaryti mano žaidimų langą
+					\item Atsijungti
+				\end{itemize}
+				
+		\subsubsection*{Administratoriaus perspektyva :}
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.5]{img/MainWindowAdministrator}
+				\caption{Pagrindinio navigacijos lango veiklos diagrama iš administratoriaus perspektyvos}
+				\label{img:MainWindowAdministrator}
+			\end{figure}
+			\subsubsection*{Pagrindiniame navigacijos lange vartotojas paspaudęs atitinkamus mygtukus (žr. \ref{img:MainWindowAdministrator} pav.) gali:}
+				\renewcommand{\labelitemi}{$\bullet$}
+				\begin{itemize}
+					\item Atidaryti visų žaidimų sąrašą.
+					\item Atidaryti profilio nustatymo langą.
+					\item Atidaryti visų vartotojų sąrašą.
+					\item Atidaryti statistikos langą
+					\item Atsijungti
+				\end{itemize}
+				
+		\subsubsection*{Kompanijos perspektyva :}
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.5]{img/MainWindowCompany}
+				\caption{Pagrindinio navigacijos lango veiklos diagrama iš kompanijos perspektyvos}
+				\label{img:MainWindowCompany}
+			\end{figure}
+			\subsubsection*{Pagrindiniame navigacijos lange vartotojas paspaudęs atitinkamus mygtukus (žr. \ref{img:MainWindowCompany} pav.) gali:}
+				\renewcommand{\labelitemi}{$\bullet$}
+				\begin{itemize}
+					\item Atidaryti savo sukurtų žaidimų sąrašą.
+					\item Atidaryti profilio nustatymo langą.
+					\item Atidaryti sekėjų sąrašą.
+					\item Atidaryti renginio sukūrimo langą
+					\item Atsijungti
+				\end{itemize}
 
 	\subsection{Žaidimo sukūrimo langas}
 		\subsubsection*{Žaidimo sukūrimo veiklos diagrama :}
