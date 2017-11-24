@@ -50,6 +50,283 @@ sistemą iš skirtingų pusių, papildantys vieni kitus. Modelio pagrindas - sta
 Board Games - tai aplikacija, sujungianti norinčius žaisti stalo žaidimus žmones
 su tais, kuriems trūksta žaidėjų. 
 
+\section{Funkciniai reikalavimai asmeninio vartotojo perspektyva}
+
+\newcounter{frcount}
+\newcommand\rownumberfr{\stepcounter{frcount}\arabic{frcount}}
+
+\subsection{Aplikacijos langai}
+\begin{longtable}{ | >{\centering}m{2cm} | m{10cm} | >{\centering}m{2.5cm} | } \hline
+\multicolumn{3}{ |l| }{\textbf{Aplikacijos langai:}} \tabularnewline \hline
+\textbf{Numeris} & \centering{\textbf{Reikalavimas}} & \textbf{Svarba} \tabularnewline \hline
+FR\rownumberfr & Registracija - šiame lange vartotojas gali prisiregistruoti prie programėlės. & Būtina\tabularnewline \hline
+FR\rownumberfr & Prisijungimas - šiame lange vartotojas gali prisijungti prie programėlės. & Būtina\tabularnewline \hline
+FR\rownumberfr & Pagrindinis langas - iš šio lango vartotojas gali pasirinkti, kokias veiklas nori veikti programėlėje. & Būtina\tabularnewline \hline
+FR\rownumberfr & Žaidimų pasirinkimo langas - šiame lange vartotojas gali matyti galimus žaidimus ir prie jų prisijungti. & Būtina\tabularnewline \hline
+FR\rownumberfr & Žaidimo kūrimo langas - šiame lange vartotojas gali sukurti žaidimą ir pateikti informaciją apie jį. & Būtina\tabularnewline \hline
+FR\rownumberfr & Žaidimų iškėlimo langas - šiame lange vartotojas gali nustatyti, kiek ilgai nori, kad jo žaidimas būtų iškeltas žaidimų sąrašo viršuje. & Būtina\tabularnewline \hline
+FR\rownumberfr & Draugų sąrašas - šiame lange vartotojas gali matyti savo draugų sąrašą, taip pat prisijungusius draugus. & Būtina\tabularnewline \hline
+FR\rownumberfr & Žaidimo langas - šis langas rodomas vartotojui prisijungus prie žaidimo. Jame galima pasiekti pilną informaciją apie žaidimą ir susirašinėti su komandos nariais. & Būtina\tabularnewline \hline
+FR\rownumberfr & Vartotojo profilio langas - šiame lange rodomi vartotojo profilio duomenys, juos galima redaguoti. & Būtina\tabularnewline \hline
+FR\rownumberfr & Mano žaidimų langas - šiame lange bus rodomi visi žaidimai, kuriuos vartotojas yra sukūręs ir žaidimai, prie kurių jis yra prisijungęs. & Būtina\tabularnewline \hline
+\caption{Aplikacijos langai.}
+\end{longtable}
+
+\subsection{Registracija}
+\begin{longtable}{ | >{\centering}m{2cm} | m{10cm} | >{\centering}m{2.5cm} | } \hline
+\multicolumn{3}{ |l| }{\textbf{Registracija:}} \tabularnewline \hline
+\textbf{Numeris} & \centering{\textbf{Reikalavimas}} & \textbf{Svarba} \tabularnewline \hline
+FR\rownumberfr & Pradiniame lange, paspaudus mygtuką “Registracija asmeniui”, atsiveria registracijos anketa. & Būtina\tabularnewline \hline
+FR\rownumberfr & Suteikiama galimybė registruotis per Facebook, Google paskyras arba elektroniniu paštu. & Būtina\tabularnewline \hline
+FR\rownumberfr & Registruojantis vartotojas privalo nurodyti prisijungimo vardą, slaptažodį gimimo metus, elektroninį paštą ir gali pateikti nuotrauką. & Būtina\tabularnewline \hline
+FR\rownumberfr & Jei norimas vartotojo vardas jau egzistuoja, vartotojui reikia įvesti naują vartotojo vardą. & Būtina\tabularnewline \hline
+FR\rownumberfr & Tikrinama, ar elektroninis paštas yra validus (baigiasi simboliu ‘@’ ir domenu) ir ar jis egzistuoja. Jei elektroninis paštas netinkamas, vartotojui turi būti apie tai pranešama ir paprašoma duomenis įvesti iš naujo. & Būtina\tabularnewline \hline
+FR\rownumberfr & Registruojantis vartotojas yra prašomas pakartoti slaptažodį du kartus. & Būtina\tabularnewline \hline
+FR\rownumberfr & Vartotojas registracijos metu turi sutikti su aplikacijos naudojimosi sąlygomis prieš tai jas peržiūrėjęs. & Būtina\tabularnewline \hline
+FR\rownumberfr & Jei visi duomenys įvesti teisingai, jie turi būti išsaugomi duomenų bazėje, vartotojui turi būti pranešta apie sėkmingą registraciją. & Būtina\tabularnewline \hline
+FR\rownumberfr & Vartotojui sėkmingai užsiregistravus (el. pašto būdu) išsiunčiamas patvirtinimo laiškas nurodytu elektroninio pašto adresu. Vartotojas turi paspausti patvirtinimo nuorodą, jog registracija būtų užbaigta. & Būtina\tabularnewline \hline
+\caption{Funkciniai registracijos reikalavimai asmeninio vartotojo perspektyva.}
+\end{longtable}
+
+\subsection{Prisijungimas}
+\begin{longtable}{ | >{\centering}m{2cm} | m{10cm} | >{\centering}m{2.5cm} | } \hline
+\multicolumn{3}{ |l| }{\textbf{Prisijungimas:}} \tabularnewline \hline
+\textbf{Numeris} & \centering{\textbf{Reikalavimas}} & \textbf{Svarba} \tabularnewline \hline
+FR\rownumberfr & Vartotojas gali prisijungti per Facebook, Google paskyras arba lokaliai. & Būtina\tabularnewline \hline
+FR\rownumberfr & Prisijungimo lokaliai metu vartotojas gali pasirinkti, ar įvesti vartotojo vardą, ar elektroninio pašto adresą, ir privalo įvesti slaptažodį. & Būtina\tabularnewline \hline
+FR\rownumberfr & Programėlė tikrina, ar vartotojo vardas ir slaptažodis įvesti teisingai, jei ne, tai turi būti pranešta vartotojui ir paprašoma iš naujo įvesti duomenis. & Būtina\tabularnewline \hline
+FR\rownumberfr & Jei vartotojas buvo prisijungęs prie žaidimo ir neatsijungė, kitus kartus jis prijungiamas paleidus programėlę be duomenų įvedimo. & Būtina\tabularnewline \hline
+FR\rownumberfr & Prisijungęs vartotojas gali  atsijungti ir suteikiama galimybė prisijungti kitam vartotojui. & Būtina\tabularnewline \hline
+FR\rownumberfr & Vartotojui pamiršus slaptažodį, jis gali būti pakeičiamas naudojantis elektroniniu paštu. Vartotojas gali pateikti prašymą pakeisti slaptažodį, tada į jo paštą bus atsiunčiamas laiškas su nauju slaptažodžiu ir nuoroda, patvirtinančia operaciją. & Būtina\tabularnewline \hline
+\caption{Funkciniai prisijungimo reikalavimai asmeninio vartotojo perspektyva.}
+\end{longtable}
+
+\subsection{Pagrindinis langas}
+\begin{longtable}{ | >{\centering}m{2cm} | m{10cm} | >{\centering}m{2.5cm} | } \hline
+\multicolumn{3}{ |l| }{\textbf{Pagrindinio lango reikalavimai:}} \tabularnewline \hline
+\textbf{Numeris} & \centering{\textbf{Reikalavimas}} & \textbf{Svarba} \tabularnewline \hline
+FR\rownumberfr & Vartotojas gali patekti į egzistuojančių žaidimų sąrašą. & Būtina\tabularnewline \hline
+FR\rownumberfr & Vartotojas gali patekti į savo draugų sąrašą. & Būtina\tabularnewline \hline
+FR\rownumberfr & Vartotojas gali patekti į žaidimo kūrimo langą. & Būtina\tabularnewline \hline
+FR\rownumberfr & Vartotojas gali patekti į paskyros nustatymų langą. & Būtina\tabularnewline \hline
+FR\rownumberfr & Vartotojas gali atsijungti. & Būtina\tabularnewline \hline
+\caption{Funkciniai pagrindinio lango reikalavimai asmeninio vartotojo perspektyva.}
+\end{longtable}
+
+\subsection{Žaidimų pasirinkimo langas}
+\begin{longtable}{ | >{\centering}m{2cm} | m{10cm} | >{\centering}m{2.5cm} | } \hline
+\multicolumn{3}{ |l| }{\textbf{Žaidimų pasirinkimo lango reikalavimai:}} \tabularnewline \hline
+\textbf{Numeris} & \centering{\textbf{Reikalavimas}} & \textbf{Svarba} \tabularnewline \hline
+FR\rownumberfr & Vartotojas gali filtruoti žaidimus pagal miestą, žaidimą, žaidimo kategoriją, trūkstamų žaidėjų skaičių, žaidimų kūrėjo reitingą, užsiregistravusių žaidėjų reitingų vidurkį ir atstumo spindulį, esantį tarp vartotojo ir vietos, kurioje vyks žaidimas, numatomą žaidimo pradžios laiką. & Būtina\tabularnewline \hline
+FR\rownumberfr & Vartotojas gali filtruoti žaidimus pagal kelis raktus. & Būtina\tabularnewline \hline
+FR\rownumberfr & Pasirinkęs žaidimą, vartotojas gali peržiūrėti platesnę žaidimo informaciją, pateikti prašymą prisijungti prie siūlomų stalo žaidimų sesijų ar palikti žaidimą, prie kurio jau buvo prisijungęs. & Būtina\tabularnewline \hline
+FR\rownumberfr & Jei žaidime nebėra laisvų vietų, žaidimas sąraše nėra rodomas. & Būtina\tabularnewline \hline
+FR\rownumberfr & Jei žaidimo numatytas pradžios laikas jau yra praėjęs, tuomet jis žaidimų sąraše nerodomas. & Būtina\tabularnewline \hline
+\caption{Funkciniai žaidimų pasirinkimo lango reikalavimai asmeninio vartotojo perspektyva.}
+\end{longtable}
+
+\subsection{Žaidimo kūrimo langas}
+\begin{longtable}{ | >{\centering}m{2cm} | m{10cm} | >{\centering}m{2.5cm} | } \hline
+\multicolumn{3}{ |l| }{\textbf{Žaidimo kūrimo langas:}} \tabularnewline \hline
+\textbf{Numeris} & \centering{\textbf{Reikalavimas}} & \textbf{Svarba} \tabularnewline \hline
+FR\rownumberfr & Vartotojas gali pats sukurti stalo žaidimo sesiją. & Būtina\tabularnewline \hline
+FR\rownumberfr & Kuriant žaidimą, vartotojas privalo nurodyti žaidimo pavadinimą, minimalų ir maksimalų žaidėjų skaičių, žaidimo vietą. & Būtina\tabularnewline \hline
+FR\rownumberfr & Kuriant žaidimą, vartotojas gali nurodyti neprivalomus duomenis: tikėtiną žaidimo pradžios laiką, žaidimo aprašymą. & Būtina\tabularnewline \hline
+FR\rownumberfr & Vartotojas gali pašalinti žaidimą iš jo jau sukurtų žaidimų sąrašo. & Būtina\tabularnewline \hline
+FR\rownumberfr & Vartotojas gali visuomet keisti savo sukurto žaidimo duomenis. & Būtina\tabularnewline \hline
+FR\rownumberfr & Jei žaidimo duomenys pakeičiami, prisijungę žaidėjai apie tai įspėjami automatine žinute su informacija apie pakeitimus, kuri pasirodo žaidimo susirašinėjimo gijoje. & Būtina\tabularnewline \hline
+FR\rownumberfr & Atsiradus naujam vartotojui, norinčiam prisijungti prie sukurto žaidimo, vartotojas, sukūręs žaidimą, gali priimti arba atmesti šį prašymą. & Būtina\tabularnewline \hline
+FR\rownumberfr & Žaidimą sukūręs vartotojas gali pats pasiūlyti kitiems žaidėjams prisijungti prie jo kuriamo žaidimo spausdamas mygtuką “+” ir nurodydamas kitų žaidėjų prisijungimo vardus. & Būtina\tabularnewline \hline
+FR\rownumberfr & Jei įvestas žaidėjas neegzistuoja, aplikacija informuoja žaidimą sukūrusį vartotoją, kad toks žaidėjas neegzistuoja. & Būtina\tabularnewline \hline
+FR\rownumberfr & Jeigu įvestas žaidėjas žaidimo nurodytu pradžios metu jau yra prisijungęs prie kito žaidimo, aplikacija informuoja žaidimą sukūrusį vartotoją, kad šis žaidėjas šiuo metu negali dalyvauti žaidime. & Būtina\tabularnewline \hline
+FR\rownumberfr & Žaidimą sukūręs vartotojas bet kada gali išmesti žaidėją iš savo žaidimo. & Būtina\tabularnewline \hline
+FR\rownumberfr & Įvedus visą reikiamą informaciją apie žaidimą spaudžiamas mygtukas “Sukurti”. & Būtina\tabularnewline \hline
+FR\rownumberfr & Sukūrus žaidimą, vartotojai, pakviest prisijungti prie žaidimo, turi patvirtinti, kad sutinka prisijungti. & Būtina\tabularnewline \hline
+FR\rownumberfr & Kol pakviestas vartotojas nėra patvirtinęs prisijungimo prie žaidimo, šalia vaizduojama būsena “Laukia patvirtinimo”. & Būtina\tabularnewline \hline
+FR\rownumberfr & Jei pakviestas vartotojas atmeta pakvietimą, jo vardas dingsta iš žaidėjų sąrašo. & Būtina\tabularnewline \hline
+FR\rownumberfr & Šalia žaidimą sukūrusio vartotojo vardo vaizduojama būsena “Šeimininkas”. & Būtina\tabularnewline \hline
+FR\rownumberfr & Jeigu norima žaidimą iškelti visų žaidimų sąraše į viršų, galima už papildomą mokestį įsigyti tokią paslaugą. Vartotojas, suinteresuotas kuo greičiau surinkti reikiamus žmones žaidimui, renkasi mygtuką “Iškelti” ir yra nukeliamas į žaidimo iškėlimo langą. & Būtina\tabularnewline \hline
+\caption{Funkciniai žaidimo kūrimo lango reikalavimai asmeninio vartotojo perspektyva.}
+\end{longtable}
+
+\subsection{Žaidimų iškėlimo langas}
+\begin{longtable}{ | >{\centering}m{2cm} | m{10cm} | >{\centering}m{2.5cm} | } \hline
+\multicolumn{3}{ |l| }{\textbf{Žaidimų iškėlimo lango reikalavimai:}} \tabularnewline \hline
+\textbf{Numeris} & \centering{\textbf{Reikalavimas}} & \textbf{Svarba} \tabularnewline \hline
+FR\rownumberfr & Žaidimo kūrimo lange esantis pasirinkimas “Iškelti” atveria langą, kuriame pateikiami pasirinkimai, kiek ilgai norima laikyti žaidimą iškeltą bendrame žaidimų sąraše. & Būtina\tabularnewline \hline
+FR\rownumberfr & Lango apačioje vaizduojamos įvairių bankų ikonos, kurios žaidimo šeimininkui leidžia pasirinkti patogiausią apmokėjimo būdą už paslaugą. & Būtina\tabularnewline \hline
+\caption{Funkciniai žaidimų iškėlimo lango reikalavimai asmeninio vartotojo perspektyva.}
+\end{longtable}
+
+\subsection{Asmeninių žinučių langas}
+\begin{longtable}{ | >{\centering}m{2cm} | m{10cm} | >{\centering}m{2.5cm} | } \hline
+\multicolumn{3}{ |l| }{\textbf{Asmeninių žinučių lango reikalavimai:}} \tabularnewline \hline
+\textbf{Numeris} & \centering{\textbf{Reikalavimas}} & \textbf{Svarba} \tabularnewline \hline
+FR\rownumberfr & Vartotojui pradiniame puslapyje paspaudus mygtuką “Žinutės” jam atvaizduojamas atsiliepimų, parašytų apie jo sukurtus žaidimus, sąrašas. & Būtina\tabularnewline \hline
+FR\rownumberfr & Atsiliepimų sąrašo pabaigoje turi egzistuoti tekstinis laukas su galimybe atsakyti į atsiliepimą. & Būtina\tabularnewline \hline
+FR\rownumberfr & Virš šio lauko turi būti vartotojui prieinamos galimybės tą tekstą redaguoti. & Būtina\tabularnewline \hline
+FR\rownumberfr & Pasirinkęs žaidimą, vartotojas gali peržiūrėti platesnę žaidimo informaciją, pateikti prašymą prisijungti prie siūlomų stalo žaidimų sesijų ar palikti žaidimą, prie kurio jau buvo prisijungęs. & Būtina\tabularnewline \hline
+FR\rownumberfr & Jei žaidime nebėra laisvų vietų, žaidimas sąraše nėra rodomas. & Būtina\tabularnewline \hline
+FR\rownumberfr & Jei žaidimo numatytas pradžios laikas jau yra praėjęs, tuomet jis žaidimų sąraše nerodomas. & Būtina\tabularnewline \hline
+\caption{Funkciniai asmeninių žinučių lango reikalavimai asmeninio vartotojo perspektyva.}
+\end{longtable}
+
+\subsection{Draugų sąrašas}
+\begin{longtable}{ | >{\centering}m{2cm} | m{10cm} | >{\centering}m{2.5cm} | } \hline
+\multicolumn{3}{ |l| }{\textbf{Draugų sąrašo reikalavimai:}} \tabularnewline \hline
+\textbf{Numeris} & \centering{\textbf{Reikalavimas}} & \textbf{Svarba} \tabularnewline \hline
+FR\rownumberfr & Vartotojas gali peržiūrėti draugų profilius. & Būtina\tabularnewline \hline
+FR\rownumberfr & Vartotojas gali paieškos laukeliu rasti draugą pagal jo vartotojo vardą ar elektroninio pašto adresą. & Būtina\tabularnewline \hline
+FR\rownumberfr & Vartotojui rodoma, kurie draugai yra prisijungę. & Būtina\tabularnewline \hline
+FR\rownumberfr & Vartotojas gali prisijungusiam draugui pasiūlyti prisijungti prie žaidimo, kuriame yra pats vartotojas. & Būtina\tabularnewline \hline
+FR\rownumberfr & Vartotojas gali parašyti žinutę prisijungusiam draugui. & Būtina\tabularnewline \hline
+FR\rownumberfr & Vartotojas gali peržiūrėti prisijungusių draugų žaidžiamus žaidimus ir pateikti prašymą prie jų prisijungti. & Būtina\tabularnewline \hline
+FR\rownumberfr & Vartotojas gali pakviesti draugauti naujus žmones. & Būtina\tabularnewline \hline
+FR\rownumberfr & Vartotojas gali ištrinti draugą iš draugų sąrašo. & Būtina\tabularnewline \hline
+FR\rownumberfr & Vartotojas gali pranešti apie netinkamą vartotojo elgesį administracijai. & Būtina\tabularnewline \hline
+\caption{Funkciniai draugų sąrašo reikalavimai asmeninio vartotojo perspektyva.}
+\end{longtable}
+
+\subsection{Žaidimo langas}
+\begin{longtable}{ | >{\centering}m{2cm} | m{10cm} | >{\centering}m{2.5cm} | } \hline
+\multicolumn{3}{ |l| }{\textbf{Žaidimo lango reikalavimai:}} \tabularnewline \hline
+\textbf{Numeris} & \centering{\textbf{Reikalavimas}} & \textbf{Svarba} \tabularnewline \hline
+FR\rownumberfr & Prie žaidimo prisijungę vartotojai turi prieigą prie to žaidimo susirašinėjimo gijos. & Būtina\tabularnewline \hline
+FR\rownumberfr & Vartotojas gali peržiūrėti žaidimo lokaciją žemėlapyje. & Būtina\tabularnewline \hline
+FR\rownumberfr & Vartotojas gali peržiūrėti žaidimo dalyvių bei jo kūrėjo profilius. & Būtina\tabularnewline \hline
+FR\rownumberfr & Vartotojas gali pakviesti esančius žaidimo dalyvius į draugus. & Būtina\tabularnewline \hline
+FR\rownumberfr & Paspaudus mygtuką “išsiųsti atsiliepimą”, vartotojas gali palikti atsiliepimą apie įvykusį žaidimą. Jei atsiliepimo laukas tuščias, rodomas pranešimas apie tai, jog atsiliepimą būtina įrašyti. Parašius atsiliepimą, jis išsiunčiamas žaidimo šeimininkui ir pasirodo trumpas sakinys, padėkojantis vartotojui už paliktą atsiliepimą. & Būtina\tabularnewline \hline
+\caption{Funkciniai žaidimo lango reikalavimai asmeninio vartotojo perspektyva.}
+\end{longtable}
+
+\subsection{Vartotojo profilio langas}
+\begin{longtable}{ | >{\centering}m{2cm} | m{10cm} | >{\centering}m{2.5cm} | } \hline
+\multicolumn{3}{ |l| }{\textbf{Vartotojo profilio lango reikalavimai:}} \tabularnewline \hline
+\textbf{Numeris} & \centering{\textbf{Reikalavimas}} & \textbf{Svarba} \tabularnewline \hline
+FR\rownumberfr & Vartotojas gali pasikeisti slaptažodį, nuotrauką, elektroninį paštą, gyvenamąjį adresą, telefono numerį. & Būtina\tabularnewline \hline
+FR\rownumberfr & Vartotojas gali pasiekti savo draugų sąrašą. & Būtina\tabularnewline \hline
+FR\rownumberfr & Vartotojas gali nustatyti elektroninio pašto, gyvenamojo adreso, telefono numerio bei savo prisijungimo matomumą. & Būtina\tabularnewline \hline
+FR\rownumberfr & Vartotojas gali pateikti trumpą aprašymą apie save. & Būtina\tabularnewline \hline
+FR\rownumberfr & Jei užeinama ant kito vartotojo profilio, tai suteikiama galimybė jį pakviesti į draugus. & Būtina\tabularnewline \hline
+FR\rownumberfr & Vartotojas gali ištrinti savo paskyrą. & Būtina\tabularnewline \hline
+\caption{Funkciniai vartotojo profilio lango reikalavimai asmeninio vartotojo perspektyva.}
+\end{longtable}
+
+\subsection{Mano žaidimų langas}
+\begin{longtable}{ | >{\centering}m{2cm} | m{10cm} | >{\centering}m{2.5cm} | } \hline
+\multicolumn{3}{ |l| }{\textbf{Mano žaidimų lango reikalavimai:}} \tabularnewline \hline
+\textbf{Numeris} & \centering{\textbf{Reikalavimas}} & \textbf{Svarba} \tabularnewline \hline
+FR\rownumberfr & Atsivėrusiame lange vartotojas mato žaidimų sąrašą, kuriame atvaizduojami visi jo sukurti žaidimai. & Būtina\tabularnewline \hline
+FR\rownumberfr & Atsivėrusiame lange vartotojas mato žaidimų sąrašą, kuriame pateikiami žaidimai, prie kurių jis prisijungė pakviestas kito vartotojo arba suradęs žaidimą bendrame žaidimų sąraše ir sulaukęs patvirtinimo iš žaidimo kūrėjo. & Būtina\tabularnewline \hline
+FR\rownumberfr & Prie kiekvieno žaidimo vartotojas mato laiką, likusį iki žaidimo pradžios. & Būtina\tabularnewline \hline
+FR\rownumberfr & Pasirinkęs žaidimą, vartotojas yra nukreipiamas į žaidimo langą, kuriame pateikiama detalesnė informacija apie žaidimą. & Būtina\tabularnewline \hline
+FR\rownumberfr & Žemiau pateikiami vartotojo patvirtinimo nesulaukę žaidimai, prie kurių jis buvo pakviestas prisijungti. & Būtina\tabularnewline \hline
+FR\rownumberfr & Paspaudus ant žaidimo, į kurį yra kviečiamas, vartotojas gali peržiūrėti kitų žaidėjų, esančių žaidime, profilius bei prisijungti prie žaidimo arba atmesti pakvietimą paspaudus atitinkamai žalią mygtuką “Prisijungti” arba raudoną mygtuką “Atmesti”. & Būtina\tabularnewline \hline
+FR\rownumberfr & Prisijungus prie žaidimo, jis atsiduria sąraše žaidimų, prie kurių yra prisijungęs. & Būtina\tabularnewline \hline
+\caption{Funkciniai mano žaidimų lango reikalavimai asmeninio vartotojo perspektyva.}
+\end{longtable}
+
+\section{Funkciniai reikalavimai kompanijos perspektyva}
+
+\subsection{Registracija}
+\begin{longtable}{ | >{\centering}m{2cm} | m{10cm} | >{\centering}m{2.5cm} | } \hline
+\multicolumn{3}{ |l| }{\textbf{Registracijos reikalavimai:}} \tabularnewline \hline
+\textbf{Numeris} & \centering{\textbf{Reikalavimas}} & \textbf{Svarba} \tabularnewline \hline
+FR\rownumberfr & Pradiniame lange, paspaudus mygtuką “Registracija kompanijai”, atsiveria registracijos anketa. & Būtina\tabularnewline \hline
+FR\rownumberfr & Anketoje kompanija privalo įrašyti savo pavadinimą, administracinį kompanijos elektroninio pašto adresą ir slaptažodį bei gali pateikti nuotrauką ar kompanijos logotipą. & Būtina\tabularnewline \hline
+FR\rownumberfr & Tikrinama, ar kompanijos el. pašto adresas yra validus ir ar tokia kompanija dar nėra užregistruota. & Būtina\tabularnewline \hline
+FR\rownumberfr & Jei duomenys netinkami, apie tai yra pranešama ir prašoma duomenis įvesti iš naujo. & Būtina\tabularnewline \hline
+FR\rownumberfr & Jei duomenys įvesti tinkamai, jie yra išsaugomi į duomenų bazę, kompanija yra informuojama apie sėkmingą registraciją pranešimu. & Būtina\tabularnewline \hline
+FR\rownumberfr & Įvykdžius sėkmingą registraciją, pateiktu elektroninio pašto adresu išsiunčiamas pranešimas su galimybe patvirtinti registraciją. Kompanijai patvirtinus registraciją, ji yra baigiama. & Būtina\tabularnewline \hline
+\caption{Funkciniai registracijos reikalavimai kompanijos perspektyva.}
+\end{longtable}
+
+\subsection{Prisijungimas}
+\begin{longtable}{ | >{\centering}m{2cm} | m{10cm} | >{\centering}m{2.5cm} | } \hline
+\multicolumn{3}{ |l| }{\textbf{Prisijungimo reikalavimai:}} \tabularnewline \hline
+\textbf{Numeris} & \centering{\textbf{Reikalavimas}} & \textbf{Svarba} \tabularnewline \hline
+FR\rownumberfr & Prisijungimo metu, kompanijai yra palikta galimybė pasirinkti, ar prisijungti naudojant kompanijos vardą, ar elektroninį paštą. & Pageidautina\tabularnewline \hline
+FR\rownumberfr & Prisijungimo metu kompanija privalo įvesti slaptažodį. & Būtina\tabularnewline \hline
+FR\rownumberfr & Programėlė tikrina, ar kompanijos vardas ir slaptažodis įvesti teisingai, jei ne, tai turi būti pranešta kompanijai ir paprašoma iš naujo įvesti duomenis. & Būtina\tabularnewline \hline
+FR\rownumberfr & Jei kompanija buvo prisijungusi prie žaidimo ir neatsijungė, kitus kartus ji prijungiama paleidus programėlę be duomenų įvedimo. & Būtina\tabularnewline \hline
+FR\rownumberfr & Prisijungusi kompanija gali atsijungti. & Būtina\tabularnewline \hline
+FR\rownumberfr & Kompanijai pamiršus slaptažodį, jis gali būti pakeičiamas naudojantis elektroniniu paštu. Kompanija gali pateikti prašymą pakeisti slaptažodį, tada į jos paštą bus atsiunčiamas laiškas su nauju slaptažodžiu ir nuoroda, patvirtinančia operaciją. & Būtina\tabularnewline \hline
+\caption{Funkciniai prisijungimo reikalavimai kompanijos perspektyva.}
+\end{longtable}
+
+\subsection{Pagrindinis langas}
+\begin{longtable}{ | >{\centering}m{2cm} | m{10cm} | >{\centering}m{2.5cm} | } \hline
+\multicolumn{3}{ |l| }{\textbf{Pagrindinio lango reikalavimai:}} \tabularnewline \hline
+\textbf{Numeris} & \centering{\textbf{Reikalavimas}} & \textbf{Svarba} \tabularnewline \hline
+FR\rownumberfr & Kompanija gali patekti į savo siūlomų žaidimų sąrašą. & Būtina\tabularnewline \hline
+FR\rownumberfr & Kompanija gali patekti į savo sekėjų sąrašą. & Būtina\tabularnewline \hline
+FR\rownumberfr & Kompanija gali patekti į renginio kūrimo langą. & Būtina\tabularnewline \hline
+FR\rownumberfr & Kompanija gali patekti į paskyros nustatymų langą. & Būtina\tabularnewline \hline
+FR\rownumberfr & Kompanija gali atsijungti. & Būtina\tabularnewline \hline
+\caption{Funkciniai pagrindinio lango reikalavimai kompanijos perspektyva.}
+\end{longtable}
+
+\subsection{Kompanijos siūlomų žaidimų langas}
+\begin{longtable}{ | >{\centering}m{2cm} | m{10cm} | >{\centering}m{2.5cm} | } \hline
+\multicolumn{3}{ |l| }{\textbf{Kompanijos siūlomų žaidimų lango reikalavimai:}} \tabularnewline \hline
+\textbf{Numeris} & \centering{\textbf{Reikalavimas}} & \textbf{Svarba} \tabularnewline \hline
+FR\rownumberfr & Kompanija gali filtruoti ir rikiuoti žaidimų sąrašą pagal jų populiarumą, sukūrimo datą, vartotojų įvertinimus, temą ir pobūdį (strateginis, asociacijų, kortų ir pan.) & Būtina\tabularnewline \hline
+FR\rownumberfr & Pasirinkusi žaidimą, kompanija gali peržiūrėti platesnį jo aprašymą, jį redaguoti. & Būtina\tabularnewline \hline
+FR\rownumberfr & Kompanija gali išimti žaidimą iš sąrašo. & Būtina\tabularnewline \hline
+\caption{Funkciniai kompanijos siūlomų žaidimų lango reikalavimai kompanijos perspektyva.}
+\end{longtable}
+
+\subsection{Kompanijos sekėjų langas}
+\begin{longtable}{ | >{\centering}m{2cm} | m{10cm} | >{\centering}m{2.5cm} | } \hline
+\multicolumn{3}{ |l| }{\textbf{Kompanijos sekėjų lango reikalavimai:}} \tabularnewline \hline
+\textbf{Numeris} & \centering{\textbf{Reikalavimas}} & \textbf{Svarba} \tabularnewline \hline
+FR\rownumberfr & Kompanija gali pasiekti visų vartotojų, sekančių kompaniją, profilius, išsiųsti kiekvienam kompaniją sekančiam vartotojui asmenišką pranešimą. & Būtina\tabularnewline \hline
+FR\rownumberfr & Kompanija gali išsiųsti bendrą reklaminį pranešimą visiems ją sekantiems vartotojams, peržiūrėti anksčiau išsiųstus pranešimus ir atsakymus į juos. & Būtina\tabularnewline \hline
+FR\rownumberfr & Kompanija gali ieškoti naujų vartotojų paskyrų, kviesti juos sekti kompaniją. & Būtina\tabularnewline \hline
+FR\rownumberfr & Kompanija gali matyti savo sekėjų skaičių. & Būtina\tabularnewline \hline
+\caption{Funkciniai kompanijos sekėjų lango reikalavimai kompanijos perspektyva.}
+\end{longtable}
+
+\section{Funkciniai reikalavimai administracijos perspektyva}
+
+\subsection{Informacijos duomenų bazėje tvarkymas}
+\begin{longtable}{ | >{\centering}m{2cm} | m{10cm} | >{\centering}m{2.5cm} | } \hline
+\multicolumn{3}{ |l| }{\textbf{Informacijos duomenų bazėje tvarkymo reikalavimai:}} \tabularnewline \hline
+\textbf{Numeris} & \centering{\textbf{Reikalavimas}} & \textbf{Svarba} \tabularnewline \hline
+FR\rownumberfr & Galimybė ištrinti netinkamą žaidimą. & Būtina\tabularnewline \hline
+FR\rownumberfr & Galimybė atrinkti žaidžiamiausius žaidimus, juos peržiūrėti. & Būtina\tabularnewline \hline
+FR\rownumberfr & Galimybė identifikuoti patraukliausias vietas žaisti. & Būtina\tabularnewline \hline
+FR\rownumberfr & Galimybė rikiuoti vartotojus pagal įspėjimų kiekį. & Būtina\tabularnewline \hline
+\caption{Funkciniai informacijos duomenų bazėje tvarkymo reikalavimai administracijos perspektyva.}
+\end{longtable}
+
+\subsection{Vartotojų blokavimas}
+\begin{longtable}{ | >{\centering}m{2cm} | m{10cm} | >{\centering}m{2.5cm} | } \hline
+\multicolumn{3}{ |l| }{\textbf{Vartotojų blokavimo reikalavimai:}} \tabularnewline \hline
+\textbf{Numeris} & \centering{\textbf{Reikalavimas}} & \textbf{Svarba} \tabularnewline \hline
+FR\rownumberfr & Galimybė duoti įspėjimą žaidėjui. & Būtina\tabularnewline \hline
+FR\rownumberfr & Galimybė blokuoti žaidėją. & Būtina\tabularnewline \hline
+FR\rownumberfr & Galimybė atblokuoti žaidėją & Būtina\tabularnewline \hline
+\caption{Funkciniai vartotojų blokavimo reikalavimai administracijos perspektyva.}
+\end{longtable}
+
+\subsection{Informacijos atnaujinimas}
+\begin{longtable}{ | >{\centering}m{2cm} | m{10cm} | >{\centering}m{2.5cm} | } \hline
+\multicolumn{3}{ |l| }{\textbf{Informacijos atnaujinimo reikalavimai:}} \tabularnewline \hline
+\textbf{Numeris} & \centering{\textbf{Reikalavimas}} & \textbf{Svarba} \tabularnewline \hline
+FR\rownumberfr & Galimybė įkelti naujausią programėlės versiją. & Būtina\tabularnewline \hline
+FR\rownumberfr & Administratorius gali atsakyti į atsiliepimus Google Play, App ir Windows Phone store aplikacijų parduotuvėse. & Būtina\tabularnewline \hline
+\caption{Funkciniai informacijos atnaujinimo reikalavimai administracijos perspektyva.}
+\end{longtable}
+
+\subsection{Klaidų taisymas}
+\begin{longtable}{ | >{\centering}m{2cm} | m{10cm} | >{\centering}m{2.5cm} | } \hline
+\multicolumn{3}{ |l| }{\textbf{Klaidų taisymo reikalavimai:}} \tabularnewline \hline
+\textbf{Numeris} & \centering{\textbf{Reikalavimas}} & \textbf{Svarba} \tabularnewline \hline
+FR\rownumberfr & Galimybė redaguoti programos kodą, pateikti programėlės atnaujinimą į aplikacijų parduotuves. & Būtina\tabularnewline \hline
+FR\rownumberfr & Galimybė testuoti atnaujintą programėlės versiją. & Būtina\tabularnewline \hline
+\caption{Funkciniai Klaidų taisymo reikalavimai administracijos perspektyva.}
+\end{longtable}
 
 \section{Nefunkciniai reikalavimai}
 
@@ -242,7 +519,11 @@ NFR\rownumber & Pasirinkimas pateikti prašymą prisijungti prie žaidimo yra ro
 NFR\rownumber & Pasirinkimas pasiųsti pakvietimą rodomas žmogeliukio su “+” pavidalu. & Būtina\tabularnewline \hline
 NFR\rownumber & Jei draugas prisijungęs, prie jo vardo draugų sąraše rodomas žalias užpildytas apskritimas. & Būtina\tabularnewline \hline
 NFR\rownumber & Registracija per Facebook ar Google anketas rodoma jų atitinkamais simboliais. & Būtina\tabularnewline \hline
+NFR\rownumber & Šalia įvesto prisijungimo vardo atsiradusi žalia varnelė simbolizuoja tinkamą vartotojo vardą. & Būtina\tabularnewline \hline
+NFR\rownumber & Šalia įvesto prisijungimo vardo atsiradęs raudonas “X” simbolis simbolizuoja netinkamą vartotojo vardą. & Būtina\tabularnewline \hline
 \caption{Nefunkciniai dalykinės srities metaforų reikalavimai}
 \end{longtable}
 
 \end{document}
+
+
