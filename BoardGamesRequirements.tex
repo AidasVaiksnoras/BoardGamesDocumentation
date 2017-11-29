@@ -40,15 +40,23 @@
 \maketitle
 
 \sectionnonum{Anotacija}
-Šiame dokumente pristatomas mobiliosios stalo žaidimų programėlės Board Games 4+1 architektūrinis
-modelis, kurį sudaro loginis, kūrimo, fizinis, procesų ir užduočių pjūviai, visi kartu parodantys
-sistemą iš skirtingų pusių, papildantys vieni kitus. Modelio pagrindas - standartinės UML diagramos.
+Šis 2-ojo laboratorinio darbo dokumentas yra skirtas aprašyti stalo žaidimų mobiliosios programėlės reikalavimų specifikacijai. Dokumente išdėstomi pagrindiniai sistemos reikalavimai, kurie formuluojami po dalykinės verslo srities analizės jau turint konkretesnį kuriamos sistemos poreikių sąrašą.
 
 \tableofcontents
 
 \sectionnonum{Įvadas}
-Board Games - tai aplikacija, sujungianti norinčius žaisti stalo žaidimus žmones
-su tais, kuriems trūksta žaidėjų. 
+\textbf{Dalykinė sritis:} stalo žaidimai
+
+\textbf{Probleminė sritis:} siekiama išspręsti stalo žaidimų žaidėjų skaičiaus trūkumo realiame pasaulyje problemą.
+
+Programėlės vartotojai: 
+\begin{itemize}
+	\item Stalo žaidimų mėgėjai
+	\item Stalo žaidimų kūrimo kompanijos
+\end{itemize}
+
+Stalo žaidimų mobilioji programėlė yra projektas, skirtas išnaudoti dar neužpildytą nišą mobiliųjų programėlių versle, sukuriant nemokamą, reklama pagrįstą programėlę, skirtą stalo žaidimų mėgėjams. 
+Šio antrojo laboratorinio darbo paskirtis yra susipažinti su kuriamos sistemos achitektūros reikalavimų (funkcinių, nefunkcinių, vartotojo sąsajos) sudarymo eiga ir detalėmis.
 
 \section{Funkciniai reikalavimai asmeninio vartotojo perspektyva}
 
@@ -523,6 +531,133 @@ NFR\rownumber & Šalia įvesto prisijungimo vardo atsiradusi žalia varnelė sim
 NFR\rownumber & Šalia įvesto prisijungimo vardo atsiradęs raudonas “X” simbolis simbolizuoja netinkamą vartotojo vardą. & Būtina\tabularnewline \hline
 \caption{Nefunkciniai dalykinės srities metaforų reikalavimai}
 \end{longtable}
+
+\section{Sąsajos reikalavimai}
+
+\newcounter{ircount}
+\newcommand\rownumberir{\stepcounter{ircount}\arabic{ircount}}
+
+\subsection{Pagrindinių vartotojo įrankių reikalavimai}
+\begin{longtable}{ | >{\centering}m{2cm} | m{10cm} | >{\centering}m{2.5cm} | } \hline
+\multicolumn{3}{ |l| }{\textbf{Pagrindinių vartotojo įrankių reikalavimai}} \tabularnewline \hline
+\textbf{Numeris} & \centering{\textbf{Reikalavimas}} & \textbf{Svarba} \tabularnewline \hline
+IR\rownumberir & Perėjimui iš vienos vietos į kitą naudojami mygtukai. & Būtina\tabularnewline \hline
+IR\rownumberir & Paieškai naudojami įvedimo langai su paieškos mygtuku. & Būtina\tabularnewline \hline
+IR\rownumberir & Sėkmingai įvykdžius veiksmą (registraciją, žaidimo sukūrimą, prisijungimą, patalpinimą) iššoka patvirtinantis langas su sėkmingai atlikto veiksmo pranešimu. & Būtina\tabularnewline \hline
+IR\rownumberir & Įvykus klaidai, iššoka pranešimas su klaidos žinute. & Būtina\tabularnewline \hline
+IR\rownumberir & Ikonos - piktogramos, naudojamos programėlės interfeise informacijos papildymui. & Būtina\tabularnewline \hline
+IR\rownumberir & Mygtukai – skirti patekti į kitą programėlės langą. & Būtina\tabularnewline \hline
+IR\rownumberir & Įvedimo laukai – skirti vartotojui įvesti tekstinius duomenis. & Būtina\tabularnewline \hline
+IR\rownumberir & Pranešimų langai – iššokantys langai, informuojantys apie svarbią informaciją. & Būtina\tabularnewline \hline
+IR\rownumberir & Patvirtinimų langai – iššokantys langai, prašantys vartotojo patvirtinimo prieš atliekant svarbų veiksmą. & Būtina\tabularnewline \hline
+IR\rownumberir & Žemėlapis – integruotas Google Maps žemėlapis, skirtas matyti aplink vyksiančius žaidimus. & Būtina\tabularnewline \hline
+IR\rownumberir & Meniu - pagrindinė vartotojo sąsaja su programėle, iš kurio galima pasiekti kitus programėlės langus. & Būtina\tabularnewline \hline
+\caption{Pagrindinių vartotojo įrankių sąsajos reikalavimai.}
+\end{longtable}
+
+\subsection{Vartotojo įrašų formulavimo reikalavimai}
+\begin{longtable}{ | >{\centering}m{2cm} | m{10cm} | >{\centering}m{2.5cm} | } \hline
+\multicolumn{3}{ |l| }{\textbf{Vartotojo įrašų formulavimo reikalavimai}} \tabularnewline \hline
+\textbf{Numeris} & \centering{\textbf{Reikalavimas}} & \textbf{Svarba} \tabularnewline \hline
+IR\rownumberir & Vartotojo vardui skiriama ne daugiau nei 20 simbolių, jis privalo būti unikalus. & Būtina\tabularnewline \hline
+IR\rownumberir & Vartotojo slaptažodžiui skiriama ne daugiau nei 20 simbolių. & Būtina\tabularnewline \hline
+IR\rownumberir & Vartotojo slaptažodis negali būti trumpesnis nei 8 simboliai. & Būtina\tabularnewline \hline
+IR\rownumberir & Vartotojo rašomų atsiliepimų, aprašymų simbolių skaičius neribojamas. & Būtina\tabularnewline \hline
+\caption{Vartotojo įrašų formulavimo sąsajos reikalavimai.}
+\end{longtable}
+
+\subsection{Programėlės pranešimų formulavimo reikalavimai}
+\begin{longtable}{ | >{\centering}m{2cm} | m{10cm} | >{\centering}m{2.5cm} | } \hline
+\multicolumn{3}{ |l| }{\textbf{Programėlės pranešimų formulavimo reikalavimai}} \tabularnewline \hline
+\textbf{Numeris} & \centering{\textbf{Reikalavimas}} & \textbf{Svarba} \tabularnewline \hline
+IR\rownumberir & Visi pranešimai privalo būti vienareikšmiški, lengvai suprantami, kuo trumpesni ir tiksliai pateikiantys informaciją. & Būtina\tabularnewline \hline
+IR\rownumberir & Sėkmingo įvykio pranešimai turi būti pažymėti žalia varnele, klaidos pranešimai - raudomu kryžiuku. & Būtina\tabularnewline \hline
+\caption{Programėlės pranešimų formulavimo sąsajos reikalavimai.}
+\end{longtable}
+
+\subsection{Interfeiso individualizavimo reikalavimai}
+\begin{longtable}{ | >{\centering}m{2cm} | m{10cm} | >{\centering}m{2.5cm} | } \hline
+\multicolumn{3}{ |l| }{\textbf{Interfeiso individualizavimo reikalavimai}} \tabularnewline \hline
+\textbf{Numeris} & \centering{\textbf{Reikalavimas}} & \textbf{Svarba} \tabularnewline \hline
+IR\rownumberir & Vartotojas gali pakeisti šrifto dydį. & Būtina\tabularnewline \hline
+IR\rownumberir & Vartotojas gali pakeisti kalbą. & Pageidautinas\tabularnewline \hline
+IR\rownumberir & Vartotojas gali pakeisti aplinkos spalvą. & Pageidautinas\tabularnewline \hline
+\caption{Interfeiso individualizavimo sąsajos reikalavimai.}
+\end{longtable}
+
+\subsection{Interfeiso reikalavimai}
+\begin{longtable}{ | >{\centering}m{2cm} | m{10cm} | >{\centering}m{2.5cm} | } \hline
+\multicolumn{3}{ |l| }{\textbf{Interfeiso reikalavimai}} \tabularnewline \hline
+\textbf{Numeris} & \centering{\textbf{Reikalavimas}} & \textbf{Svarba} \tabularnewline \hline
+IR\rownumberir & Pagrindinis informacijos perdavimo naudotojui būdas – vaizdinė medžiaga. Stengiamasi minimizuoti teksto kiekį, į pagalbą pasitelkti paveiksliukus bei spalvas, tačiau neprarasti aiškumo. & Būtina\tabularnewline \hline
+IR\rownumberir & Vartotojo interfeise visi grafiniai objektai dera tarpusavy (t.y. mygtukai, pranešimai, patvirtinimo langai ir kiti grafiniai objektai skirtinguose aplikacijos languose yra vienodos išvaizdos). & Būtina\tabularnewline \hline
+IR\rownumberir & Vartotojo interfeisas turi atitikti operacinės sistemos, kurioje programa naudojama, standartą. & Būtina\tabularnewline \hline
+IR\rownumberir & Meniu patalpintas patogioje vartotojui vietoje, netrukdo turinio peržiūrai, tačiau yra visada pasiekiamas. & Būtina\tabularnewline \hline
+IR\rownumberir & Svetainė bei programėlė neturi būti perpildyta reklamomis. & Būtina\tabularnewline \hline
+IR\rownumberir & Reklamos turi būti neįkyrios. & Būtina\tabularnewline \hline
+IR\rownumberir & Reklamos turi netrukdyti naudotis sistema. & Būtina\tabularnewline \hline
+IR\rownumberir & Reklamos turi būti ne interaktyvios. & Būtina\tabularnewline \hline
+IR\rownumberir & Reklamos talpinamos ekrano apačioje. & Būtina\tabularnewline \hline
+\caption{Interfeiso reikalavimai.}
+\end{longtable}
+
+\section{Prototipas}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.9]{img/entrance_window}
+	\caption{Langas, rodomas atidarius programėlę}
+	\label{img:entrance_window}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.9]{img/company_register}
+	\caption{Naujos kompanijos registracijos langas}
+	\label{img:company_register}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.9]{img/login_window}
+	\caption{Prisijungimo langas}
+	\label{img:login_window}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.9]{img/main_window}
+	\caption{Pagrindinis langas}
+	\label{img:main_window}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.9]{img/host_game_window}
+	\caption{Žaidimo kūrimo langas}
+	\label{img:host_game_window}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.9]{img/game_sessions_view}
+	\caption{Žaidimų pasirinkimo langas}
+	\label{img:game_sessions_view}
+\end{figure}
+
+\sectionnonum{Rezultatas}
+Dokumente detaliai apibrėžti mobiliosios stalo žaidimų programėlės architektūros funkciniai reikalavimai iš asmeninio vartotojo, kompanijos, administracijos perspektyvos, taip pat nefunkciniai, vartotojo sąsajos reikalavimai. Pagal užsakovo poreikius išskirtos dvi vartotojų kategorijos - paprasti vartotojai, žaidžiantys stalo žaidimus ir stalo žaidimų kūrimo kompanijos, pranešančios naujienas, organizuojančios konkursus, matančios stalo žaidimų sesijų visumos statistiką. Taip pat dokumento priede pateikti numatomos sistemos vartotojo sąsajos brėžiniai, leidžiantys geriau suvokti numatomas sistemos sąsajos galimybes.
+
+\sectionnonum{Išvada}
+Apibrėžtų stalo žaidimų programėlės architektūros reikalavimų visuma leidžia vykdyti tolimesnį etapą - konkrečios sistemos kūrimo darbus, pasitelkiant IT architektus ir programuotojus. Sukurtų reikalavimų sėkmės požymis - dokumentas vienareikšmiškai vienodai suvokiamas tiek verslo aplinkos žmonių, tiek ir IT srities atstovų.
+
+\sectionnonum{Literatūros sąrašas}
+\begin{itemize}
+	\item Doc. dr. K. Petrausko Programų Sistemų Inžinerijos kurso konspektai
+    \item A. Abran, J. W. Moore, P.Bourque, R. Dupuis, L. L. Tripp - ,,Guide to the Software Engineering Body of Knowledge''
+	\item UML dokumentacija \url{https://www.tutorialspoint.com/uml/uml_2_overview.htm}
+	\item OMG UML v.2.5 Dokumentacija diagramoms, žymėjimui
+\end{itemize}
 
 \end{document}
 
