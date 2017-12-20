@@ -47,7 +47,7 @@ tikrose uždarose grupėse (pvz. butų, bendrabučių gyventojai ar festivalių 
 
 \tableofcontents
 
-\section{Įvadas}
+\sectionnonum{Įvadas}
 \textbf{Darbo tikslas}\\
 Išanalizuoti esamą stalo žaidimų organizavimo rinką ir pasitelkus analizę sukurti naują projektą, 
 gebantį sujungti žmones bendram laisvalaikio praleidimui žaidžiant stalo žaidimus, pasitelkiant 
@@ -380,7 +380,7 @@ grafinio dizaino, pasiekiamumo patobulinimų.
 			\end{itemize}			
 \section{Verslo proceso tobulinimo strategija}
 Sistema gali būti naudojama siekiant skirtingų tikslų, todėl išskyrėme tris 
-vartotojų grupes: vartotojus (1 pav), žaidimų kūrėjus (2 pav) ir administratorius 
+vartotojų grupes: vartotojus (žr. 1 pav.), žaidimų kūrėjus (žr. 7 pav.) ir administratorius (žr. 9 pav.)
 (3asfd pav).
 	\subsection {Scenarijus}
 		\subsubsection {Vartotojo perspektyva}
@@ -393,7 +393,7 @@ vartotojų grupes: vartotojus (1 pav), žaidimų kūrėjus (2 pav) ir administra
 			
 			\begin{enumerate}
 			\item Prisijungti prie žaidimo - vartotojas gali prisijungti prie 
-				jau egzistuojančio žaidimo, kuriam įvykti trūksta kelių žaidėjų. (žr. \ref{img:JoinGameSequence} pav.)
+				jau egzistuojančio žaidimo, kuriam įvykti trūksta kelių žaidėjų. (žr. 2 pav.)
 				\begin{figure}[H]
 					\centering
 					\includegraphics[scale=0.5]{img/JoinGameSequence}
@@ -411,7 +411,7 @@ vartotojų grupes: vartotojus (1 pav), žaidimų kūrėjus (2 pav) ir administra
 					praneša, apie sėkmingą prisijungimą.
 				
 			\item Sukurti žaidimą - vartotojas gali inicijuoti privatų arba viešą 
-			žaidimą, pasirinkti žaidėjų skaičių, žaidimo vietą, laiką (žr. \ref{img:CreateGameSequence} pav.).
+			žaidimą, pasirinkti žaidėjų skaičių, žaidimo vietą, laiką (žr. 3 pav.).
 				\begin{figure}[H]
 					\centering
 					\includegraphics[scale=0.5]{img/CreateGameSequence}
@@ -426,7 +426,7 @@ vartotojų grupes: vartotojus (1 pav), žaidimų kūrėjus (2 pav) ir administra
 					pateikia. Vartotojas yra informuojamas apie sėkmingą žaidimo sukūrimą.	
 					
 			\item Pakviesti draugą žaisti - vartotojas gali pakviesti draugą žaisti 
-			pasirinktą žaidimą, jei yra pakankamai laisvų vietų (žr. \ref{img:InviteFriendSequence} pav.).
+			pasirinktą žaidimą, jei yra pakankamai laisvų vietų (žr. 4 pav.).
 				\begin{figure}[H]
 					\centering
 					\includegraphics[scale=0.5]{img/InviteFriendSequence}
@@ -442,7 +442,7 @@ vartotojų grupes: vartotojus (1 pav), žaidimų kūrėjus (2 pav) ir administra
 					vartotojui pranešama, apie sėkmingą kvietimo išsiuntimą.
 				
 			\item Parašyti žinutę draugui - vartotojas aplikacijoje gali bendrauti 
-			su draugais žinutėmis. (žr. \ref{img:SendMessageSequence} pav.).
+			su draugais žinutėmis. (žr. 5 pav.).
 				\begin{figure}[H]
 					\centering
 					\includegraphics[scale=0.5]{img/SendMessageSequence}
@@ -455,7 +455,7 @@ vartotojų grupes: vartotojus (1 pav), žaidimų kūrėjus (2 pav) ir administra
 					susirašinėjimų lange, vartotojas gali išsiųsti žinutę.
 					
 			\item Dalyvauti renginyje - vartotojas gali dalyvauti žaidimų kūrėjų 
-			inicijuotame renginyje ar varžybose. (žr. \ref{img:ParticipateEventSequence} pav.).
+			inicijuotame renginyje ar varžybose. (žr. 6 pav.).
 				\begin{figure}[H]
 					\centering
 					\includegraphics[scale=0.5]{img/ParticipateEventSequence}
@@ -466,12 +466,68 @@ vartotojų grupes: vartotojus (1 pav), žaidimų kūrėjus (2 pav) ir administra
 					Vartotojui suteikiama galimybė peržiūrėti savo draugų sąrašą, 
 					pasirinkus vieną ar daugiau draugų, atsidariusiame 
 					susirašinėjimų lange, vartotojas gali išsiųsti žinutę					
-		\end{enumerate}	
-		
+			\end{enumerate}	
+
+		\subsubsection {Žaidimų kūrėjo perspektyva}
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.5]{img/CreatorUseCase}
+				\caption{Žaidimų kūrėjo scenarijaus sekų diagrama}
+				\label{img:CreatorUseCase}
+			\end{figure}
 			
-		\subsubsection {Žaidimų kūrėjo}
+			\begin{enumerate}
+			\item Prisijungti prie žaidimo - vartotojas gali prisijungti prie 
+				jau egzistuojančio žaidimo, kuriam įvykti trūksta kelių žaidėjų. (žr. 8 pav.)			
+			\item Sukurti žaidimą - vartotojas gali inicijuoti privatų arba viešą 
+			žaidimą, pasirinkti žaidėjų skaičių, žaidimo vietą, laiką (žr. 8 pav.).
+				\begin{figure}[H]
+					\centering
+					\includegraphics[scale=0.5]{img/CreateEventSequence}
+					\caption{Renginio kūrimo sekų diagrama}
+					\label{img:CreateEventSequence}
+				\end{figure}
+				\textbf{Aprašas:}\\
+					Žaidimų kūrėjai gali prisijungti prie atskiros paskyros, čia 
+					peržiūrėti jau sukurtų žaidimų sąrašą ir pridėti naują renginį. 
+					Atsivėrusioje renginio kūrimo formoje kūrėjas turi įvesti 
+					pageidaujamus duomenis (renginio vietą, laiką, pobūdį, aprašymą 
+					ir t.t.), juos  patvirtinti. Pranešama apie sėkmingą renginio 
+					sukūrimą, tada į šį renginį kūrėjas gali kviesti norimus 
+					žaidėjus. Jam parodomi jį sekantys žaidėjai, kūrėjas gali 
+					pasirinkti kelis ar visus žaidėjus iš sąrašo. Pranešama apie 
+					sėkmingai išsiųstus kvietimus.											
+			\end{enumerate}		
+			
 		\subsubsection {Administratoriaus}
-		
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.5]{img/UserUseCase}
+				\caption{Administratoriaus sistemos naudojimo scenarijus}
+				\label{img:UserUseCase}
+			\end{figure}
+			
+			\begin{enumerate}
+				\item Trinti žaidimą - administratorius pasilieka teisę trinti 
+				taisyklių neatitinkančius žaidimus.
+				\item Blokuoti vartotoją - administratorius pasilieka teisę blokuoti 
+				taisyklių nesilaikantį vartotoją.
+				\item Nutraukti bendradarbiavimą su žaidimų kūrėju - administratorius 
+				turi teisę nutraukti kontraktą su žaidimų kūrėju dėl pažeistų platformos taisyklių.			
+			\end{enumerate}	
+			
+	\subsection {Sistemos teikiama nauda}
+	BoardGames platforma sujungia stalo žaidimų entuziastus, kurie nori žaisti 
+	stalo žaidimus neturinčius draugų, žaisiančių konkretų žaidimą, su tais, 
+	kuriems trūksta kelių žaidėjų iki pilnos žaidėjų komplektacijos. Taip pat 
+	platforma leidžia žaidimų kūrėjų bendrovėms reklamuoti kuriamus žaidimus, 
+	rengiant specialius renginius, susitikimus, varžybas, konferencijas. Sistema 
+	neabejotinai teikia komercinę naudą žaidimų kūrėjams, jie nesunkiai gali 
+	pasiekti tikslinę auditoriją klientams patraukliomis priemonėmis. Kita vertus, 
+	sistema padeda žmonėms plėsti savo socialinį akiratį, susirasti bendraminčių 
+	ar net draugų. Taip pat sistema supaprastina stalo žaidimų organizavimą vos iki 
+	kelių ekrano paspaudimų, todėl tai galima padaryti kaip niekad greitai.	
+	
 	\subsection {Esama būklė}
 	Šiuo metu BoardGames komanda turi:
 	\renewcommand{\labelitemi}{$\bullet$}
@@ -495,5 +551,221 @@ vartotojų grupes: vartotojus (1 pav), žaidimų kūrėjus (2 pav) ir administra
 			\item Patyrę programuotojai aplikacijai sukurti.
 			\item Rinkodaros strategija.
 			\item Numatytos lėšos aplikacijos talpinimui skirtingų platformų aplikacijų parduotuvėse.
-		\end{itemize}		
+		\end{itemize}	
+\section {Įgyvendinamumo ir naudos analizė}		
+	\subsection{Operacinis įgyvendinamumas}
+		\noindent \textbf{Problema} Klientai gali nesinaudoti programėle, nes gali manyti, kad esančios alternatyvos (socialiniai tinklai (pvz. “Facebook”) yra patogesni.\\
+		\noindent \textbf{Problemos sprendimas} Akcentuoti programėlės patogumą ir paprastumą. \\
+
+		\noindent \textbf{Problema} Klientai gali nesinaudoti programėle, nes gali manyti, kad neverta jos siųstis, jei ja planuoja naudotis tik kelis kartus. \\
+		\noindent \textbf{Problemos sprendimas} Stengtis pernelyg daug neišplėsti programėlės funkcionalumo, padaryti programėlę paprastą, kad ji užimtų ne daug vietos telefone. Be to, būtų numatytas ir alternatyvios web aplikacijos sukūrimas, kuri naudotų tą patį serverio API, todėl susirasti ar sukurti žaidimą būtų galima tiesiog naudojant naršyklę.\\
+		
+		\noindent \textbf{Problema} Nors vienas sėkmingo programėlės naudotojo apgavimo atvejis, paskelbtas viešai, galėtų tapti programėlės gyvavimo ir pačio projekto pabaiga dėl teisinių institucijų reikalavimo uždaryti/riboti veiklą.\\
+		\noindent \textbf{Problemos sprendimas} Būtina įvesti tam tikro lygio vartotojų identifikaciją siekiant užtikrinti, jog tiek kuriantys, tiek ir prisijungiantys žmonės žinotų, su kuo turi reikalų. Taip pat galima įvesti reitingavimo, atsiliepimų sistemas, kurios leistų lengvai nustatyti įtartinos reputacijos naudotojus, kuriančius (hosting) žaidimo sesijas ar prie jų norinčius prisijungti. Įvykdžius pastaruosius reikalavimus programėlė pasižymėtų socialiniu saugumu, o tai reklamuojant galima išgauti strateginį pranašumą prieš galimus konkurentus.\\
+		
+		\noindent \textbf{Problema} Mobilioji programėlė taikoma į labai ribotą ir tikslinę auditoriją – tai žmonės, kurie itin mėgsta stalo žaidimus. Ši pastaba leidžia daryti prielaidą, jog didžioji dalis potencialių vartotojų būtų jaunesnio amžiaus ir/arba vyresni žmonės, kurie labiau mėgsta anime kultūrą, loginį mąstymą.\\
+		\noindent \textbf{Problemos sprendimas} Itin tikslinga ir siaura auditorija yra labai paranki, nes leidžia labiau numatyti potencialių vartotojų elgseną, pomėgius, todėl vykdant reklamines kampanijas galima lengviau pasiekti naują vartotoją. Taip pat galimybė tartis su įvairių stalo žaidimų kūrėjais dėl partnerystės galimybių. Pvz. programėlės naudotojas per ją tiesiogiai sužino apie naują stalo žaidimą, užsinori jį įsigyti, tai gali padaryti programėlės pagalba, su kuria pvz. jis gautų tam tikrą nuolaidą, o mes – programėlės kūrėjai – galime susitarti dėl papildomo finansavimo ar komisinių galimybės iš stalo žaidimų kūrėjų. Dėl tikslingos auditorijos žaidimų įsigyjimo konversijos rodiklis būtų aukštas.\\
+		
+		\noindent \textbf{Problema} Tam tikrais laiko tarpais bei aplikacijos išleidimo pradžioje gali trūkti vartotojų, todėl programėlės užimtumas bus labai mažas ir ilgai truks pradėti naujus žaidimus.\\
+		\noindent \textbf{Problemos sprendimas} Leisti vartotojams prisijungti naudojantis dabartiniais socialiniais tinklais ir pakviesti juose esančius draugus parsisiųsti programėlę. Vartotojai, sudalyvavę žaidime pirmomis išleidimo savaitėmis, galėtų gauti prizų. \\
+		
+		\noindent \textbf{Problema} Labai maža klientų dalis gali pirkti paslaugą, skirtą iškelti kuriamą žaidimą bendrame žaidimų sąraše.\\
+		\noindent \textbf{Problemos sprendimas} Samdyti marketingo specialistą, kuris padėtų programėlės vartotojus įtikinti mokamos paslaugos svarba. \\
+		
+		\noindent \textbf{Problema} Vartotojai gali neapsilankyti programėlėje ilgą laiko tarpą.\\
+		\noindent \textbf{Problemos sprendimas} Įgyvendinti funkcionalumą, kuris vartotojui skirtų prizą įsijungus aplikaciją bent kartą kiekvieną dieną. Epizodiškai siųsti vartotojui pranešimus apie netoli jo įvyksiantį žaidimą, kurį vartotojas yra įtraukęs į savo mėgstamų žaidimų sąrašą arba žaidimą, kuriame dalyvauja vartotojo draugai, su kvietimu prisijungti prie jo. Reklamuojant programėlę, bandyti įtikinti vartotojus, kad jie pakviestų savo draugus įsitraukti į programėlės veiklą ir taip sukurti naudotojų mėgstamą laisvalaikio praleidimo formą, kurią jie naudotų reguliariai.\\
+		
+		\noindent \textbf{Problema} Vartotojo operacinė sistema gali būti atgyvenusi.\\
+		\noindent \textbf{Problemos sprendimas} Suprogramuoti aplikaciją taip, kad ji būtų prieinama kuo didesniam operacinių sistemos versijų diapazonui.\\
+		
+		\noindent \textbf{Problema} Sistemos sukūrimas. Pasamdyti darbuotojai gali neišpildyti visų norimų reikalavimų.\\
+		\noindent \textbf{Problemos sprendimas} Tam, kad sistema būtų sukurta tiksliai tokia, kokios reikalaujame, darbuotojams bus iškelti aiškūs nurodymai, sudaryti pagal reikalavimų dokumentą. \\
+		
+		\noindent \textbf{Problema} Sklandaus sistemos veikimo užtikrinimas. Tiek dėl pačios sistemos, tiek dėl vartotojų klaidų sistema gali pateikti netikslią informaciją. \\
+		\noindent \textbf{Problemos sprendimas} Tam, kad būtų sumažinti sistemos netikslumai, bus samdomi darbuotojai, kurie nuolat testuos ir sieks kuo patogesnio bei tikslesnio veikimo.\\
+		
+		\noindent \textbf{Problema} Sistemoje gali likti senų, nereikalingų duomenų, galinčių sudaryti sunkumų naudotojams, siekiantiems prisijungti prie žaidimo. \\
+		\noindent \textbf{Problemos sprendimas} Sistemoje bus įdiegta programa, kuri automatiškai po tam tikro laiko panaikins galimybę prisijungti prie jau pasibaigusio žaidimo ir kitus nebereikalingus duomenis. \\
+		
+		\noindent \textbf{Problema}  Į silpną sistemą gali įsilaužti nepageidaujami asmenys.\\
+		\noindent \textbf{Problemos sprendimas} Tam, kad į sistemą nebūtų įsilaužta ir ji nebūtų pažeista, bus samdomi darbuotojai, užtikrinantys sistemos saugumą.  \\
+		
+	\subsection{Techninis įgyvendinamumas}
+		\noindent \textbf{Problema} Sistemos veikimas bus paremtas integruoto GPS įrenginio naudojimu bei interneto ryšiu. Dauguma išmaniųjų įrenginių turi GPS paruoštą naudojimui, todėl ši sistema techniškai įgyvendinama. Kadangi žaidimas vyks miesto ribose, dėl interneto problemų kilti neturėtų. \\
+		\noindent \textbf{Problemos sprendimas} Sklandžiam veikimui užtikrinti galima duomenis kešuoti, tada sistema bus mažiau pririšta prie interneto.\\
+		
+		\noindent \textbf{Problema} Esamam personalui trūksta serverių priežiūros, duomenų bazių valdymo, internetinių svetainių bei mobiliųjų aplikacijų kūrimo ir panašių įgūdžių.\\
+		\noindent \textbf{Problemos sprendimas} Personalo apmokymas, internetinių video pamokų portalų paslaugų prenumeratų įsigijimas, individualus darbuotojų mokymasis, ekspertų pagalba. \\	
+		
+		\noindent \textbf{Problema} Serveriui, internetinei svetainei ir mobiliajai aplikacijai reikia nuolatinės priežiūros, kad duomenys visada būtų validūs, o serveris veiktų efektyviai ir vartotojui būtų malonus naudoti.\\
+		\noindent \textbf{Problemos sprendimas} Specialistų samdymas serverių techninei priežiūrai, gera backend sistema lengvai programėlės internetinės svetainės bei programėlės priežiūrai ir duomenų įvedimui, išėmimui bei keitimui. \\
+		
+		\noindent \textbf{Problema} Programėlės naudotojai, norintys teikti žaidimų pasiūlymus, turi užsiregistruoti programėlėje ir pasirinktinai pateikti savo asmeninius duomenis. Jei nebus užtikrintas sistemos saugumas, privatūs duomenys gali būti nutekinti.\\
+		\noindent \textbf{Problemos sprendimas} Samdyti duomenų saugumo specialistus, apmokyti darbuotojus, kad būtų laikomasi gerų programavimo praktikų, užtikrinančių duomenų saugumą kuriamoje sistemoje. \\
+		
+		\noindent \textbf{Problema} Užsisakant žaidimo iškėlimą sistemoje piniginės transakcijos gali būti perimtos trečių šalių asmenų ir vartotojo pinigai gali būti nesaugiai perduodami organizacijai.\\
+		\noindent \textbf{Problemos sprendimas} Bendradarbiavimas su bankais, piniginių transakcijų vykdymas per jų sistemas, taip užtikrinant vartotojų pinigų saugumą. \\
+		
+		\noindent \textbf{Problema} Laikui bėgant serveriuose neišvengiamai kaupsis vis daugiau informacijos: vartotojų duomenų, žaidimų įrašų ir pan. Paprastas komunikavimas su serveriu taps nepakankamai efektyvus ir užtruks per daug laiko.\\
+		\noindent \textbf{Problemos sprendimas} Pasirūpinti efektyvių algoritmų analize ir įgyvendinimu, kad sistema galėtų efektyviai dirbti su milžinišku kiekiu duomenų ir vartotojas nepajustų jokių šalutinių efektų. \\
+		
+	\subsection{Techninis įgyvendinamumas}	
+		Programėlės išleidimas skaičiuojamas taip: 21,12 € (išleidimo į Google 
+		Play Store kaina) + 83.63 € / m. (išleidimo į Apple Store kaina)  + 10,13 
+		€ / m. (išleidimo į Microsoft Store kaina).
+		
+		Mobiliosios aplikacijos sukūrimo kainos formulė: 5 dirbantys žmonės * 20 
+		darbo dienų (mėnuo) * 4 valandos * 15 € (valandinis užmokestis 
+		programuotojui).
+
+		Aplikacijos palaikymas skaičiuojamas taip: 1 dirbantis žmogus * 8 valandos * 4 
+		savaitės * 5,13 € (vidutinis valandinis užmokestis Lietuvoje).
+
+		Marketingo specialisto samdymo kaina skaičuojama taip: 1 dirbantis žmogus * 
+		10 valandų * 4 savaitės * 5,13 € (vidutinis valandinis užmokestis Lietuvoje).
+
+		Taip pat turime įtraukti ir lėšas, kurios bus skiriamos apmokėti SEO 
+		agentūros darbą siekiant iškelti svetainę paieškos sistemos rezultatų 
+		puslapiuose. Kadangi potencialus srautas 1 mln. Paieškų per mėnesį visame 
+		pasaulyje, todėl reikės didelės agentūros nuolatinio darbo, kaštai - 
+		500/mėn. * 12 (tikime, jog SEO agentūra rezultatą pasieks per metus) = 
+		6000€ (per dvejus metus)
+
+		Techninės įrangos kaina skaičiuota taip: Kompiuterių kaina (2 * 2 000 = 
+		4 000 €) + Telefonų kaina (3 * 400 = 1 200 €).
+		
+		\begin{longtable}{ | m{8cm} | m{8cm} | }
+		\caption{Išlaidos}
+		\label{variability_impl_mech}
+		%\endfirsthead
+		\endhead
+		 \hline			
+
+		\textbf{Dalykas} & \textbf{Kaina} \tabularnewline \hline
+		Programėlės išleidimas. & 21,12 € + 93,76 € / met. \tabularnewline \hline
+		Mobiliosios aplikacijos sukūrimo kaina. & 6000 € \tabularnewline \hline
+		Aplikacijos palaikymas. & 164,16 € / mėn. \tabularnewline \hline
+		Serverių nuoma & 80 € / mėn. \tabularnewline \hline
+		Marketingas. & 505,2 € / mėn. \tabularnewline \hline
+		Techninė įranga. & 5200 €  \tabularnewline \hline
+		Domeno išpirka. & 10 € / met. \tabularnewline \hline
+		\end{longtable}
+		
+		Bendros išlaidos per 2 metus skaičiuojamos taip (mėnesinės išlaidos 
+		dauginamos iš 20 mėnesių, nes 4 mėnesius bus kuriama aplikacija) : 
+		techninė įranga (5200 €) + aplikacijos sukūrimo kaina (6000 €) +  
+		programėlės išleidimo kaina (21,12 € + 93,76 € * 2 metai = 208,64 €) + 
+		aplikacijos palaikymo kaina (164,16 € * 20 mėn. = 3283,2 €) +  serverių 
+		nuomos kaina (80 € * 20 mėn. = 1600 €) + marketingo kaina (505,2 € * 20 
+		mėn. = 10104 €) + domeno išpirkos kaina (2 * 10 €). Iš čia gauname, kad 
+		bendros išlaidos iš viso kainuos 26415,84 €.
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.5]{img/economics}
+			\caption{Renginio kūrimo sekų diagrama}
+			\label{img:economics}
+		\end{figure}
+		
+		Maksimali galima globali auditorija paieškos tinkluose: 1 mln. Paieškų per 
+		mėnesį (atsižvelgiame tik į Google sistemą, nes ji užima didžiąją rinkos 
+		dalį). Pasitelkus SEO (Search Engine Optimisation) specialistus, marketingo 
+		ir turinio rašymo ekspertus, galima tikėtis pasiekti \#7 - \#10 pozicijas 
+		pirmame paieškos rezultatų puslapyje. Esant tokioms pozicijoms, yra 
+		nustatyta, jog svetainė generuoja 1,5 - 3,5% paspaudimų nuo visų paieškų 
+		skaičiaus per mėnesį (vidurkis: 2,5%). Taigi, po 2 metų galime tikėtis, 
+		jog per vieną mėnesį iš natūralaus paieškos srauto mūsų web aplikaciją 
+		aplankytų 25000 unikalių vartotojų visame pasaulyje. Konversijos tipas 
+		svetainėje - mobiliosios programėlės atsisiuntimas. Kadangi šie lankytojai 
+		- gana tikslinė auditorija, todėl nustatėme, jog realus konversijos 
+		procentas: 5%. Taigi, vien iš paieškos srauto, būtų galima pritraukti apie 
+		1250 naujų programėlės parsisiuntimų per mėnesį.
+
+		Svetainėje galima įdiegti Google Adwords reklamos banerinius laukus, 
+		kurių vidutinis konversijos rodiklis: 4% nuo unikalių lankytojų, o 
+		vidutinis užmokestis už paspaudimą - 0,02€
+		Todėl vien svetainė per po 2 metų galėtų generuoti 25000 * 0,04 * 
+		0,02 = 20€ per mėnesį.
+
+		Manome, kad mobiliąją aplikaciją per mėnesį atsisiųs apie 500 (paieškos 
+		Google Play Store, App Store, Microsoft Store) + 1250 (paieškos tinklai) 
+		+ 200 (socialiniai tinklai) = 1950 žmonių. Tikėtina, kad apie 5% žmonių 
+		paspaus ant reklamos nuorodos naudojantis programėle. Taip pat tikėtina, 
+		kad vartotojai dėl dienos prizų aplikacijoje apsilankys apie 15 kartų per 
+		mėnesį. Taigi, pirmą mėnesį iš reklamų bus galima užsidirbti 1950 * 15 * 
+		0.05 * 0.02 € = 29,25€. Pagal aritmetinę progresiją po 2 metų (20 mėnesių, 
+		kai bus išleista aplikaciją), iš reklamų bus galima uždirbti: (20 * ( 49,25 
+		+ 49,25 * 20)) / 2 = 10342,5 €.
+
+		Programėlė pinigus galės uždirbti ne tik iš paprastų reklamų, bet ir 
+		iš rėmėjų, kurie užsiima stalo žaidimų prekyba. Tikėtina, kad programėlė 
+		nuolat turės apie 3 rėmėjus, iš kurių bus galima gauti apie 1500 € lėšų 
+		per metus. Taigi, per 2 metus programėlė iš rėmėjų turėtų gauti 3 * 2 * 
+		1500 € = 9000 €.
+
+		Taip pat manome, kad aplikacijoje apie 5% aktyvių vartotojų naudosis 
+		žaidimo iškėlimo paslauga ir pirks ją bent kartą į mėnesį. Tikėtina, kad 
+		aplikacija turės apie 2000 aktyvių vartotojų. Taigi, per 2 metus būtų 
+		galima surinkti: 20 * 2000 * 0,05 * 1.49 = 2980 €.
+
+		Žaidimo iškėlimo paslauga: tai galimybė 3 kartus iškelti žaidimą bendrame
+		žaidimų sąraše, padėsianti daug greičiau surinkti visus žaidimui prasidėti 
+		trūkstamus žaidėjus. Žaidėjas, nusipirkęs tokią paslaugą, gali pasinaudoti 
+		ja bet kuriam jo sukurtam žaidimui. Jos kaina - 1.49 € arba 500 žaidimo 
+		monetų.
+
+		\begin{longtable}{ | m{10cm} | m{6cm} | }
+		\caption{Pajamos}
+		\label{variability_impl_mech}
+		%\endfirsthead
+		\endhead
+		 \hline			
+
+		\textbf{Pajamų šaltinis} & \textbf{Numatoma suma per 2 metus} \tabularnewline \hline
+		Rėmėjų skiriamos lėšos mainais už teikiamą reklamą. & 9000 € \tabularnewline \hline
+		Vartotojų išpirkta paslauga skirta iškelti žaidimą aukščiau bendrame sąraše. & 2980  € \tabularnewline \hline
+		Reklamos mobiliojoje aplikacijoje ir svetainėje. & 10342,5 €\tabularnewline \hline
+		\end{longtable}
+		
+		Iš viso aplikacija per 2 metus turėtų užsidirbti 9000 € + 2980 € + 10342,5 €
+		= 22322 €.
+
+		Gauname, kad projektas per 2 metus neatsipirks: 22322 € - 26415,84 € = 
+		-4093,84 €. Vis dėlto, programėlė jau sukurta, o įranga nupirkta, todėl 
+		už tai papildomų išlaidų mokėti nebereiks ir programėlė, praėjus kiek 
+		daugiau laiko, pradės atsipirkti (trečiaisiais metais bus veikla jau bus 
+		pelninga).
+		
+	\subsection{Juridinis įgyvendinamumas}
+		Programėlės kūrėjai užtikrina vartotojų asmeninių duomenų saugumą. 
+		Veiklos vystymas turės būti įformintas viena iš galimų verslo formų, 
+		pvz.: UAB, MB ar kt., todėl būtinas įsiregistravimas į Valstybinę 
+		duomenų apsaugos inspekciją, kuri patikros būdu užtikrins, jog 
+		programėlės veikla atitinka vartotojų duomenų apsaugos reglamentus, 
+		t.y. Duomenys kaupiami ir apdorojami tvarkingai, yra patikimai saugomi, 
+		nėra grėsmės juos atskleisti nepageidaujamiems tretiems asmenims.
+		
+\sectionnonum{Išvada}
+	Dalykinės srities verslo proceso analizė yra vieną svarbiausių viso projekto 
+	sudedamųjų dalių. Išsamus ir tikslus šios dalies aprašas leidžia tinkamai 
+	įvertinti planuojamos kurti sistemos finansinį, teisinį, technologinį 
+	pagrįstumą ir priimti lemiamą išvadą - vystyti projektą ar atsisakyti 
+	numatomo sistemos plano. Teisingas sprendimas šioje stadijoje leidžia 
+	išgauti ilgalaikę finansinę naudą arba betikslių išlaidų prevenciją, o 
+	klaidingas - nulemia tolimesnius, automatiškai destruktyvius sprendimus, 
+	lemsinčius projekto žūtį. Net ir menki netikslumai šioje projekto eigoje 
+	gali lemti iškraipytą bendrą sistemos verslo vaizdą. Atlikus šį tyrimą ir 
+	nusprendus, jog sistema pagrįsta visais anksčiau nurodytais aspektais, galima 
+	pradėti formuoti jos pagrindus, t.y. Apibrėžti formalius reikalavimus.
+
+	\sectionnonum{Šaltiniai}
+		\begin{enumerate}
+			\item https://osp.stat.gov.lt/statistiniu-rodikliu-analize?theme=all\#/
+			\item https://www.androidauthority.com/publishing-first-app-play-store-need-know-383572/
+			\item https://www.serveriai.lt/
+			\item https://www.ovh.com/us/dedicated-servers/
+			\item https://adwords.google.com/ko/KeywordPlanner/
+			\item https://www.webpagefx.com/SEO-Pricing.html
+		\end{enumerate}
+
 \end{document}
