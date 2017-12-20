@@ -20,7 +20,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.5.}Įeigos metrikos}{5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.6.}Išigos metrikos}{8}
+\contentsline {subsection}{\numberline {3.6.}Išeigos metrikos}{8}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.}Vidinė proceso analizė}{10}
 \defcounter {refsection}{0}\relax 
