@@ -1,0 +1,5 @@
+[1] Config.pm:354> INFO - This is Biber 2.7 (beta)
+[1] Config.pm:357> INFO - Logfile is 'BoardGames.blg'
+[105] biber:303> INFO - === Wed Dec 20, 2017, 22:24:53
+[159] Utils.pm:180> ERROR - BoardGames.bcf is malformed, last biblatex run probably failed. Deleted BoardGames.bbl
+[159] Biber.pm:114> INFO - ERRORS: 1
