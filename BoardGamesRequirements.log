@@ -1,12 +1,10 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2017.9.21)  20 DEC 2017 22:06
+This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6400) (preloaded format=xelatex 2017.10.11)  24 NOV 2017 22:09
 entering extended mode
- restricted \write18 enabled.
- %&-line parsing enabled.
-**BoardGamesBuisinessAnalysis.tex
-(./BoardGamesBuisinessAnalysis.tex
+**./BoardGamesRequirements.tex
+(BoardGamesRequirements.tex
 LaTeX2e <2016/02/01>
 Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
-(./VUMIFPSkursinis.cls
+(VUMIFPSkursinis.cls
 Document Class: VUMIFPSkursinis 2015/02/03 1.0 VU MIF SE course work class
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
@@ -24,7 +22,7 @@ File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
-) (./LTPlius.sty
+) (LTPlius.sty
 Package: LTPlius 2014/12/24 1.4.0 Lithuanian language additions
 
 (/usr/share/texlive/texmf-dist/tex/latex/polyglossia/polyglossia.sty
@@ -468,7 +466,8 @@ Package ifvtex Info: VTeX not detected.
 \Gm@layouthoffset=\dimen152
 \Gm@layoutvoffset=\dimen153
 \Gm@dimlist=\toks18
-)
+
+(/home/matas/.miktex/texmfs/install/tex/xelatex/xetexconfig/geometry.cfg))
 (/usr/share/texlive/texmf-dist/tex/latex/tocloft/tocloft.sty
 Package: tocloft 2013/05/02 v2.3f parameterised ToC, etc., typesetting
 Package tocloft Info: The document has section divisions on input line 44.
@@ -785,7 +784,7 @@ File: csquotes.def 2016/01/31 v5.1g csquotes generic definitions (JAW)
 )
 Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
 Package csquotes Info: ... configuration file loaded successfully.
- (./csquotes.cfg
+ (csquotes.cfg
 File: csquotes.cfg 
 )
 Package csquotes Info: Disabling multilingual quotes.
@@ -994,12 +993,11 @@ Package biblatex Warning: Upgrade package 'polyglossia' to >v1.42.0 recommended
 
 Package biblatex Info: Trying to load language 'lithuanian'...
 Package biblatex Info: ... file 'lithuanian.lbx' found.
-(./lithuanian.lbx
+(lithuanian.lbx
 File: lithuanian.lbx 2016/03/03 v3.3 biblatex localization (PK/JW/AB)$Id: lithu
 anian.lbx,v 1.0 2015/02/05 20:21:28 niekas stable $
-)
-No file BoardGamesBuisinessAnalysis.aux.
-\openout1 = `BoardGamesBuisinessAnalysis.aux'.
+) (BoardGamesRequirements.aux)
+\openout1 = `BoardGamesRequirements.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
 LaTeX Font Info:    ... okay on input line 39.
@@ -1017,6 +1015,7 @@ LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 39.
 LaTeX Font Info:    ... okay on input line 39.
 LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 39.
 LaTeX Font Info:    Try loading font information for T3+cmr on input line 39.
+
 (/usr/share/texmf/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
@@ -1097,10 +1096,9 @@ Package: ltcaption 2013/06/09 v1.4-94 longtable captions (AR)
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
-*geometry* driver: auto-detecting
-*geometry* detected driver: xetex
+*geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
-* driver: xetex
+* driver: pdftex
 * paper: <default>
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
@@ -1135,11 +1133,11 @@ Package biblatex Info: XeTeX detected.
 (biblatex)             Assuming input encoding 'utf8'.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
-\openout3 = `BoardGamesBuisinessAnalysis.bcf'.
+\openout3 = `BoardGamesRequirements.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'BoardGamesBuisinessAnalysis.bbl' not found.
-No file BoardGamesBuisinessAnalysis.bbl.
+Package biblatex Info: ... file 'BoardGamesRequirements.bbl' not found.
+No file BoardGamesRequirements.bbl.
 Package biblatex Info: Reference section=0 on input line 39.
 Package biblatex Info: Reference segment=0 on input line 39.
 \c@lstlisting=\count370
@@ -1156,649 +1154,200 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ] [1
 
 ]
-(./BoardGamesBuisinessAnalysis.toc)
+(BoardGamesRequirements.toc)
 \tf@toc=\write4
-\openout4 = `BoardGamesBuisinessAnalysis.toc'.
+\openout4 = `BoardGamesRequirements.toc'.
 
  [2
 
 ] [3
 
-] [4
+]
+\c@frcount=\count371
+
+Underfull \vbox (badness 10000) detected at line 73
+ []
+
+
+Underfull \hbox (badness 2269) in paragraph at lines 81--81
+[]|\EU1/texgyretermes(0)/m/n/12 Registruojantis vartotojas privalo nurodyti pri
+sijungimo
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 89
+ []
+
+[4
 
 ]
-Overfull \hbox (6.47142pt too wide) in paragraph at lines 164--164
- []|\EU1/texgyretermes(0)/bx/n/12 Dabartinė 
+Underfull \vbox (badness 10000) detected at line 102
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 165--165
-[]|\EU1/texgyretermes(0)/m/n/12 Procentas žaidėjų,
- []
-
-
-Underfull \hbox (badness 2941) in paragraph at lines 165--165
-\EU1/texgyretermes(0)/m/n/12 dėjų, kurie pateikė
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 166--166
-[]|\EU1/texgyretermes(0)/m/n/12 Procentas žaidė-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 166--166
-\EU1/texgyretermes(0)/m/n/12 jų, kurie pateikė
- []
-
-
-Underfull \hbox (badness 2941) in paragraph at lines 166--166
-\EU1/texgyretermes(0)/m/n/12 dėjų, kurie pateikė
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 167--167
-[]|\EU1/texgyretermes(0)/m/n/12 Procentas žaidė-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 167--167
-\EU1/texgyretermes(0)/m/n/12 jų, kurie pateikė
- []
-
-
-Underfull \hbox (badness 2941) in paragraph at lines 167--167
-\EU1/texgyretermes(0)/m/n/12 dėjų, kurie pateikė
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 168--168
-[]|\EU1/texgyretermes(0)/m/n/12 Procentas žaidė-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 168--168
-\EU1/texgyretermes(0)/m/n/12 jų, kurie pateikė
- []
-
-
-Underfull \hbox (badness 2941) in paragraph at lines 168--168
-\EU1/texgyretermes(0)/m/n/12 dėjų, kurie pateikė
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 169--169
-[]|\EU1/texgyretermes(0)/m/n/12 Procentas žaidė-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 169--169
-\EU1/texgyretermes(0)/m/n/12 jų, kurie pateikė
- []
-
-
-Underfull \hbox (badness 2941) in paragraph at lines 169--169
-\EU1/texgyretermes(0)/m/n/12 dėjų, kurie pateikė
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 170--170
-[]|\EU1/texgyretermes(0)/m/n/12 Vidutinis nukeliau-
- []
-
-
-Underfull \hbox (badness 1616) in paragraph at lines 170--170
-\EU1/texgyretermes(0)/m/n/12 žaidėjo iki žaidimo
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 170--170
-[]|\EU1/texgyretermes(0)/m/n/12 Suskaičiuoti visų
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 170--170
-\EU1/texgyretermes(0)/m/n/12 žaidėjų, išskyrus
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 170--170
-\EU1/texgyretermes(0)/m/n/12 žaidimo kūrėjų,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 170--170
-\EU1/texgyretermes(0)/m/n/12 kiekvieno žaidimo
- []
-
-
-Underfull \hbox (badness 4205) in paragraph at lines 170--170
-\EU1/texgyretermes(0)/m/n/12 nuvyktą atstumą ir
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 171--171
-[]|\EU1/texgyretermes(0)/m/n/12 Vidutinė žaidimo
- []
-
-
-Underfull \hbox (badness 2418) in paragraph at lines 171--171
-\EU1/texgyretermes(0)/m/n/12 žaidimų trukmes ir
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 172--172
-[]|\EU1/texgyretermes(0)/m/n/12 Vidutinė laukimo
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 172--172
-[]|\EU1/texgyretermes(0)/m/n/12 Suskaičiuoti lau-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 172--172
-\EU1/texgyretermes(0)/m/n/12 kimo iki žaidimų
- []
-
-
-Underfull \hbox (badness 5417) in paragraph at lines 172--172
-\EU1/texgyretermes(0)/m/n/12 pradžių trukmes ir
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 173--173
-[]|\EU1/texgyretermes(0)/m/n/12 Vartotojo pateikia-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 173--173
-\EU1/texgyretermes(0)/m/n/12 mas mokestis už
- []
-
-
-Underfull \hbox (badness 1377) in paragraph at lines 173--173
-[]|\EU1/texgyretermes(0)/m/n/12 Procentas vartotojų,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 173--173
-[]|\EU1/texgyretermes(0)/m/n/12 Suskaičiuoti, dalį
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 173--173
-\EU1/texgyretermes(0)/m/n/12 vartotojų, kurie
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 173--173
-\EU1/texgyretermes(0)/m/n/12 naudojosi mokama
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 173--173
-\EU1/texgyretermes(0)/m/n/12 paslauga iškelti
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-[]|\EU1/texgyretermes(0)/m/n/12 Suskaičiuoti visų
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-\EU1/texgyretermes(0)/m/n/12 įvykusių žaidimų
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 175--175
-[]|\EU1/texgyretermes(0)/m/n/12 Suskaičiuoti visų
- []
-
-
-Underfull \hbox (badness 3861) in paragraph at lines 175--175
-\EU1/texgyretermes(0)/m/n/12 neįvykusių žaidimų
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 176--176
-[]|\EU1/texgyretermes(0)/m/n/12 Vidutinis žmonių
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 176--176
-[]|\EU1/texgyretermes(0)/m/n/12 Suskaičiuoti visų
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 176--176
-\EU1/texgyretermes(0)/m/n/12 įvykusių žaidimų
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 176--176
-\EU1/texgyretermes(0)/m/n/12 žaidėjų skaičių ir
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 177--177
-[]|\EU1/texgyretermes(0)/m/n/12 Aktyvių progra-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 177--177
-\EU1/texgyretermes(0)/m/n/12 mėlės naudotojų,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 177--177
-[]|\EU1/texgyretermes(0)/m/n/12 Suskaičiuoti žaidė-
- []
-
-
-Underfull \hbox (badness 4819) in paragraph at lines 179--179
-\EU1/texgyretermes(0)/m/n/12 nučių kiekis žaidi-
- []
-
-
-Underfull \hbox (badness 1014) in paragraph at lines 179--179
-\EU1/texgyretermes(0)/m/n/12 tes žaidimo kūrimo
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 180--180
-[]|\EU1/texgyretermes(0)/m/n/12 Rėmėjų, užsiiman-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 180--180
-\EU1/texgyretermes(0)/m/n/12 ir norinčių remti
- []
-
-
-Underfull \hbox (badness 2662) in paragraph at lines 180--180
-\EU1/texgyretermes(0)/m/n/12 programėlę mainais
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 180--180
-[]|\EU1/texgyretermes(0)/m/n/12 Suskaičiuoti visus
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 180--180
-\EU1/texgyretermes(0)/m/n/12 rėmėjus, užsi-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 180--180
-\EU1/texgyretermes(0)/m/n/12 imančius žaidimų
+[5]
+Underfull \vbox (badness 10000) detected at line 114
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--180
-\EU1/texgyretermes(0)/m/n/12 remti programėlę
+Underfull \vbox (badness 10000) detected at line 126
  []
 
-
-Underfull \hbox (badness 4634) in paragraph at lines 181--181
-[]|\EU1/texgyretermes(0)/m/n/12 Remėjų, užsiregist-
- []
-
-
-Underfull \hbox (badness 1320) in paragraph at lines 181--181
-\EU1/texgyretermes(0)/m/n/12 savo prekes, sukur-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 181--181
-[]|\EU1/texgyretermes(0)/m/n/12 Suskaičiuoti, kiek
+[6]
+Underfull \vbox (badness 10000) detected at line 150
  []
-
 
-Underfull \hbox (badness 10000) in paragraph at lines 181--181
-\EU1/texgyretermes(0)/m/n/12 renginių kiekviena
+[7]
+Underfull \vbox (badness 10000) detected at line 159
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 182--182
-[]|\EU1/texgyretermes(0)/m/n/12 Vidutinis skaičius
+Underfull \vbox (badness 10000) detected at line 172
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 182--182
-\EU1/texgyretermes(0)/m/n/12 žaidėjų, sekančių
+[8]
+Underfull \vbox (badness 10000) detected at line 188
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 182--182
-\EU1/texgyretermes(0)/m/n/12 užsiregistravusį
+Underfull \vbox (badness 10000) detected at line 200
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 182--182
-[]|\EU1/texgyretermes(0)/m/n/12 Suskaičiuoti, kiek
+[9]
+Underfull \vbox (badness 10000) detected at line 213
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 182--182
-\EU1/texgyretermes(0)/m/n/12 ną užsiregistravusį
+Underfull \vbox (badness 10000) detected at line 227
  []
-
 
-Underfull \hbox (badness 10000) in paragraph at lines 182--182
-\EU1/texgyretermes(0)/m/n/12 remėją ir išvesti
+[10] [11]
+Underfull \vbox (badness 10000) detected at line 242
  []
 
 
-Underfull \vbox (badness 10000) detected at line 183
+Underfull \vbox (badness 10000) detected at line 255
  []
 
-[5
+[12
 
 ]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 1 on input line 183.
-
-[6] [7]
-Overfull \hbox (6.47142pt too wide) in paragraph at lines 193--193
- []|\EU1/texgyretermes(0)/bx/n/12 Dabartinė 
+Underfull \vbox (badness 10000) detected at line 267
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 194--194
-[]|\EU1/texgyretermes(0)/m/n/12 Procentas žaidėjų,
+Underfull \vbox (badness 10000) detected at line 277
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 194--194
-[]|\EU1/texgyretermes(0)/m/n/12 Suskaičiuoti visų
+Underfull \vbox (badness 10000) detected at line 288
+ []
+
+[13] [14]
+Underfull \vbox (badness 10000) detected at line 301
  []
 
 
-Underfull \hbox (badness 1648) in paragraph at lines 194--194
-\EU1/texgyretermes(0)/m/n/12 per savaitę, skaičių
+Underfull \vbox (badness 10000) detected at line 311
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 195--195
-[]|\EU1/texgyretermes(0)/m/n/12 Žaidimo monetos,
+Underfull \vbox (badness 10000) detected at line 320
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 195--195
-\EU1/texgyretermes(0)/m/n/12 skiriamos prisi-
+Underfull \vbox (badness 10000) detected at line 329
+ []
+
+[15
+
+] [16]
+\c@nfrcount=\count372
+
+Underfull \vbox (badness 10000) detected at line 346
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 195--195
-\EU1/texgyretermes(0)/m/n/12 jungus kiekvieną
+Underfull \vbox (badness 10000) detected at line 356
  []
 
 
-Underfull \hbox (badness 2088) in paragraph at lines 195--195
-\EU1/texgyretermes(0)/m/n/12 monetų skaičių per
+Underfull \vbox (badness 10000) detected at line 364
  []
 
 
-Underfull \hbox (badness 2181) in paragraph at lines 195--195
-\EU1/texgyretermes(0)/m/n/12 dieną, kai prisijun-
+Underfull \vbox (badness 10000) detected at line 372
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 196--196
-[]|\EU1/texgyretermes(0)/m/n/12 Vidutinis teigiamų
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 196--196
-\EU1/texgyretermes(0)/m/n/12 atsiliepimų,kuriuos
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 196--196
-\EU1/texgyretermes(0)/m/n/12 palieka žaidėjai,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 196--196
-\EU1/texgyretermes(0)/m/n/12 dalyvavę žaidime,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 197--197
-[]|\EU1/texgyretermes(0)/m/n/12 Vidutinis neigiamų
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 197--197
-\EU1/texgyretermes(0)/m/n/12 palieka žaidėjai,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 197--197
-\EU1/texgyretermes(0)/m/n/12 dalyvavę žaidime,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 197--197
-[]|\EU1/texgyretermes(0)/m/n/12 Neigiamų žmonių
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 197--197
-\EU1/texgyretermes(0)/m/n/12 atsiliepimų dalis
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 197--197
-\EU1/texgyretermes(0)/m/n/12 procentais.a - nei-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 197--197
-\EU1/texgyretermes(0)/m/n/12 giamų atsiliepimų
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 198--198
-[]|\EU1/texgyretermes(0)/m/n/12 Vidutinis skaičius
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 198--198
-[]|\EU1/texgyretermes(0)/m/n/12 Suskaičiuoti, kiek
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 198--198
-\EU1/texgyretermes(0)/m/n/12 žaidimų kiekvienas
- []
-
-
-Underfull \hbox (badness 4341) in paragraph at lines 198--198
-\EU1/texgyretermes(0)/m/n/12 rėmėjas reklamuoja
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 199--199
-[]|\EU1/texgyretermes(0)/m/n/12 Teigiamas rėmėjo
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 199--199
-[]|\EU1/texgyretermes(0)/m/n/12 Žaidėjų, teigiamai
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 199--199
-\EU1/texgyretermes(0)/m/n/12 įvertinusių rėmėjo
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 199--199
-\EU1/texgyretermes(0)/m/n/12 siūlomą žaidimą,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 199--199
-[]|\EU1/texgyretermes(0)/m/n/12 Suskaičiuoti, kiek
- []
-
-
-Underfull \hbox (badness 4341) in paragraph at lines 199--199
-\EU1/texgyretermes(0)/m/n/12 procentaliai žaidėjų
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 199--199
-\EU1/texgyretermes(0)/m/n/12 teigiamai vertina
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 199--199
-\EU1/texgyretermes(0)/m/n/12 kompanijos rekla-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 200--200
-[]|\EU1/texgyretermes(0)/m/n/12 Neigiamas rėmėjo
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 200--200
-[]|\EU1/texgyretermes(0)/m/n/12 Žaidėjų, neigiamai
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 200--200
-\EU1/texgyretermes(0)/m/n/12 įvertinusių rėmėjo
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 200--200
-\EU1/texgyretermes(0)/m/n/12 siūlomą žaidimą,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 200--200
-[]|\EU1/texgyretermes(0)/m/n/12 Suskaičiuoti, kiek
- []
-
-
-Underfull \hbox (badness 4341) in paragraph at lines 200--200
-\EU1/texgyretermes(0)/m/n/12 procentaliai žaidėjų
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 200--200
-\EU1/texgyretermes(0)/m/n/12 neigiamai vertina
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 200--200
-\EU1/texgyretermes(0)/m/n/12 kompanijos rekla-
- []
-
-
-Underfull \vbox (badness 10000) detected at line 201
- []
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 2 on input line 201.
-
-[8] [9] [10
-
-] [11]
-Underfull \hbox (badness 1102) in paragraph at lines 327--328
-\EU1/texgyretermes(0)/m/n/12 užtikrina programėlės populiarumo pa-
- []
-
-
-Underfull \hbox (badness 1102) in paragraph at lines 341--342
-\EU1/texgyretermes(0)/m/n/12 užtikrina programėlės populiarumo pa-
- []
-
-
-Overfull \hbox (10.97357pt too wide) in alignment at lines 319--350
- [] [] 
- []
-
-
-Underfull \vbox (badness 10000) detected at line 350
- []
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 3 on input line 350.
-
-[12] [13] [14] [15
+[17
 
 ]
-File: img/UserUseCase.png Graphic file (type QTm)
- <use  "img/UserUseCase.png" >
-
-LaTeX Warning: Reference `img:JoinGameSequence' on page 16 undefined on input l
-ine 396.
-
-File: img/JoinGameSequence.png Graphic file (type QTm)
-<use  "img/JoinGameSequence.png" > [16
-
-]
-
-LaTeX Warning: Reference `img:CreateGameSequence' on page 17 undefined on input
- line 414.
-
-File: img/CreateGameSequence.png Graphic file (type QTm)
-<use  "img/CreateGameSequence.png" >
-
-LaTeX Warning: Reference `img:InviteFriendSequence' on page 17 undefined on inp
-ut line 429.
-
-File: img/InviteFriendSequence.png Graphic file (type QTm)
-<use  "img/InviteFriendSequence.png" > [17]
-
-LaTeX Warning: Reference `img:SendMessageSequence' on page 18 undefined on inpu
-t line 445.
-
-File: img/SendMessageSequence.png Graphic file (type QTm)
-<use  "img/SendMessageSequence.png" >
-
-LaTeX Warning: Reference `img:ParticipateEventSequence' on page 18 undefined on
- input line 458.
-
-File: img/ParticipateEventSequence.png Graphic file (type QTm)
-<use  "img/ParticipateEventSequence.png" > [18] [19]
-
-Package longtable Warning: Table widths have changed. Rerun LaTeX.
-
-[20] (./BoardGamesBuisinessAnalysis.aux)
-
-LaTeX Warning: There were undefined references.
+Underfull \vbox (badness 10000) detected at line 385
+ []
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+Underfull \vbox (badness 10000) detected at line 398
+ []
 
 
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                BoardGamesBuisinessAnalysis
-(biblatex)                and rerun LaTeX afterwards.
+Underfull \vbox (badness 10000) detected at line 410
+ []
 
-Package logreq Info: Writing requests to 'BoardGamesBuisinessAnalysis.run.xml'.
+[18]
+Underfull \vbox (badness 10000) detected at line 420
+ []
 
-\openout1 = `BoardGamesBuisinessAnalysis.run.xml'.
+
+Underfull \vbox (badness 10000) detected at line 432
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 442
+ []
+
+[19]
+Underfull \vbox (badness 10000) detected at line 452
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 462
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 472
+ []
+
+[20]
+Underfull \vbox (badness 10000) detected at line 483
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 492
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 502
+ []
+
+[21]
+Underfull \vbox (badness 10000) detected at line 512
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 525
+ []
+
+[22] (BoardGamesRequirements.aux)
+Package logreq Info: Writing requests to 'BoardGamesRequirements.run.xml'.
+\openout1 = `BoardGamesRequirements.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 25289 strings out of 493638
- 466136 string characters out of 6146796
- 863469 words of memory out of 5000000
- 28376 multiletter control sequences out of 15000+600000
- 16590 words of font info for 83 fonts, out of 8000000 for 9000
+ 25267 strings out of 428369
+ 459527 string characters out of 3159085
+ 848492 words of memory out of 3000000
+ 28409 multiletter control sequences out of 15000+200000
+ 16590 words of font info for 83 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
- 68i,12n,96p,10516b,712s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 68i,11n,96p,10513b,712s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on BoardGamesBuisinessAnalysis.pdf (21 pages).
+Output written on BoardGamesRequirements.pdf (23 pages).

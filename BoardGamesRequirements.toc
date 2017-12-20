@@ -6,40 +6,88 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{Įvadas}{3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.}Nefunkciniai reikalavimai}{4}
+\contentsline {section}{\numberline {1.}Funkciniai reikalavimai asmeninio vartotojo perspektyva}{4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1.}OS reikalavimai}{4}
+\contentsline {subsection}{\numberline {1.1.}Aplikacijos langai}{4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2.}Saveikos su DB reikalavimai}{4}
+\contentsline {subsection}{\numberline {1.2.}Registracija}{4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3.}Dokumentų mainų reikalavimai}{4}
+\contentsline {subsection}{\numberline {1.3.}Prisijungimas}{5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.4.}Darbo kompiuterių tinkluose reikalavimai}{4}
+\contentsline {subsection}{\numberline {1.4.}Pagrindinis langas}{6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.5.}Saveikos su kitomis programomis reikalavimai}{5}
+\contentsline {subsection}{\numberline {1.5.}Žaidimų pasirinkimo langas}{6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.6.}Programavimo aplinkos reikalavimai}{5}
+\contentsline {subsection}{\numberline {1.6.}Žaidimo kūrimo langas}{7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.7.}Tikslumo reikalavimai duomenų saugojimui}{5}
+\contentsline {subsection}{\numberline {1.7.}Žaidimų i�kėlimo langas}{8}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.8.}Tikslumo reikalavimai duomenų vaizdavimui}{6}
+\contentsline {subsection}{\numberline {1.8.}Asmeninių žinučių langas}{8}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.9.}Patikimumo reikalavimai}{6}
+\contentsline {subsection}{\numberline {1.9.}Draugų sąra�as}{9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.10.}Našumo reikalavimai}{6}
+\contentsline {subsection}{\numberline {1.10.}Žaidimo langas}{9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.11.}Diegimo reikalavimai}{7}
+\contentsline {subsection}{\numberline {1.11.}Vartotojo profilio langas}{10}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.12.}Sistemos įsisavinamumo reikalavimai}{7}
+\contentsline {subsection}{\numberline {1.12.}Mano žaidimų langas}{10}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.13.}Saugumo reikalavimai}{7}
+\contentsline {section}{\numberline {2.}Funkciniai reikalavimai kompanijos perspektyva}{12}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.14.}Aptarnavimo ir priežiūros reikalavimai}{8}
+\contentsline {subsection}{\numberline {2.1.}Registracija}{12}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.15.}Tiražuojamumo reikalavimai}{8}
+\contentsline {subsection}{\numberline {2.2.}Prisijungimas}{12}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.16.}Apsaugos reikalavimai}{8}
+\contentsline {subsection}{\numberline {2.3.}Pagrindinis langas}{13}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.17.}Juridiniai reikalavimai}{9}
+\contentsline {subsection}{\numberline {2.4.}Kompanijos siūlomų žaidimų langas}{13}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.18.}Dalykinės srities metaforų reikalavimai}{9}
+\contentsline {subsection}{\numberline {2.5.}Kompanijos sekėjų langas}{13}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.}Funkciniai reikalavimai administracijos perspektyva}{15}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1.}Informacijos duomenų bazėje tvarkymas}{15}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.}Vartotojų blokavimas}{15}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.}Informacijos atnaujinimas}{15}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4.}Klaidų taisymas}{15}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.}Nefunkciniai reikalavimai}{17}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.}OS reikalavimai}{17}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.}Saveikos su DB reikalavimai}{17}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3.}Dokumentų mainų reikalavimai}{17}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.4.}Darbo kompiuterių tinkluose reikalavimai}{17}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.5.}Saveikos su kitomis programomis reikalavimai}{18}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.6.}Programavimo aplinkos reikalavimai}{18}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.7.}Tikslumo reikalavimai duomenų saugojimui}{18}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.8.}Tikslumo reikalavimai duomenų vaizdavimui}{19}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.9.}Patikimumo reikalavimai}{19}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.10.}Na�umo reikalavimai}{19}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.11.}Diegimo reikalavimai}{20}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.12.}Sistemos įsisavinamumo reikalavimai}{20}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.13.}Saugumo reikalavimai}{20}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.14.}Aptarnavimo ir priežiūros reikalavimai}{21}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.15.}Tiražuojamumo reikalavimai}{21}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.16.}Apsaugos reikalavimai}{21}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.17.}Juridiniai reikalavimai}{22}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.18.}Dalykinės srities metaforų reikalavimai}{22}
