@@ -2045,4 +2045,12 @@
         <bcf:field>gender</bcf:field>
       </bcf:constraint>
     </bcf:constraints>
-  </b
+  </bcf:datamodel>
+  <!-- CITATION DATA -->
+  <!-- SECTION 0 -->
+  <bcf:bibdata section="0">
+    <bcf:datasource type="file" datatype="bibtex">bibliografija.bib</bcf:datasource>
+  </bcf:bibdata>
+  <bcf:section number="0">
+  </bcf:section>
+</bcf:controlfile>

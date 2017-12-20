@@ -57,7 +57,13 @@ su tais, kuriems trūksta žaidėjų.
 \newcommand\rownumber{\stepcounter{nfrcount}\arabic{nfrcount}}
 
 \subsection{OS reikalavimai}
-\begin{longtable}{ | >{\centering}m{2cm} | m{10cm} | >{\centering}m{2.5cm} | } \hline
+\begin{longtable}{ | >{\centering}m{2cm} | m{10cm} | >{\centering}m{2.5cm} | }
+\caption{my caption}
+\label{variability_impl_mech}
+%\endfirsthead
+\endhead
+ \hline
+
 \multicolumn{3}{ |l| }{\textbf{OS reikalavimai}} \tabularnewline \hline
 \textbf{Numeris} & \centering{\textbf{Reikalavimas}} & \textbf{Svarba} \tabularnewline \hline
 NFR\rownumber & Aplikacija turi būti palaikoma IOS (nuo 8.0 versijos) ir Android (nuo 4.0 versijos) įrenginiuose & Būtina\tabularnewline \hline
@@ -65,7 +71,7 @@ NFR\rownumber & Aplikacija palaikoma Windows Phone opracinėje sistemoje. & Page
 NFR\rownumber & Aplikacija turi būti pasiekiama ir be išmanaus telefono - per naršyklę & Būtina\tabularnewline \hline
 NFR\rownumber & Išmanusis renginys turi turėti GPS modulį. & Būtina\tabularnewline \hline
 NFR\rownumber & Išmanusis įrenginys turi turėti prieigą prie interneto & Būtina\tabularnewline \hline
-\caption{Nefunkciniai OS reikalavimai.}
+
 \end{longtable}
 
 \subsection{Saveikos su DB reikalavimai}
