@@ -1,6 +1,6 @@
 generuoti:
-	xelatex BoardGamesBuisinessAnalysis.tex
-	biber BoardGames
+	xelatex BoardGamesFinal.tex
+	biber BoardGamesFinal
 
 ubuntu:
 	echo "Diegiamas LaTeX (PdfLaTeX, XeTeX ir kt.)"

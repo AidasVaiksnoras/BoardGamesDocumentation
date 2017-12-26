@@ -1,9 +1,9 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/Debian) (preloaded format=xelatex 2017.10.10)  24 DEC 2017 17:34
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/Debian) (preloaded format=xelatex 2017.10.10)  26 DEC 2017 14:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**BoardGames.tex
-(./BoardGames.tex
+**BoardGamesFinal.tex
+(./BoardGamesFinal.tex
 LaTeX2e <2017/01/01> patch level 3
 Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
 (./VUMIFPSkursinis.cls
@@ -1020,19 +1020,37 @@ Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
 \multirow@dima=\skip115
 \bigstrutjot=\dimen170
 )
+(/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip116
+\LTright=\skip117
+\LTpre=\skip118
+\LTpost=\skip119
+\LTchunksize=\count367
+\LTcapwidth=\dimen171
+\LT@head=\box49
+\LT@firsthead=\box50
+\LT@foot=\box51
+\LT@lastfoot=\box52
+\LT@cols=\count368
+\LT@rows=\count369
+\c@LT@tables=\count370
+\c@LT@chunks=\count371
+\LT@p@ftn=\toks37
+)
 (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
 Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
-\col@sep=\dimen171
-\extrarowheight=\dimen172
-\NC@list=\toks37
-\extratabsurround=\skip116
-\backup@length=\skip117
+\col@sep=\dimen172
+\extrarowheight=\dimen173
+\NC@list=\toks38
+\extratabsurround=\skip120
+\backup@length=\skip121
 )
 (/usr/share/texlive/texmf-dist/tex/latex/makecell/makecell.sty
 Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
-\rotheadsize=\dimen173
-\c@nlinenum=\count367
-\TeXr@lab=\toks38
+\rotheadsize=\dimen174
+\c@nlinenum=\count372
+\TeXr@lab=\toks39
 )
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
@@ -1050,25 +1068,59 @@ anian.lbx,v 1.0 2015/02/05 20:21:28 niekas stable $
 
 Package biblatex Warning: Conflicting options.
 (biblatex)                'date=edtf' requires 'seconds=true'.
-(biblatex)                Setting 'seconds=true' on input line 38.
+(biblatex)                Setting 'seconds=true' on input line 39.
 
-(./BoardGames.aux)
-\openout1 = `BoardGames.aux'.
+(./BoardGamesFinal.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
+LaTeX Warning: Label `variability_impl_mech' multiply defined.
+
+
+LaTeX Warning: Label `variability_impl_mech' multiply defined.
+
+
+LaTeX Warning: Label `variability_impl_mech' multiply defined.
+
+
+LaTeX Warning: Label `variability_impl_mech' multiply defined.
+
+
+LaTeX Warning: Label `variability_impl_mech' multiply defined.
+
+
+LaTeX Warning: Label `variability_impl_mech' multiply defined.
+
+
+LaTeX Warning: Label `img:UserUseCase' multiply defined.
+
+
+LaTeX Warning: Label `variability_impl_mech' multiply defined.
+
+
+LaTeX Warning: Label `variability_impl_mech' multiply defined.
+
+
+LaTeX Warning: Label `variability_impl_mech' multiply defined.
+
+
+LaTeX Warning: Label `variability_impl_mech' multiply defined.
+
+)
+\openout1 = `BoardGamesFinal.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
 .................................................
 . fontspec info: "setup-math"
 . 
@@ -1076,67 +1128,71 @@ LaTeX Font Info:    ... okay on input line 38.
 .................................................
 \symlegacymaths=\mathgroup9
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 38.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 38.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 38.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 38.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 38.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 38.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 38.
-LaTeX Font Info:    Redeclaring math accent \check on input line 38.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 38.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 38.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 38.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 38.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 38.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 38.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 38.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 38.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 38.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 38.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 38.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 38.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 38.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 38.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 38.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 38.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 39.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 39.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 39.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 39.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 39.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 39.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 39.
+LaTeX Font Info:    Redeclaring math accent \check on input line 39.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 39.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 39.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 39.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 39.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 39.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 39.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 39.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 39.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 39.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 39.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 39.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 39.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 39.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 39.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 39.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 39.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 38.
+(Font)              `operators' in the math version `normal' on input line 39.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> TU/texgyretermes(0)/m/n on input line 3
-8.
+9.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 38.
+(Font)              `operators' in the math version `bold' on input line 39.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  OT1/cmr/bx/n --> TU/texgyretermes(0)/m/n on input line 
-38.
+39.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  TU/texgyretermes(0)/m/n --> TU/texgyretermes(0)/m/n on 
-input line 38.
+input line 39.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
 (Font)                  OT1/cmr/m/it --> TU/texgyretermes(0)/m/it on input line
- 38.
+ 39.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
 (Font)                  OT1/cmr/bx/n --> TU/texgyretermes(0)/bx/n on input line
- 38.
+ 39.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 38.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 39.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 38.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 39.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  TU/texgyretermes(0)/m/n --> TU/texgyretermes(0)/bx/n on
- input line 38.
+ input line 39.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> TU/texgyretermes(0)/bx/it on input li
-ne 38.
+ne 39.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/bx/n on input line 38.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/bx/n on input line 39.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/bx/n on input line 38.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/bx/n on input line 39.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: float package is loaded.
 Package caption Info: listings package is loaded.
+Package caption Info: longtable package is loaded.
+ (/usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2013/06/09 v1.4-94 longtable captions (AR)
+)
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
@@ -1178,19 +1234,20 @@ Package biblatex Info: XeTeX detected.
 (biblatex)             Assuming input encoding 'utf8'.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
-\openout4 = `BoardGames.bcf'.
+\openout4 = `BoardGamesFinal.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'BoardGames.bbl' found.
-(./BoardGames.bbl)
-Package biblatex Info: Reference section=0 on input line 38.
-Package biblatex Info: Reference segment=0 on input line 38.
-\c@lstlisting=\count368
-LaTeX Font Info:    Try loading font information for U+msa on input line 39.
- (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+Package biblatex Info: ... file 'BoardGamesFinal.bbl' found.
+(./BoardGamesFinal.bbl)
+Package biblatex Info: Reference section=0 on input line 39.
+Package biblatex Info: Reference segment=0 on input line 39.
+\c@lstlisting=\count373
+LaTeX Font Info:    Try loading font information for U+msa on input line 40.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 39.
+LaTeX Font Info:    Try loading font information for U+msb on input line 40.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1199,123 +1256,1046 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ] [1
 
 ]
-(./BoardGames.toc)
+(./BoardGamesFinal.toc [2
+
+] [3])
 \tf@toc=\write5
-\openout5 = `BoardGames.toc'.
+\openout5 = `BoardGamesFinal.toc'.
 
- [2
+ [4] [5
 
-] [3
+] [6
 
-] [4
+] [7]
+Overfull \hbox (6.47142pt too wide) in paragraph at lines 183--183
+ []|\TU/texgyretermes(0)/bx/n/12 Dabartinė 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 184--184
+[]|\TU/texgyretermes(0)/m/n/12 Procentas žaidėjų,
+ []
+
+
+Underfull \hbox (badness 2941) in paragraph at lines 184--184
+\TU/texgyretermes(0)/m/n/12 dėjų, kurie pateikė
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 185--185
+[]|\TU/texgyretermes(0)/m/n/12 Procentas žaidė-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 185--185
+\TU/texgyretermes(0)/m/n/12 jų, kurie pateikė
+ []
+
+
+Underfull \hbox (badness 2941) in paragraph at lines 185--185
+\TU/texgyretermes(0)/m/n/12 dėjų, kurie pateikė
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 186--186
+[]|\TU/texgyretermes(0)/m/n/12 Procentas žaidė-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 186--186
+\TU/texgyretermes(0)/m/n/12 jų, kurie pateikė
+ []
+
+
+Underfull \hbox (badness 2941) in paragraph at lines 186--186
+\TU/texgyretermes(0)/m/n/12 dėjų, kurie pateikė
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 187--187
+[]|\TU/texgyretermes(0)/m/n/12 Procentas žaidė-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 187--187
+\TU/texgyretermes(0)/m/n/12 jų, kurie pateikė
+ []
+
+
+Underfull \hbox (badness 2941) in paragraph at lines 187--187
+\TU/texgyretermes(0)/m/n/12 dėjų, kurie pateikė
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 188--188
+[]|\TU/texgyretermes(0)/m/n/12 Procentas žaidė-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 188--188
+\TU/texgyretermes(0)/m/n/12 jų, kurie pateikė
+ []
+
+
+Underfull \hbox (badness 2941) in paragraph at lines 188--188
+\TU/texgyretermes(0)/m/n/12 dėjų, kurie pateikė
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 189--189
+[]|\TU/texgyretermes(0)/m/n/12 Vidutinis nukeliau-
+ []
+
+
+Underfull \hbox (badness 1616) in paragraph at lines 189--189
+\TU/texgyretermes(0)/m/n/12 žaidėjo iki žaidimo
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 189--189
+[]|\TU/texgyretermes(0)/m/n/12 Suskaičiuoti visų
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 189--189
+\TU/texgyretermes(0)/m/n/12 žaidėjų, išskyrus
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 189--189
+\TU/texgyretermes(0)/m/n/12 žaidimo kūrėjų,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 189--189
+\TU/texgyretermes(0)/m/n/12 kiekvieno žaidimo
+ []
+
+
+Underfull \hbox (badness 4205) in paragraph at lines 189--189
+\TU/texgyretermes(0)/m/n/12 nuvyktą atstumą ir
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 190--190
+[]|\TU/texgyretermes(0)/m/n/12 Vidutinė žaidimo
+ []
+
+
+Underfull \hbox (badness 2418) in paragraph at lines 190--190
+\TU/texgyretermes(0)/m/n/12 žaidimų trukmes ir
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 191--191
+[]|\TU/texgyretermes(0)/m/n/12 Vidutinė laukimo
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 191--191
+[]|\TU/texgyretermes(0)/m/n/12 Suskaičiuoti lau-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 191--191
+\TU/texgyretermes(0)/m/n/12 kimo iki žaidimų
+ []
+
+
+Underfull \hbox (badness 5417) in paragraph at lines 191--191
+\TU/texgyretermes(0)/m/n/12 pradžių trukmes ir
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 192--192
+[]|\TU/texgyretermes(0)/m/n/12 Vartotojo pateikia-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 192--192
+\TU/texgyretermes(0)/m/n/12 mas mokestis už
+ []
+
+
+Underfull \hbox (badness 1377) in paragraph at lines 192--192
+[]|\TU/texgyretermes(0)/m/n/12 Procentas vartotojų,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 192--192
+[]|\TU/texgyretermes(0)/m/n/12 Suskaičiuoti, dalį
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 192--192
+\TU/texgyretermes(0)/m/n/12 vartotojų, kurie
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 192--192
+\TU/texgyretermes(0)/m/n/12 naudojosi mokama
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 192--192
+\TU/texgyretermes(0)/m/n/12 paslauga iškelti
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 193--193
+[]|\TU/texgyretermes(0)/m/n/12 Suskaičiuoti visų
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 193--193
+\TU/texgyretermes(0)/m/n/12 įvykusių žaidimų
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 194--194
+[]|\TU/texgyretermes(0)/m/n/12 Suskaičiuoti visų
+ []
+
+
+Underfull \hbox (badness 3861) in paragraph at lines 194--194
+\TU/texgyretermes(0)/m/n/12 neįvykusių žaidimų
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 195--195
+[]|\TU/texgyretermes(0)/m/n/12 Vidutinis žmonių
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 195--195
+[]|\TU/texgyretermes(0)/m/n/12 Suskaičiuoti visų
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 195--195
+\TU/texgyretermes(0)/m/n/12 įvykusių žaidimų
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 195--195
+\TU/texgyretermes(0)/m/n/12 žaidėjų skaičių ir
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--196
+[]|\TU/texgyretermes(0)/m/n/12 Aktyvių progra-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--196
+\TU/texgyretermes(0)/m/n/12 mėlės naudotojų,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--196
+[]|\TU/texgyretermes(0)/m/n/12 Suskaičiuoti žaidė-
+ []
+
+
+Underfull \hbox (badness 4819) in paragraph at lines 198--198
+\TU/texgyretermes(0)/m/n/12 nučių kiekis žaidi-
+ []
+
+
+Underfull \hbox (badness 1014) in paragraph at lines 198--198
+\TU/texgyretermes(0)/m/n/12 tes žaidimo kūrimo
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 199--199
+[]|\TU/texgyretermes(0)/m/n/12 Rėmėjų, užsiiman-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 199--199
+\TU/texgyretermes(0)/m/n/12 ir norinčių remti
+ []
+
+
+Underfull \hbox (badness 2662) in paragraph at lines 199--199
+\TU/texgyretermes(0)/m/n/12 programėlę mainais
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 199--199
+[]|\TU/texgyretermes(0)/m/n/12 Suskaičiuoti visus
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 199--199
+\TU/texgyretermes(0)/m/n/12 rėmėjus, užsi-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 199--199
+\TU/texgyretermes(0)/m/n/12 imančius žaidimų
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 199--199
+\TU/texgyretermes(0)/m/n/12 remti programėlę
+ []
+
+
+Underfull \hbox (badness 4634) in paragraph at lines 200--200
+[]|\TU/texgyretermes(0)/m/n/12 Remėjų, užsiregist-
+ []
+
+
+Underfull \hbox (badness 1320) in paragraph at lines 200--200
+\TU/texgyretermes(0)/m/n/12 savo prekes, sukur-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 200--200
+[]|\TU/texgyretermes(0)/m/n/12 Suskaičiuoti, kiek
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 200--200
+\TU/texgyretermes(0)/m/n/12 renginių kiekviena
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 201--201
+[]|\TU/texgyretermes(0)/m/n/12 Vidutinis skaičius
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 201--201
+\TU/texgyretermes(0)/m/n/12 žaidėjų, sekančių
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 201--201
+\TU/texgyretermes(0)/m/n/12 užsiregistravusį
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 201--201
+[]|\TU/texgyretermes(0)/m/n/12 Suskaičiuoti, kiek
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 201--201
+\TU/texgyretermes(0)/m/n/12 ną užsiregistravusį
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 201--201
+\TU/texgyretermes(0)/m/n/12 remėją ir išvesti
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 202
+ []
+
+[8] [9]
+Overfull \hbox (6.47142pt too wide) in paragraph at lines 212--212
+ []|\TU/texgyretermes(0)/bx/n/12 Dabartinė 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 213--213
+[]|\TU/texgyretermes(0)/m/n/12 Procentas žaidėjų,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 213--213
+[]|\TU/texgyretermes(0)/m/n/12 Suskaičiuoti visų
+ []
+
+
+Underfull \hbox (badness 1648) in paragraph at lines 213--213
+\TU/texgyretermes(0)/m/n/12 per savaitę, skaičių
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 214--214
+[]|\TU/texgyretermes(0)/m/n/12 Žaidimo monetos,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 214--214
+\TU/texgyretermes(0)/m/n/12 skiriamos prisi-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 214--214
+\TU/texgyretermes(0)/m/n/12 jungus kiekvieną
+ []
+
+
+Underfull \hbox (badness 2088) in paragraph at lines 214--214
+\TU/texgyretermes(0)/m/n/12 monetų skaičių per
+ []
+
+
+Underfull \hbox (badness 2181) in paragraph at lines 214--214
+\TU/texgyretermes(0)/m/n/12 dieną, kai prisijun-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 215--215
+[]|\TU/texgyretermes(0)/m/n/12 Vidutinis teigiamų
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 215--215
+\TU/texgyretermes(0)/m/n/12 atsiliepimų,kuriuos
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 215--215
+\TU/texgyretermes(0)/m/n/12 palieka žaidėjai,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 215--215
+\TU/texgyretermes(0)/m/n/12 dalyvavę žaidime,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 216--216
+[]|\TU/texgyretermes(0)/m/n/12 Vidutinis neigiamų
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 216--216
+\TU/texgyretermes(0)/m/n/12 palieka žaidėjai,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 216--216
+\TU/texgyretermes(0)/m/n/12 dalyvavę žaidime,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 216--216
+[]|\TU/texgyretermes(0)/m/n/12 Neigiamų žmonių
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 216--216
+\TU/texgyretermes(0)/m/n/12 atsiliepimų dalis
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 216--216
+\TU/texgyretermes(0)/m/n/12 procentais.a - nei-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 216--216
+\TU/texgyretermes(0)/m/n/12 giamų atsiliepimų
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 217--217
+[]|\TU/texgyretermes(0)/m/n/12 Vidutinis skaičius
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 217--217
+[]|\TU/texgyretermes(0)/m/n/12 Suskaičiuoti, kiek
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 217--217
+\TU/texgyretermes(0)/m/n/12 žaidimų kiekvienas
+ []
+
+
+Underfull \hbox (badness 4341) in paragraph at lines 217--217
+\TU/texgyretermes(0)/m/n/12 rėmėjas reklamuoja
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 218--218
+[]|\TU/texgyretermes(0)/m/n/12 Teigiamas rėmėjo
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 218--218
+[]|\TU/texgyretermes(0)/m/n/12 Žaidėjų, teigiamai
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 218--218
+\TU/texgyretermes(0)/m/n/12 įvertinusių rėmėjo
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 218--218
+\TU/texgyretermes(0)/m/n/12 siūlomą žaidimą,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 218--218
+[]|\TU/texgyretermes(0)/m/n/12 Suskaičiuoti, kiek
+ []
+
+
+Underfull \hbox (badness 4341) in paragraph at lines 218--218
+\TU/texgyretermes(0)/m/n/12 procentaliai žaidėjų
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 218--218
+\TU/texgyretermes(0)/m/n/12 teigiamai vertina
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 218--218
+\TU/texgyretermes(0)/m/n/12 kompanijos rekla-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 219--219
+[]|\TU/texgyretermes(0)/m/n/12 Neigiamas rėmėjo
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 219--219
+[]|\TU/texgyretermes(0)/m/n/12 Žaidėjų, neigiamai
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 219--219
+\TU/texgyretermes(0)/m/n/12 įvertinusių rėmėjo
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 219--219
+\TU/texgyretermes(0)/m/n/12 siūlomą žaidimą,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 219--219
+[]|\TU/texgyretermes(0)/m/n/12 Suskaičiuoti, kiek
+ []
+
+
+Underfull \hbox (badness 4341) in paragraph at lines 219--219
+\TU/texgyretermes(0)/m/n/12 procentaliai žaidėjų
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 219--219
+\TU/texgyretermes(0)/m/n/12 neigiamai vertina
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 219--219
+\TU/texgyretermes(0)/m/n/12 kompanijos rekla-
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 220
+ []
+
+[10] [11] [12] [13]
+Overfull \hbox (10.97357pt too wide) in alignment at lines 334--338
+ [] [] 
+ []
+
+
+Overfull \hbox (10.97357pt too wide) in alignment at lines 338--369
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 369
+ []
+
+[14] [15]
+File: img/UserUseCase.png Graphic file (type QTm)
+ <use  "img/UserUseCase.png" > [16]
+File: img/JoinGameSequence.png Graphic file (type QTm)
+
+<use  "img/JoinGameSequence.png" > [17]
+File: img/CreateGameSequence.png Graphic file (type QTm)
+ <use  "img/CreateGameSequence.png" >
+File: img/InviteFriendSequence.png Graphic file (type QTm)
+
+<use  "img/InviteFriendSequence.png" > [18]
+File: img/SendMessageSequence.png Graphic file (type QTm)
+
+<use  "img/SendMessageSequence.png" >
+File: img/ParticipateEventSequence.png Graphic file (type QTm)
+
+<use  "img/ParticipateEventSequence.png" > [19]
+File: img/CreatorUseCase.png Graphic file (type QTm)
+
+<use  "img/CreatorUseCase.png" >
+File: img/CreateEventSequence.png Graphic file (type QTm)
+ <use  "img/CreateEventSequence.png" > [20]
+File: img/UserUseCase.png Graphic file (type QTm)
+
+<use  "img/UserUseCase.png" > [21] [22]
+Underfull \hbox (badness 10000) in paragraph at lines 576--578
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 579--581
+
+ []
+
+
+Underfull \hbox (badness 1331) in paragraph at lines 582--584
+\TU/texgyretermes(0)/m/n/12 reikalavimus programėlė pasižymėtų socialiniu saugu
+mu, o tai reklamuojant galima išgauti
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 582--584
+
+ []
+
+[23]
+Underfull \hbox (badness 10000) in paragraph at lines 585--587
+
+ []
+
+
+Underfull \hbox (badness 1259) in paragraph at lines 588--590
+\TU/texgyretermes(0)/m/n/12 ir pakviesti juose esančius draugus parsisiųsti pro
+gramėlę. Vartotojai, sudalyvavę žaidime
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 588--590
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 591--593
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 594--596
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 597--599
+
+ []
+
+
+Underfull \hbox (badness 1102) in paragraph at lines 600--602
+\TU/texgyretermes(0)/bx/n/12 Problemos sprendimas \TU/texgyretermes(0)/m/n/12 T
+am, kad sistema būtų sukurta tiksliai tokia, kokios reikalaujame,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 600--602
+
+ []
+
+[24]
+Underfull \hbox (badness 10000) in paragraph at lines 603--605
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 606--608
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 609--611
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 613--615
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 616--618
+
+ []
+
+
+Underfull \hbox (badness 1163) in paragraph at lines 619--621
+\TU/texgyretermes(0)/m/n/12 lengvai programėlės internetinės svetainės bei prog
+ramėlės priežiūrai ir duomenų įvedimui,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 619--621
+
+ []
+
+
+Underfull \hbox (badness 2293) in paragraph at lines 622--624
+\TU/texgyretermes(0)/bx/n/12 Problema \TU/texgyretermes(0)/m/n/12 Programėlės n
+audotojai, norintys teikti žaidimų pasiūlymus, turi užsiregistruoti
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 622--624
+
+ []
+
+[25]
+Underfull \hbox (badness 10000) in paragraph at lines 625--627
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 628--630
+
+ []
+
+
+Overfull \hbox (10.97357pt too wide) in alignment at lines 656--660
+ [] [] 
+ []
+
+
+Overfull \hbox (10.97357pt too wide) in alignment at lines 660--671
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 671
+ []
+
+[26]
+File: img/economics.png Graphic file (type QTm)
+ <use  "img/economics.png" > [27]
+Overfull \hbox (10.97357pt too wide) in alignment at lines 736--740
+ [] [] 
+ []
+
+
+Overfull \hbox (10.97357pt too wide) in alignment at lines 740--747
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 747
+ []
+
+[28] [29]
+\c@frcount=\count374
+
+Underfull \vbox (badness 10000) detected at line 813
+ []
+
+[30
 
 ]
+Underfull \hbox (badness 2269) in paragraph at lines 821--821
+[]|\TU/texgyretermes(0)/m/n/12 Registruojantis vartotojas privalo nurodyti pris
+ijungimo
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 828
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 840
+ []
+
+[31]
+Underfull \vbox (badness 10000) detected at line 851
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 862
+ []
+
+[32]
+Underfull \vbox (badness 10000) detected at line 885
+ []
+
+[33]
+Underfull \vbox (badness 10000) detected at line 893
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 905
+ []
+
+[34]
+Underfull \vbox (badness 10000) detected at line 920
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 931
+ []
+
+[35]
+Underfull \vbox (badness 10000) detected at line 943
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 956
+ []
+
+[36]
+Underfull \vbox (badness 10000) detected at line 970
+ []
+
+[37]
+Underfull \vbox (badness 10000) detected at line 982
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 993
+ []
+
+[38]
+Underfull \vbox (badness 10000) detected at line 1002
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 1012
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 1024
+ []
+
+[39]
+Underfull \vbox (badness 10000) detected at line 1033
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 1041
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 1049
+ []
+
+\c@nfrcount=\count375
+
+Underfull \vbox (badness 10000) detected at line 1072
+ []
+
+[40]
+Underfull \vbox (badness 10000) detected at line 1081
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 1088
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 1095
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 1107
+ []
+
+[41]
+Underfull \vbox (badness 10000) detected at line 1119
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 1130
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 1139
+ []
+
+[42]
+Underfull \vbox (badness 10000) detected at line 1150
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 1159
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 1168
+ []
+
+[43]
+Underfull \vbox (badness 10000) detected at line 1177
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 1186
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 1196
+ []
+
+[44]
+Underfull \vbox (badness 10000) detected at line 1204
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 1213
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 1222
+ []
+
+[45]
+Underfull \vbox (badness 10000) detected at line 1234
+ []
+
+\c@ircount=\count376
+
+Underfull \vbox (badness 10000) detected at line 1257
+ []
+
+[46]
+Underfull \vbox (badness 10000) detected at line 1267
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 1275
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 1284
+ []
+
+[47]
+Underfull \hbox (badness 1484) in paragraph at lines 1290--1290
+[]|\TU/texgyretermes(0)/m/n/12 Pagrindinis informacijos perdavimo naudotojui bū
+das –
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 1299
+ []
+
+File: img/entrance_window.png Graphic file (type QTm)
+<use  "img/entrance_window.png" > [48]
+File: img/company_register.png Graphic file (type QTm)
+ <use  "img/company_register.png" >
+[49]
+File: img/login_window.png Graphic file (type QTm)
+ <use  "img/login_window.png" > [50]
+File: img/main_window.png Graphic file (type QTm)
+ <use  "img/main_window.png" > [51]
+File: img/host_game_window.png Graphic file (type QTm)
+
+<use  "img/host_game_window.png" > [52]
+File: img/game_sessions_view.png Graphic file (type QTm)
+ <use  "img/game_sessions_view.png" >
+[53] [54] [55]
 File: img/NodesCommunication.jpg Graphic file (type QTm)
  <use  "img/NodesCommunication.jpg" >
-Overfull \hbox (10.82271pt too wide) in paragraph at lines 71--72
+Overfull \hbox (10.82271pt too wide) in paragraph at lines 1359--1360
  [][] 
  []
 
-[5
+[56
 
 ]
 File: img/Artifacts.jpg Graphic file (type QTm)
- <use  "img/Artifacts.jpg" > [6]
+ <use  "img/Artifacts.jpg" > [57]
 File: img/TopologyExample.jpg Graphic file (type QTm)
- <use  "img/TopologyExample.jpg" > [7]
+ <use  "img/TopologyExample.jpg" >
 File: img/UMLComponent1.jpg Graphic file (type QTm)
 
-<use  "img/UMLComponent1.jpg" >
+<use  "img/UMLComponent1.jpg" > [58]
 File: img/UMLComponent2.jpg Graphic file (type QTm)
- <use  "img/UMLComponent2.jpg" > [8
-
-]
+ <use  "img/UMLComponent2.jpg" > [59]
 File: img/UMLComponent3.jpg Graphic file (type QTm)
 
-<use  "img/UMLComponent3.jpg" > [9] [10]
+<use  "img/UMLComponent3.jpg" > [60]
 File: img/BoardGamesClassDiagram.jpg Graphic file (type QTm)
-
-<use  "img/BoardGamesClassDiagram.jpg" >
+ <use  "img/BoardGamesClassDiagram.jpg" >
+[61]
 File: img/BoardGamesClassDiagrampt1.jpg Graphic file (type QTm)
-
-<use  "img/BoardGamesClassDiagrampt1.jpg" > [11
-
-]
+ <use  "img/BoardGamesClassDiagrampt1.jpg" > [62]
 File: img/BoardGamesClassDiagrampt2.jpg Graphic file (type QTm)
 
 <use  "img/BoardGamesClassDiagrampt2.jpg" >
 File: img/BoardGamesClassDiagramFull.jpg Graphic file (type QTm)
 
 <use  "img/BoardGamesClassDiagramFull.jpg" >
-Overfull \hbox (60.90161pt too wide) in paragraph at lines 180--181
+Overfull \hbox (60.90161pt too wide) in paragraph at lines 1468--1469
  [][] 
  []
 
-[12]
+[63]
 File: img/Object.jpg Graphic file (type QTm)
- <use  "img/Object.jpg" > [13] [14]
+ <use  "img/Object.jpg" > [64]
 File: img/UzduociuDiagrama1.jpg Graphic file (type QTm)
- <use  "img/UzduociuDiagrama1.jpg" >
+ <use  "img/UzduociuDiagrama1.jpg" > [65]
 File: img/UzduociuDiagrama2.jpg Graphic file (type QTm)
 
-<use  "img/UzduociuDiagrama2.jpg" > [15
-
-]
+<use  "img/UzduociuDiagrama2.jpg" >
 File: img/UzduociuDiagrama3.jpg Graphic file (type QTm)
  <use  "img/UzduociuDiagrama3.jpg" >
-[16] [17]
+[66]
 File: img/Login_sequence.png Graphic file (type QTm)
- <use  "img/Login_sequence.png" >
+ <use  "img/Login_sequence.png" > [67]
 File: img/Authentication.jpg Graphic file (type QTm)
  <use  "img/Authentication.jpg" >
-[18
-
-]
+[68]
 File: img/MainWindow_activity.png Graphic file (type QTm)
- <use  "img/MainWindow_activity.png" > [19]
+ <use  "img/MainWindow_activity.png" > [69]
 File: img/MainWindowAdministrator.png Graphic file (type QTm)
 
-<use  "img/MainWindowAdministrator.png" > [20]
+<use  "img/MainWindowAdministrator.png" > [70]
 File: img/MainWindowCompany.png Graphic file (type QTm)
 
 <use  "img/MainWindowCompany.png" >
 File: img/HostGame_activity.png Graphic file (type QTm)
  <use  "img/HostGame_activity.png" >
-[21]
+[71]
 File: img/HostGame_sequence.png Graphic file (type QTm)
- <use  "img/HostGame_sequence.png" > [22]
+ <use  "img/HostGame_sequence.png" > [72]
 File: img/JoinGame_activity.png Graphic file (type QTm)
 
-<use  "img/JoinGame_activity.png" > [23]
+<use  "img/JoinGame_activity.png" > [73]
 File: img/JoinGame_sequence.png Graphic file (type QTm)
  <use  "img/JoinGame_sequence.png" >
 File: img/FriendList_sequence.png Graphic file (type QTm)
 
-<use  "img/FriendList_sequence.png" > [24]
+<use  "img/FriendList_sequence.png" > [74]
 File: img/GameWindow_sequence.png Graphic file (type QTm)
 
-<use  "img/GameWindow_sequence.png" > [25] [26
+<use  "img/GameWindow_sequence.png" > [75] [76
 
 ]
-Underfull \hbox (badness 1783) in paragraph at lines 422--423
+Underfull \hbox (badness 1783) in paragraph at lines 1720--1721
 []\TU/texgyretermes(0)/m/n/12 Informacija apie išdėstymo tinkle (Deployment) di
 agramas, pavyzdžiai $[][][][] [] [] [] [][][] []
  []
 
-[27
+[77
 
-] (./BoardGames.aux)
-Package logreq Info: Writing requests to 'BoardGames.run.xml'.
-\openout1 = `BoardGames.run.xml'.
+] (./BoardGamesFinal.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package logreq Info: Writing requests to 'BoardGamesFinal.run.xml'.
+\openout1 = `BoardGamesFinal.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 23118 strings out of 493068
- 467979 string characters out of 6137719
- 908594 words of memory out of 5000000
- 26719 multiletter control sequences out of 15000+600000
+ 23349 strings out of 493068
+ 471209 string characters out of 6137719
+ 941697 words of memory out of 5000000
+ 26929 multiletter control sequences out of 15000+600000
  16574 words of font info for 81 fonts, out of 8000000 for 9000
  1347 hyphenation exceptions out of 8191
- 67i,12n,96p,10499b,3426s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 67i,12n,96p,10504b,3426s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on BoardGames.pdf (28 pages).
+Output written on BoardGamesFinal.pdf (78 pages).

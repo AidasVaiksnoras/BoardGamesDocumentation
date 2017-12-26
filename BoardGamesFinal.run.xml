@@ -44,10 +44,10 @@
   <internal package="biblatex" priority="9" active="0">
     <generic>latex</generic>
     <provides type="dynamic">
-      <file>BoardGames.bcf</file>
+      <file>BoardGamesFinal.bcf</file>
     </provides>
     <requires type="dynamic">
-      <file>BoardGames.bbl</file>
+      <file>BoardGamesFinal.bbl</file>
     </requires>
     <requires type="static">
       <file>blx-dm.def</file>
@@ -67,19 +67,19 @@
     <generic>biber</generic>
     <cmdline>
       <binary>biber</binary>
-      <infile>BoardGames</infile>
+      <infile>BoardGamesFinal</infile>
     </cmdline>
     <input>
-      <file>BoardGames.bcf</file>
+      <file>BoardGamesFinal.bcf</file>
     </input>
     <output>
-      <file>BoardGames.bbl</file>
+      <file>BoardGamesFinal.bbl</file>
     </output>
     <provides type="dynamic">
-      <file>BoardGames.bbl</file>
+      <file>BoardGamesFinal.bbl</file>
     </provides>
     <requires type="dynamic">
-      <file>BoardGames.bcf</file>
+      <file>BoardGamesFinal.bcf</file>
     </requires>
     <requires type="editable">
       <file>bibliografija.bib</file>

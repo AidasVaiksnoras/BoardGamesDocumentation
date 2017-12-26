@@ -1,0 +1,239 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {lithuanian}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Anotacija}{1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Žodynas}{5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.}Verslo srities analizė}{6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.1.}Įvadas}{6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.2.}Verslo proceso aprašymas}{6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.3.}Išorinė proceso analizė}{7}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {1.3.1.}Dabartinio verslo sistemos įeiga:}{7}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {1.3.2.}Dabartinio verslo sistemos išeiga:}{7}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {1.3.3.}Dabartinis verslas reguliuojamas šių taisyklių:}{8}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {1.3.4.}Dabartinis verslo įvaizdžio formavimas:}{8}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {1.3.5.}Įeigos metrikos}{8}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {1.3.6.}Išeigos metrikos}{10}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.4.}Vidinė proceso analizė}{11}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {1.4.1.}Verslo proceso tobulinimo strategija}{11}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\numberline {1.4.1.1.}Bendroji tobulinimo strategija:}{11}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\numberline {1.4.1.2.}Struktūrizuota tobulinimo strategija}{12}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {1.4.2.}Esamų sistemų analizė}{13}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\numberline {1.4.2.1.}Rikis – stalo žaidimų klubas}{13}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\numberline {1.4.2.2.}Board Gamer programėlė}{13}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {1.4.3.}Analizės rezultatai}{14}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.5.}Verslo proceso tobulinimo strategija}{15}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {1.5.1.}Funkcionalumo tobulinimo strategija}{15}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {1.5.2.}Grafinio dizaino tobulinimo strategija}{16}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {1.5.3.}Pasiekiamumo tobulinimo strategija}{16}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.6.}Sistemos naudojimo scenarijus}{16}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {1.6.1.}Scenarijus}{17}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\numberline {1.6.1.1.}Vartotojo perspektyva}{17}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\numberline {1.6.1.2.}Žaidimų kūrėjo perspektyva}{20}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\numberline {1.6.1.3.}Administratoriaus}{22}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {1.6.2.}Sistemos teikiama nauda}{22}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {1.6.3.}Esama būklė}{22}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {1.6.4.}Priemonės scenarijui įgyvendinti}{23}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.7.}Įgyvendinamumo ir naudos analizė}{23}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {1.7.1.}Operacinis įgyvendinamumas}{23}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {1.7.2.}Techninis įgyvendinamumas}{25}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {1.7.3.}Ekonominis įgyvendinamumas}{26}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {1.7.4.}Juridinis įgyvendinamumas}{28}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.8.}Išvada}{28}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.}Reikalavimų specifikacija}{30}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1.}Įvadas}{30}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.}Funkciniai reikalavimai asmeninio vartotojo perspektyva}{30}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.2.1.}Aplikacijos langai}{30}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.2.2.}Registracija}{31}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.2.3.}Prisijungimas}{31}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.2.4.}Pagrindinis langas}{32}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.2.5.}Žaidimų pasirinkimo langas}{32}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.2.6.}Žaidimo kūrimo langas}{33}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.2.7.}Žaidimų iškėlimo langas}{34}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.2.8.}Asmeninių žinučių langas}{34}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.2.9.}Draugų sąrašas}{35}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.2.10.}Žaidimo langas}{35}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.2.11.}Vartotojo profilio langas}{36}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.2.12.}Mano žaidimų langas}{36}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.}Funkciniai reikalavimai kompanijos perspektyva}{37}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.3.1.}Registracija}{37}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.3.2.}Prisijungimas}{38}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.3.3.}Pagrindinis langas}{38}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.3.4.}Kompanijos siūlomų žaidimų langas}{39}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.3.5.}Kompanijos sekėjų langas}{39}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.4.}Funkciniai reikalavimai administracijos perspektyva}{39}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.4.1.}Informacijos duomenų bazėje tvarkymas}{39}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.4.2.}Vartotojų blokavimas}{40}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.4.3.}Informacijos atnaujinimas}{40}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.4.4.}Klaidų taisymas}{40}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.5.}Nefunkciniai reikalavimai}{40}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.5.1.}OS reikalavimai}{40}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.5.2.}Saveikos su DB reikalavimai}{41}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.5.3.}Dokumentų mainų reikalavimai}{41}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.5.4.}Darbo kompiuterių tinkluose reikalavimai}{41}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.5.5.}Saveikos su kitomis programomis reikalavimai}{41}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.5.6.}Programavimo aplinkos reikalavimai}{42}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.5.7.}Tikslumo reikalavimai duomenų saugojimui}{42}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.5.8.}Tikslumo reikalavimai duomenų vaizdavimui}{42}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.5.9.}Patikimumo reikalavimai}{43}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.5.10.}Našumo reikalavimai}{43}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.5.11.}Diegimo reikalavimai}{43}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.5.12.}Sistemos įsisavinamumo reikalavimai}{44}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.5.13.}Saugumo reikalavimai}{44}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.5.14.}Aptarnavimo ir priežiūros reikalavimai}{44}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.5.15.}Tiražuojamumo reikalavimai}{45}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.5.16.}Apsaugos reikalavimai}{45}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.5.17.}Juridiniai reikalavimai}{45}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.5.18.}Dalykinės srities metaforų reikalavimai}{46}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.6.}Sąsajos reikalavimai}{46}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.6.1.}Pagrindinių vartotojo įrankių reikalavimai}{46}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.6.2.}Vartotojo įrašo formulavimo reikalavimai}{47}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.6.3.}Programėlės pranešimų formulavimo reikalavimai}{47}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.6.4.}Interfeiso individualizavimo reikalavimai}{47}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.6.5.}Interfeiso reikalavimai}{48}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.7.}Prototipas}{49}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.8.}Rezultatas}{55}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.9.}Išvada}{55}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.}4+1 architektūrinis modelis}{56}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1.}Fizinis pjūvis}{56}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.1.1.}Fiziniai mazgai tinkle, jų komunikacija}{56}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.1.2.}Artifaktų diegimas į mazgus}{57}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.1.3.}Topologinio išdėstymo tinkle pavyzdys}{58}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.}Kūrimo pjūvis}{58}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.2.1.}Bendroji UML diagrama}{59}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.2.2.}Vartotojo komponentų diagrama}{59}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.2.3.}Detalesnė vartotojo komponentų diagrama}{60}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.}Loginis pjūvis}{61}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.3.1.}Klasių Diagramos}{61}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.3.2.}Objektų diagrama}{64}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4.}Užduotys}{65}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.4.1.}Svečio ir registruoto vartotojo užduotys}{65}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.4.2.}Žaidimo dalyvio ir šeimininko užduotys}{66}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.4.3.}Sistemos administravimas}{67}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.5.}Procesų pjūvis}{67}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.5.1.}Prisijungimas}{68}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.5.2.}Pagrindinis navigacijos langas}{70}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.5.3.}Žaidimo sukūrimo langas}{72}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.5.4.}Prisijungimo prie egzistuojančio žaidimo langas}{73}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.5.5.}Draugų sąrašo langas}{74}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.5.6.}Žaidimo langas}{75}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.6.}Rezultatai}{75}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Išvada}{76}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Literatūros sąrašas}{77}

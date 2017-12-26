@@ -1,0 +1,59 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {lithuanian}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Anotacija}{1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Įvadas}{3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Žodynas}{4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.}Fizinis pjūvis}{5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.1.}Fiziniai mazgai tinkle, jų komunikacija}{5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {1.1.1.}Kazkokia nesamone}{5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.2.}Artifaktų diegimas į mazgus}{6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.3.}Topologinio išdėstymo tinkle pavyzdys}{7}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.}Kūrimo pjūvis}{8}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1.}Bendroji UML diagrama}{8}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.}Vartotojo komponentų diagrama}{8}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.}Detalesnė vartotojo komponentų diagrama}{9}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.}Loginis pjūvis}{11}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1.}Klasių Diagramos}{11}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.}Objektų diagrama}{14}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.}Užduotys}{15}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.}Svečio ir registruoto vartotojo užduotys}{15}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.}Žaidimo dalyvio ir šeimininko užduotys}{16}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3.}Sistemos administravimas}{17}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.}Procesų pjūvis}{18}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1.}Prisijungimas}{18}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.}Pagrindinis navigacijos langas}{20}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.3.}Žaidimo sukūrimo langas}{22}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.4.}Prisijungimo prie egzistuojančio žaidimo langas}{23}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.5.}Draugų sąrašo langas}{24}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.6.}Žaidimo langas}{25}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Rezultatai}{26}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Literatūros sąrašas}{27}

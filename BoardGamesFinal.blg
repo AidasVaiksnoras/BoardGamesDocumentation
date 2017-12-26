@@ -1,0 +1,9 @@
+[1] Config.pm:354> INFO - This is Biber 2.7 (beta)
+[1] Config.pm:357> INFO - Logfile is 'BoardGamesFinal.blg'
+[91] biber:303> INFO - === Tue Dec 26, 2017, 14:48:47
+[118] Biber.pm:360> INFO - Reading 'BoardGamesFinal.bcf'
+[235] Biber.pm:836> INFO - Found 0 citekeys in bib section 0
+[247] Utils.pm:164> WARN - The file 'BoardGamesFinal.bcf' does not contain any citations!
+[253] bbl.pm:608> INFO - Writing 'BoardGamesFinal.bbl' with encoding 'UTF-8'
+[254] bbl.pm:712> INFO - Output to BoardGamesFinal.bbl
+[254] Biber.pm:110> INFO - WARNINGS: 1
